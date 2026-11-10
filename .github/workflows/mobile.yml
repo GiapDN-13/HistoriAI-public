@@ -1,0 +1,40 @@
+name: Mobile CI
+
+on:
+  push:
+    branches: [master, develop]
+    paths: ["mobile/**", ".github/workflows/mobile.yml"]
+  pull_request:
+    paths: ["mobile/**", ".github/workflows/mobile.yml"]
+
+jobs:
+  analyze-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+
+      # Phải khớp bản đang dùng để phát triển (xem `sdk:` trong pubspec.yaml).
+      # Ghim 3.24 trong khi máy dev chạy 3.41 thì CI đỏ mà không ai để ý: từ
+      # lúc thêm webview_flutter (cần Dart >= 3.6) tới khi phát hiện, mọi thay
+      # đổi chỉ được kiểm trên đúng một máy.
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.41.6"
+          channel: stable
+          cache: true
+
+      - name: Get dependencies
+        run: flutter pub get
+
+      - name: Analyze (lint)
+        run: flutter analyze --no-fatal-infos
+
+      - name: Run tests
+        run: flutter test
+
+      - name: Build APK (debug)
+        if: ${{ hashFiles('mobile/android/app/build.gradle', 'mobile/android/app/build.gradle.kts') != '' }}
+        run: flutter build apk --debug

@@ -1,0 +1,35 @@
+# Render Blueprint — deploy backend HistoriAI miễn phí (free tier).
+# Cách dùng: render.com -> New -> Blueprint -> chọn repo GiapDN-13/HistoriAI
+# Render tự dựng: 1 web service (FastAPI) + 1 Postgres free, tự seed dữ liệu.
+services:
+  - type: web
+    name: historiai-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    # Seed dữ liệu 'Hào khí Đại Việt' rồi chạy API
+    startCommand: "python -m app.db.seed && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: historiai-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true          # Render tự sinh khóa ngẫu nhiên
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: ANALYTICS_KEY
+        generateValue: true          # khoá xem dashboard số liệu
+      - key: TTS_PROVIDER
+        value: "none"                # tắt giọng (cloud không có GPU)
+      - key: LLM_API_KEY
+        value: ""                    # rỗng -> chat trả lời mock
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+
+databases:
+  - name: historiai-db
+    plan: free
+    databaseName: historiai
+    user: historiai

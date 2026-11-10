@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Trang chủ">
+  <path fill="#D89A25" d="M5 25 32 9l27 16v4H5z"/>
+  <path fill="#FFF1B3" d="m12 24 20-12 20 12H12z"/>
+  <path fill="#FDD141" d="M10 30h44v5H10zM7 54h50v5H7z"/>
+  <path fill="#FBF3E6" d="M14 37h7v16h-7zm15 0h7v16h-7zm15 0h7v16h-7z"/>
+  <path fill="#7A2218" d="M11 35h42v2H11zm-3 17h48v3H8z"/>
+  <path fill="#FDD141" d="M29 5h6v4h-6z"/>
+</svg>

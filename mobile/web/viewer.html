@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>HistoriAI · Mô hình 3D</title>
+<script type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+<style>
+  :root { --kem:#FDF9F4; --kem-dam:#FBF3E6; --do:#BA2323; --vang:#D4AF37; --chu:#2B1410; }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; background:var(--kem); overflow:hidden;
+    font-family:"Inter",-apple-system,"Segoe UI",Roboto,sans-serif; color:var(--chu); }
+  model-viewer { width:100%; height:100%; background:transparent; --poster-color:transparent; }
+
+  #nap {
+    position:absolute; inset:0; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:12px; background:var(--kem);
+    transition:opacity .35s; pointer-events:none;
+  }
+  #nap.an { opacity:0; }
+  .vong {
+    width:34px; height:34px; border:3px solid var(--kem-dam);
+    border-top-color:var(--do); border-radius:50%; animation:quay .9s linear infinite;
+  }
+  @keyframes quay { to { transform:rotate(360deg); } }
+  #nap .chu { font-size:12.5px; color:#896F62; }
+
+  #loi {
+    position:absolute; inset:0; display:none; flex-direction:column;
+    align-items:center; justify-content:center; gap:8px; padding:24px; text-align:center;
+  }
+  #loi.hien { display:flex; }
+  #loi .to { font-size:14px; font-weight:600; color:var(--do); }
+  #loi .nho { font-size:12.5px; color:#896F62; max-width:280px; line-height:1.5; }
+
+  #mach {
+    position:absolute; left:50%; bottom:12px; transform:translateX(-50%);
+    background:rgba(43,20,16,.78); color:#FBF3E6; font-size:11.5px;
+    padding:5px 12px; border-radius:999px; pointer-events:none;
+    opacity:0; transition:opacity .4s;
+  }
+  #mach.hien { opacity:1; }
+</style>
+</head>
+<body>
+
+<model-viewer id="mv"
+  camera-controls touch-action="pan-y"
+  auto-rotate auto-rotate-delay="1200" rotation-per-second="18deg"
+  shadow-intensity="1" exposure="1.05"
+  environment-image="neutral"
+  interaction-prompt="none"
+  loading="eager">
+</model-viewer>
+
+<div id="nap"><div class="vong"></div><div class="chu">Đang dựng mô hình…</div></div>
+<div id="loi">
+  <div class="to">Chưa dựng được mô hình</div>
+  <div class="nho" id="loiChiTiet">Kiểm tra lại đường mạng rồi thử mở lại.</div>
+</div>
+<div id="mach">Kéo để xoay · chụm hai ngón để phóng</div>
+
+<script>
+  // Nhận ?model=<slug> rồi nạp /models/<slug>.glb trên CHÍNH tên miền này.
+  // Trước đây viewer nằm ở một repo GitHub Pages khác, nghĩa là phần 3D của sản
+  // phẩm phụ thuộc vào nơi nhóm không kiểm soát cùng lúc với backend.
+  const thamSo = new URLSearchParams(location.search);
+  const slug = (thamSo.get('model') || '').replace(/[^a-z0-9\-_]/gi, '');
+  // Góc quay ngang ban đầu, tính bằng độ. Model nhân vật do Tripo dựng quay
+  // lưng về phía máy ảnh mặc định, nên mở ra là thấy tấm áo choàng sau lưng
+  // chứ không thấy mặt. Truyền quay=180 để xoay lại.
+  const quay = parseFloat(thamSo.get('quay') || '0') || 0;
+  // tuxoay=0 tắt tự xoay. Cổ vật thì xoay vòng cho đẹp, nhưng nhân vật đang
+  // trò chuyện mà quay lưng lại giữa câu thì hỏng hết cảm giác đối thoại.
+  const tuXoay = thamSo.get('tuxoay') !== '0';
+  // Đoạn cử động mở đầu. Rỗng thì để model tự chọn đoạn đầu tiên.
+  const cuDongDau = thamSo.get('anim') || '';
+  const mv = document.getElementById('mv');
+  const nap = document.getElementById('nap');
+  const loi = document.getElementById('loi');
+  const mach = document.getElementById('mach');
+
+  function baoLoi(chiTiet) {
+    nap.classList.add('an');
+    document.getElementById('loiChiTiet').textContent = chiTiet;
+    loi.classList.add('hien');
+  }
+
+  if (!slug) {
+    baoLoi('Thiếu tên mô hình trong đường dẫn.');
+  } else {
+    mv.src = `models/${slug}.glb`;
+    mv.alt = `Mô hình 3D: ${slug}`;
+    if (quay) mv.setAttribute('camera-orbit', `${quay}deg 75deg auto`);
+    if (!tuXoay) mv.removeAttribute('auto-rotate');
+
+    mv.addEventListener('load', () => {
+      nap.classList.add('an');
+      mach.classList.add('hien');
+      setTimeout(() => mach.classList.remove('hien'), 3500);
+      if ((mv.availableAnimations || []).length) {
+        // Đoạn mở đầu khác 'dung_tho' thì là lời chào: chạy MỘT lần rồi về
+        // đứng thở. Trước đây truyền cứng false nên nhân vật cúi chào lặp đi
+        // lặp lại suốt cuộc trò chuyện.
+        const motLan = !!cuDongDau && cuDongDau !== 'dung_tho';
+        doiCuDong(cuDongDau || 'dung_tho', motLan);
+      }
+    });
+
+    mv.addEventListener('error', (e) => {
+      baoLoi('Không tải được tệp mô hình. Có thể tệp chưa được đưa lên máy chủ.');
+      console.error('model-viewer lỗi:', e);
+    });
+  }
+
+  // --- Điều khiển cử động từ phía Flutter ---
+  //
+  // Đổi đoạn bằng lệnh chứ không nạp lại trang: nạp lại là tải lại model gần
+  // 900 KB và chớp trắng giữa cuộc trò chuyện.
+  let hen = null;
+
+  function doiCuDong(ten, motLan) {
+    const co = mv.availableAnimations || [];
+    if (!co.length) return;
+    if (!co.includes(ten)) ten = co.includes('dung_tho') ? 'dung_tho' : co[0];
+    if (hen) { clearTimeout(hen); hen = null; }
+    mv.animationName = ten;
+    mv.currentTime = 0;
+    mv.play();
+    // model-viewer lặp mọi đoạn. Đoạn chạy một lần thì tự hẹn giờ quay về
+    // trạng thái đứng thở khi hết.
+    if (motLan) {
+      // Đợi một khung hình: ngay sau khi gán animationName thì mv.duration
+      // vẫn còn là của đoạn CŨ (hoặc 0), hẹn giờ theo nó là sai nhịp.
+      requestAnimationFrame(() => {
+        const dai = mv.duration > 0 ? mv.duration : 3;
+        hen = setTimeout(() => doiCuDong('dung_tho', false), dai * 1000);
+      });
+    }
+  }
+  window.doiCuDong = doiCuDong;
+
+  // Trên web nhúng bằng iframe nên nhận lệnh qua postMessage; trên Android
+  // WebView gọi thẳng window.doiCuDong(...). Cùng một hàm, hai lối vào.
+  window.addEventListener('message', (e) => {
+    const d = e.data;
+    if (d && typeof d === 'object' && d.cuDong) doiCuDong(d.cuDong, !!d.motLan);
+  });
+</script>
+</body>
+</html>

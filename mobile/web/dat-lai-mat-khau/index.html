@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đặt lại mật khẩu · HistoriAI</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<!--
+  Link trong thư quên mật khẩu trỏ về đây: /dat-lai-mat-khau/#ma=<mã>.
+  Mã nằm sau dấu # nên trình duyệt KHÔNG gửi nó lên máy chủ (không vào nhật ký
+  nginx/Cloudflare, không lọt qua Referer). Đọc xong là xoá khỏi thanh địa chỉ.
+  Không có mã (ai đó mở thẳng trang) thì hiện ô nhập email để xin thư.
+-->
+<style>
+  :root { --kem:#FDF9F4; --kem-dam:#FBF3E6; --do:#BA2323; --do-dam:#7A2218;
+          --vang:#D4AF37; --chu:#2B1410; --chu-nhat:#7C5A4A; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--kem); color:var(--chu); min-height:100vh;
+         font-family:Inter,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.6; }
+  header { background:linear-gradient(160deg,var(--do),var(--do-dam));
+           color:var(--kem-dam); padding:30px 16px 24px; text-align:center; }
+  header h1 { font-family:"Playfair Display","Times New Roman",serif; font-weight:900;
+              font-size:clamp(23px,5.5vw,29px); margin:0; color:#FDD141; }
+  main { max-width:420px; margin:0 auto; padding:26px 16px 60px; }
+  label { display:block; font-weight:600; font-size:14px; margin:16px 0 6px; }
+  input { width:100%; padding:12px 14px; font-size:16px; border-radius:10px;
+          border:1.5px solid rgba(43,20,16,.18); background:#fff; color:var(--chu); }
+  input:focus { outline:none; border-color:var(--do); }
+  button, .nut { display:block; width:100%; margin-top:22px; padding:13px; font-size:16px;
+           font-weight:600; border:0; border-radius:10px; background:var(--do); color:#fff;
+           cursor:pointer; text-align:center; text-decoration:none; }
+  button:disabled { opacity:.6; cursor:wait; }
+  .nut.phu { background:transparent; color:var(--do); border:1.5px solid var(--do); }
+  .bao { border-radius:10px; padding:12px 14px; margin-top:18px; font-size:14.5px; }
+  .bao.loi { background:#FBE9E7; color:var(--do-dam); }
+  .bao.tot { background:#EEF6EA; color:#2E5A1F; }
+  .goi-y { color:var(--chu-nhat); font-size:14px; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<header><h1>Đặt lại mật khẩu</h1></header>
+<main>
+  <form id="dat-lai" hidden>
+    <p class="goi-y">Chọn mật khẩu mới cho tài khoản HistoriAI của bạn (ít nhất 8 ký tự).</p>
+    <label for="mk1">Mật khẩu mới</label>
+    <input id="mk1" type="password" autocomplete="new-password" minlength="8" required>
+    <label for="mk2">Nhập lại mật khẩu mới</label>
+    <input id="mk2" type="password" autocomplete="new-password" minlength="8" required>
+    <button type="submit">Lưu mật khẩu mới</button>
+  </form>
+
+  <form id="xin-thu" hidden>
+    <p class="goi-y">Nhập email bạn đã dùng để đăng ký. Chúng tôi sẽ gửi link đặt lại mật khẩu.</p>
+    <label for="email">Email</label>
+    <input id="email" type="email" autocomplete="email" required>
+    <button type="submit">Gửi thư cho tôi</button>
+  </form>
+
+  <div id="bao" class="bao" hidden></div>
+  <a id="ve-app" class="nut phu" href="/" hidden>Mở HistoriAI để đăng nhập</a>
+</main>
+<script>
+(function () {
+  var API = '/api/v1/auth/';
+  var m = /[#&]ma=([^&]+)/.exec(location.hash);
+  var ma = m ? decodeURIComponent(m[1]) : '';
+  if (ma) history.replaceState(null, '', location.pathname);   // không để mã nằm lại trong lịch sử
+
+  var fDatLai = document.getElementById('dat-lai');
+  var fXinThu = document.getElementById('xin-thu');
+  var bao = document.getElementById('bao');
+  var veApp = document.getElementById('ve-app');
+  (ma ? fDatLai : fXinThu).hidden = false;
+
+  function hien(chu, tot) {
+    bao.textContent = chu;
+    bao.className = 'bao ' + (tot ? 'tot' : 'loi');
+    bao.hidden = false;
+  }
+
+  function loiTu(body, ma_http) {
+    var d = body && body.detail;
+    if (d && d.error && d.error.message) return d.error.message;
+    if (typeof d === 'string') return d;
+    if (Array.isArray(d)) return 'Thông tin chưa hợp lệ. Mật khẩu cần ít nhất 8 ký tự.';
+    if (ma_http === 429) return 'Bạn thử nhiều lần quá. Chờ một lúc rồi thử lại.';
+    return 'Hệ thống đang bận. Hãy thử lại sau ít phút.';
+  }
+
+  function gui(duong, du_lieu, nut, xong) {
+    nut.disabled = true;
+    bao.hidden = true;
+    fetch(API + duong, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(du_lieu)
+    }).then(function (r) {
+      return r.json().catch(function () { return null; }).then(function (b) {
+        if (r.ok) xong(b); else hien(loiTu(b, r.status), false);
+      });
+    }).catch(function () {
+      hien('Không kết nối được. Kiểm tra mạng rồi thử lại.', false);
+    }).then(function () { nut.disabled = false; });
+  }
+
+  fDatLai.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var mk1 = document.getElementById('mk1').value;
+    var mk2 = document.getElementById('mk2').value;
+    if (mk1.length < 8) return hien('Mật khẩu cần ít nhất 8 ký tự.', false);
+    if (mk1 !== mk2) return hien('Hai lần nhập mật khẩu chưa khớp nhau.', false);
+    gui('dat-lai-mat-khau', { ma: ma, mat_khau_moi: mk1 }, fDatLai.querySelector('button'), function (b) {
+      fDatLai.hidden = true;
+      hien((b && b.message) || 'Đã đổi mật khẩu.', true);
+      veApp.hidden = false;
+    });
+  });
+
+  fXinThu.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim();
+    gui('quen-mat-khau', { email: email }, fXinThu.querySelector('button'), function (b) {
+      fXinThu.hidden = true;
+      hien((b && b.message) || 'Đã gửi.', true);
+      veApp.hidden = false;
+    });
+  });
+})();
+</script>
+</body>
+</html>

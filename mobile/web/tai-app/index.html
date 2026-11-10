@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tải HistoriAI</title>
+<meta name="description" content="Cài ứng dụng HistoriAI cho Android — học Lịch sử Việt Nam bằng AI, 3D và trò chơi hoá.">
+<meta property="og:title" content="Tải HistoriAI">
+<meta property="og:description" content="Học Lịch sử Việt Nam bằng AI, 3D và trò chơi hoá.">
+<link rel="icon" href="/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --kem:#FDF9F4; --kem-dam:#FBF3E6;
+    --do:#BA2323;  --do-dam:#7A2218;
+    --vang:#D4AF37; --vang-sang:#FDD141;
+    --cam:#E67E22;
+    --chu:#2B1410; --chu-nhat:#7C5A4A;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--kem); color:var(--chu);
+    font-family:Inter,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6;
+  }
+
+  header {
+    background:linear-gradient(160deg,var(--do) 0%,var(--do-dam) 100%);
+    color:var(--kem-dam); text-align:center; padding:40px 16px 34px;
+  }
+  header h1 {
+    font-family:"Playfair Display",serif; font-weight:900;
+    font-size:clamp(28px,7vw,40px); margin:0 0 6px; color:var(--vang-sang);
+    letter-spacing:.5px;
+  }
+  header p { margin:0; font-size:15px; opacity:.92; }
+
+  main { max-width:560px; margin:0 auto; padding:0 16px 56px; }
+
+  .the {
+    background:#fff; border:1px solid rgba(186,35,35,.15);
+    border-radius:16px; padding:26px 22px; margin-top:-22px;
+    box-shadow:0 8px 28px rgba(43,20,16,.10);
+    text-align:center;
+  }
+  .qr { width:220px; height:220px; display:block; margin:0 auto 6px; }
+  .qr-chu { font-size:13px; color:var(--chu-nhat); margin:0 0 20px; }
+
+  .nut {
+    display:block; width:100%; padding:16px 20px; margin:0 0 10px;
+    background:linear-gradient(135deg,var(--cam),#D2691E);
+    color:#fff; text-decoration:none; border-radius:12px;
+    font-family:Montserrat,sans-serif; font-weight:700; font-size:16px;
+    box-shadow:0 4px 14px rgba(230,126,34,.32);
+  }
+  .nut.phu {
+    background:none; color:var(--do); box-shadow:none;
+    border:1.5px solid rgba(186,35,35,.3); font-size:14px; padding:12px;
+  }
+  .nut small { display:block; font-weight:600; font-size:12px; opacity:.9; margin-top:2px; }
+
+  h2 {
+    font-family:"Playfair Display",serif; font-size:20px;
+    margin:36px 0 12px; color:var(--do-dam);
+  }
+
+  ol.buoc { padding-left:0; list-style:none; counter-reset:b; margin:0; }
+  ol.buoc li {
+    counter-increment:b; position:relative; padding:0 0 18px 44px;
+    border-left:2px solid rgba(212,175,55,.35); margin-left:14px;
+  }
+  ol.buoc li:last-child { border-left-color:transparent; padding-bottom:0; }
+  ol.buoc li::before {
+    content:counter(b); position:absolute; left:-15px; top:-2px;
+    width:28px; height:28px; border-radius:50%;
+    background:var(--do); color:var(--vang-sang);
+    font-family:Montserrat,sans-serif; font-weight:700; font-size:14px;
+    display:grid; place-items:center;
+  }
+  ol.buoc b { color:var(--chu); }
+
+  .luu-y {
+    background:var(--kem-dam); border-left:4px solid var(--vang);
+    border-radius:0 10px 10px 0; padding:14px 16px; font-size:14px;
+    color:#5C4033; margin-top:10px;
+  }
+
+  table { width:100%; border-collapse:collapse; font-size:14px; margin-top:8px; }
+  table th, table td { text-align:left; padding:9px 6px; border-bottom:1px solid rgba(43,20,16,.10); }
+  table th { color:var(--chu-nhat); font-weight:600; width:44%; }
+
+  footer {
+    text-align:center; font-size:13px; color:var(--chu-nhat);
+    padding:26px 16px 40px; border-top:1px solid rgba(43,20,16,.08);
+  }
+  footer a { color:var(--do); }
+
+  @media (min-width:600px) { .the { padding:32px 34px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>HISTORIAI</h1>
+  <p>Học Lịch sử Việt Nam bằng AI, 3D và trò chơi hoá</p>
+</header>
+
+<main>
+  <div class="the">
+    <img class="qr" src="qr.png" alt="Mã QR dẫn tới trang tải HistoriAI" width="220" height="220">
+    <p class="qr-chu">Quét mã bằng camera điện thoại</p>
+
+    <a class="nut" id="nut-chinh" href="historiai-arm64.apk" download>
+      Tải cho Android
+      <small id="co-tep">bản 64-bit · khoảng 30 MB</small>
+    </a>
+    <a class="nut phu" href="historiai-arm32.apk" download>
+      Máy đời cũ (32-bit)
+    </a>
+  </div>
+
+  <h2>Cài thế nào</h2>
+  <ol class="buoc">
+    <li><b>Bấm nút tải ở trên.</b> Trình duyệt sẽ hỏi có chắc muốn tải tệp này
+        không — chọn <b>Vẫn tải xuống</b>.</li>
+    <li><b>Mở tệp vừa tải.</b> Kéo thanh thông báo xuống rồi chạm vào tên tệp,
+        hoặc tìm trong thư mục <i>Tải xuống</i>.</li>
+    <li><b>Android sẽ chặn lần đầu</b> và hiện dòng
+        <i>"Vì lý do bảo mật, điện thoại không được phép cài ứng dụng không rõ
+        nguồn gốc"</i>. Chạm <b>Cài đặt</b> trong hộp thoại đó, gạt bật
+        <b>Cho phép từ nguồn này</b>, rồi bấm nút quay lại.</li>
+    <li><b>Chạm Cài đặt.</b> Xong là có biểu tượng HistoriAI ngoài màn hình chính.</li>
+  </ol>
+
+  <div class="luu-y">
+    Cảnh báo ở bước 3 là bình thường với mọi ứng dụng cài ngoài cửa hàng, không
+    phải dấu hiệu tệp có vấn đề. HistoriAI chưa lên CH Play nên Android chưa
+    biết mặt.
+  </div>
+
+  <h2>Cần gì để chạy</h2>
+  <table>
+    <tr><th>Hệ điều hành</th><td>Android 7.0 trở lên</td></tr>
+    <tr><th>Dung lượng</th><td>khoảng 30 MB khi cài</td></tr>
+    <tr><th>Xem cổ vật qua camera</th><td>máy có hỗ trợ Google Play Services for AR<br><span style="color:var(--chu-nhat);font-size:13px">máy không hỗ trợ vẫn dùng được mọi phần còn lại</span></td></tr>
+    <tr><th>iPhone</th><td>chưa có bản cài — xem cách <a href="#iphone" style="color:var(--do)">thêm vào màn hình chính</a> ở dưới</td></tr>
+  </table>
+
+  <h2 id="iphone">Dùng trên iPhone</h2>
+  <p>Bản cài riêng cho iPhone chưa có. Làm 3 bước này là có biểu tượng HistoriAI
+     ngoài màn hình chính, mở lên toàn màn hình như app:</p>
+  <ol class="buoc">
+    <li><b>Mở <a href="/" style="color:var(--do)">historiai.org</a> bằng Safari.</b>
+        Nếu đang xem trong Zalo hay Facebook, chạm dấu ⋯ rồi chọn <i>Mở bằng trình duyệt</i>.</li>
+    <li><b>Chạm nút Chia sẻ</b> — hình vuông có mũi tên chỉ lên, ở thanh dưới (hoặc trên) của Safari.</li>
+    <li><b>Chọn "Thêm vào MH chính"</b> (kéo xuống nếu chưa thấy), rồi chạm <b>Thêm</b>.</li>
+  </ol>
+
+  <h2>Trong app có gì</h2>
+  <ol class="buoc">
+    <li><b>Trò chuyện cùng vĩ nhân.</b> Hỏi Trần Hưng Đạo, Quang Trung bằng tiếng Việt, nghe trả lời bằng giọng nói.</li>
+    <li><b>Bảo tàng 3D.</b> Chín cổ vật xoay được mọi hướng, đặt ra giữa phòng đúng kích thước thật ngoài đời.</li>
+    <li><b>Đấu trường Sử Việt.</b> Trắc nghiệm theo từng trận đánh, có giải thích từng câu.</li>
+    <li><b>Dòng thời gian.</b> Thước phim lịch sử và tóm tắt từng sự kiện.</li>
+  </ol>
+</main>
+
+<footer>
+  Đội <b>HistoJourney</b> · FPT University Đà Nẵng<br>
+  <a href="/">Bản chạy trên trình duyệt</a>
+</footer>
+
+<script>
+  // Máy 32-bit vẫn cài được bản 64-bit nhưng sẽ văng ngay khi mở. Gợi ý đúng
+  // bản ngay từ nút chính, vì phần lớn người dùng sẽ không đọc tới nút phụ.
+  (function () {
+    var ua = navigator.userAgent || '';
+    var la32 = /armv7|armeabi-v7a/i.test(ua) && !/arm64|aarch64/i.test(ua);
+    if (!la32) return;
+    var nut = document.getElementById('nut-chinh');
+    nut.setAttribute('href', 'historiai-arm32.apk');
+    document.getElementById('co-tep').textContent = 'bản 32-bit · khoảng 27 MB';
+  })();
+</script>
+</body>
+</html>

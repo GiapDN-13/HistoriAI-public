@@ -1,0 +1,37 @@
+# Chạy toàn bộ backend + database bằng 1 lệnh:  docker compose up
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: historiai
+      POSTGRES_PASSWORD: historiai
+      POSTGRES_DB: historiai
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U historiai"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build: ./backend
+    env_file: ./backend/.env
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://historiai:historiai@db:5432/historiai
+      CORS_ORIGINS: "*"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    # Seed dữ liệu rồi khởi động API
+    command: >
+      sh -c "python -m app.db.seed &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000"
+
+volumes:
+  pgdata:

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HistoriAI — Số liệu người dùng</title>
+<style>
+/* Bộ nhận diện Imperial Light (mobile/lib/core/theme.dart).
+   Trang chỉ có bản sáng: nó sinh ra để chụp màn hình đưa vào slide, mà slide
+   của nhóm luôn nền kem. Bản tối sẽ lệch khỏi bộ nhận diện. */
+:root {
+  --kem: #FDF9F4;
+  --kem-dam: #FBF3E6;
+  --the: #FFFFFF;
+  --vien: #EDE0CF;
+  --luoi: #F0E6D8;
+  --chu: #2B1410;
+  --chu-nhat: #7C5A4A;
+  --chu-mo: #A08877;
+  --do-son: #BA2323;
+  --do-dam: #7A2218;
+  --vang: #D4AF37;
+  --cam: #E67E22;
+  /* Thang 6 bậc cho phễu — một sắc đỏ, đậm dần sang nhạt.
+     Đã kiểm bằng validate_palette.js --ordinal: đơn sắc, độ sáng giãn đều,
+     đầu nhạt vẫn đạt 2:1 so với nền kem. */
+  --phieu-1: #6B1D14;
+  --phieu-2: #8C231A;
+  --phieu-3: #AD2A22;
+  --phieu-4: #C55B4E;
+  --phieu-5: #D77E72;
+  --phieu-6: #E8A196;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--kem);
+  color: var(--chu);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.boc { max-width: 1080px; margin: 0 auto; padding: 28px 20px 64px; }
+
+/* --- Đầu trang --- */
+header { margin-bottom: 20px; }
+/* Georgia/ui-serif thiếu glyph tiếng Việt (ố, ế, ấ) — trình duyệt phải mượn
+   dấu từ font khác nên dấu rời hẳn ra khỏi chữ. Times New Roman và Noto Serif
+   có đủ bộ, để trước mọi serif chung. */
+h1 {
+  font-family: "Playfair Display", "Noto Serif", "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+.phu { color: var(--chu-nhat); font-size: 13px; margin: 0; }
+
+/* --- Hàng lọc: một hàng duy nhất, đặt trên mọi biểu đồ --- */
+.loc {
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  padding: 10px 12px; margin: 16px 0 24px;
+  background: var(--the); border: 1px solid var(--vien); border-radius: 10px;
+}
+.loc-nhan { font-size: 12px; color: var(--chu-nhat); margin-right: 2px; }
+button.khoang {
+  font: inherit; font-size: 13px; cursor: pointer;
+  padding: 5px 13px; border-radius: 999px;
+  border: 1px solid var(--vien); background: var(--kem-dam); color: var(--chu-nhat);
+}
+button.khoang:hover { border-color: var(--vang); }
+button.khoang[aria-pressed="true"] {
+  background: var(--do-son); border-color: var(--do-son); color: #fff; font-weight: 600;
+}
+.trang-thai { margin-left: auto; font-size: 12px; color: var(--chu-mo); }
+
+/* --- Số dẫn đầu --- */
+.hero {
+  background: var(--the); border: 1px solid var(--vien); border-radius: 12px;
+  padding: 22px 24px; margin-bottom: 14px;
+  border-left: 4px solid var(--do-son);
+}
+.hero .nhan { font-size: 13px; color: var(--chu-nhat); }
+.hero .so {
+  /* Sans, không dùng serif cho số — serif ở cỡ lớn đọc như trang trí */
+  font-size: 52px; font-weight: 650; line-height: 1.05; margin: 2px 0 0;
+  letter-spacing: -0.02em;
+}
+.hero .ghi { font-size: 12.5px; color: var(--chu-mo); margin-top: 4px; }
+
+/* --- Hàng thẻ số --- */
+.the-hang {
+  display: grid; gap: 12px; margin-bottom: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+}
+.the {
+  background: var(--the); border: 1px solid var(--vien); border-radius: 10px;
+  padding: 14px 16px;
+}
+.the .nhan { font-size: 12px; color: var(--chu-nhat); }
+.the .so { font-size: 26px; font-weight: 620; letter-spacing: -0.01em; margin-top: 2px; }
+.the .ghi { font-size: 11.5px; color: var(--chu-mo); margin-top: 1px; }
+
+/* --- Khối biểu đồ --- */
+.khoi {
+  background: var(--the); border: 1px solid var(--vien); border-radius: 12px;
+  padding: 18px 20px 16px; margin-bottom: 18px;
+}
+.khoi h2 {
+  font-family: "Playfair Display", "Noto Serif", "Times New Roman", serif;
+  font-size: 17px; font-weight: 700; margin: 0 0 2px;
+}
+.khoi .mo-ta { font-size: 12.5px; color: var(--chu-nhat); margin: 0 0 16px; }
+
+/* --- Cột theo ngày --- */
+.cot-vung { position: relative; padding-left: 34px; }
+.cot-luoi { position: absolute; left: 34px; right: 0; top: 0; bottom: 26px; pointer-events: none; }
+.cot-luoi i {
+  position: absolute; left: 0; right: 0; height: 1px; display: block;
+  background: var(--luoi);   /* nét liền, mảnh — không đứt đoạn */
+}
+.cot-luoi span {
+  position: absolute; right: 100%; padding-right: 8px; transform: translateY(-50%);
+  font-size: 10.5px; color: var(--chu-mo); font-variant-numeric: tabular-nums;
+}
+.cot-hang {
+  position: relative; display: flex; align-items: flex-end; gap: 2px;
+  height: 200px; padding-left: 2px;
+}
+.cot-o { flex: 1 1 0; display: flex; justify-content: center; height: 100%; align-items: flex-end; position: relative; }
+.cot {
+  width: 100%; max-width: 24px;          /* mảnh — không lấp đầy ô */
+  background: var(--do-son);
+  border-radius: 4px 4px 0 0;            /* bo đầu số, chân vuông trên đường gốc */
+  min-height: 2px; position: relative;   /* mốc neo cho nhãn số trên đầu cột */
+}
+.cot-o:hover .cot { background: var(--do-dam); }
+.cot-nhan {
+  position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%);
+  margin-bottom: 4px; font-size: 11px; font-weight: 600; color: var(--chu);
+  white-space: nowrap;
+}
+.cot-truc { display: flex; gap: 2px; height: 26px; padding-top: 6px; padding-left: 2px;
+  border-top: 1px solid var(--vien); }
+.cot-truc div {
+  flex: 1 1 0; text-align: center; font-size: 10.5px; color: var(--chu-mo);
+  white-space: nowrap;
+}
+
+/* --- Thanh ngang: phễu & top nội dung --- */
+.thanh-hang { display: flex; flex-direction: column; gap: 10px; }
+.thanh-dong { display: grid; grid-template-columns: minmax(120px, 200px) 1fr; gap: 12px; align-items: center; }
+.thanh-ten { font-size: 12px; color: var(--chu-mo); }
+.thanh-ten b { color: var(--chu); font-weight: 600; display: block; font-size: 13px; }
+.thanh-ray { position: relative; height: 22px; display: flex; align-items: center; }
+.thanh {
+  height: 18px; border-radius: 0 4px 4px 0;   /* bo đầu số, chân vuông ở gốc */
+  background: var(--do-son); min-width: 2px;
+}
+.thanh-so {
+  margin-left: 8px; font-size: 12.5px; font-weight: 600; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.thanh-so small { font-weight: 400; color: var(--chu-mo); margin-left: 4px; }
+
+/* --- Bảng số kèm theo (bản đọc được không cần màu) --- */
+details { margin-top: 14px; border-top: 1px solid var(--luoi); padding-top: 10px; }
+summary {
+  cursor: pointer; font-size: 12.5px; color: var(--chu-nhat); user-select: none;
+}
+summary:hover { color: var(--do-son); }
+.bang-cuon { overflow-x: auto; }
+.gop-y { padding-left: 18px; font-size: 13.5px; line-height: 1.55; }
+.gop-y li { margin-bottom: 8px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 12.5px; }
+th, td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--luoi); }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--chu-nhat); font-weight: 600; }
+td { font-variant-numeric: tabular-nums; }
+
+/* --- Chú giải nổi --- */
+#chu-giai {
+  position: fixed; z-index: 20; pointer-events: none; opacity: 0;
+  background: var(--chu); color: #fff; font-size: 12px; line-height: 1.45;
+  padding: 7px 10px; border-radius: 7px; white-space: nowrap;
+  transition: opacity .1s; top: 0; left: 0;
+}
+#chu-giai b { font-weight: 600; }
+
+.rong { color: var(--chu-mo); font-size: 13px; padding: 22px 0; text-align: center; }
+.loi {
+  background: #FCEDEA; border: 1px solid #E8A196; color: var(--do-dam);
+  padding: 14px 16px; border-radius: 10px; font-size: 13px;
+}
+.ghi-chan { color: var(--chu-mo); font-size: 12px; margin-top: 26px; line-height: 1.6; }
+
+@media (max-width: 560px) {
+  .thanh-dong { grid-template-columns: 1fr; gap: 3px; }
+  .hero .so { font-size: 42px; }
+}
+.luoi-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 24px; }
+.luoi-2 h3 { font-size: 14px; margin: 12px 0 6px; color: var(--chu-nhat); }
+
+/* --- Doanh thu & Premium --- */
+.dt-nhap {
+  font: inherit; font-size: 12.5px; width: 120px; padding: 4px 8px; border-radius: 6px;
+  border: 1px solid var(--vien); background: var(--kem); color: var(--chu);
+  text-transform: uppercase; letter-spacing: .03em;
+}
+.dt-nhap:focus { outline: 2px solid var(--vang); outline-offset: 1px; }
+.dt-nut {
+  font: inherit; font-size: 12.5px; cursor: pointer; padding: 4px 11px; border-radius: 6px;
+  border: 1px solid var(--cam); background: var(--cam); color: #fff; font-weight: 600;
+}
+.dt-nut:hover { background: var(--do-son); border-color: var(--do-son); }
+.dt-nut:disabled { opacity: .5; cursor: default; }
+.dt-nut-phu { background: var(--the); color: var(--chu-nhat); border-color: var(--vien); font-weight: 400; }
+.dt-nut-phu:hover { background: var(--kem-dam); border-color: var(--vang); color: var(--chu); }
+.dt-hop {
+  margin: 12px 0 0; padding: 12px 14px; border-radius: 10px; font-size: 13px;
+  background: var(--kem-dam); border: 1px solid var(--vang);
+}
+.dt-hop .dt-hang-nut { display: flex; gap: 8px; margin-top: 10px; }
+.dt-hop.dt-ok { background: #EEF6EA; border-color: #9CC48A; }
+.dt-hop.dt-loi { background: #FCEDEA; border-color: #E8A196; color: var(--do-dam); }
+.dt-tieu-de { margin: 18px 0 0; font-size: 14px; color: var(--chu-nhat); }
+</style>
+</head>
+<body>
+<div class="boc">
+  <header>
+    <h1>HistoriAI — Số liệu người dùng</h1>
+    <p class="phu">Người dùng làm gì trong app, tính theo giờ Việt Nam.</p>
+  </header>
+
+  <div class="loc">
+    <span class="loc-nhan">Khoảng thời gian</span>
+    <button class="khoang" data-ngay="7" aria-pressed="false">7 ngày</button>
+    <button class="khoang" data-ngay="30" aria-pressed="true">30 ngày</button>
+    <button class="khoang" data-ngay="90" aria-pressed="false">90 ngày</button>
+    <span class="trang-thai" id="trang-thai">Đang tải…</span>
+    <button class="khoang" id="bao-cao-tuan" type="button" title="Bảng Markdown 7 ngày qua so với tuần trước">Chép báo cáo tuần</button>
+  </div>
+
+  <div id="noi-dung"></div>
+
+  <p class="ghi-chan" id="ghi-chan"></p>
+</div>
+
+<div id="chu-giai" role="tooltip"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var noiDung = document.getElementById("noi-dung");
+  var trangThai = document.getElementById("trang-thai");
+  var ghiChan = document.getElementById("ghi-chan");
+  var chuGiai = document.getElementById("chu-giai");
+  var soNgay = 30;
+
+  // Khoá xem số liệu lấy từ chính URL đang mở, để nút đổi khoảng thời gian
+  // không làm mất quyền truy cập.
+  var khoa = new URLSearchParams(location.search).get("key");
+
+  function so(n) {
+    return (n === null || n === undefined) ? "—" : n.toLocaleString("vi-VN");
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+
+  function ngayNgan(iso) {
+    var p = iso.split("-");
+    return p[2] + "/" + p[1];
+  }
+
+  // --- Chú giải nổi: gắn một lần, dùng cho mọi mark ---
+  document.addEventListener("mouseover", function (e) {
+    var m = e.target.closest ? e.target.closest("[data-tip]") : null;
+    if (!m) return;
+    chuGiai.innerHTML = m.getAttribute("data-tip");
+    chuGiai.style.opacity = "1";
+  });
+  document.addEventListener("mousemove", function (e) {
+    if (chuGiai.style.opacity !== "1") return;
+    var x = e.clientX + 14, y = e.clientY + 16;
+    var r = chuGiai.getBoundingClientRect();
+    if (x + r.width > window.innerWidth - 8) x = e.clientX - r.width - 14;
+    if (y + r.height > window.innerHeight - 8) y = e.clientY - r.height - 16;
+    chuGiai.style.left = x + "px";
+    chuGiai.style.top = y + "px";
+  });
+  document.addEventListener("mouseout", function (e) {
+    if (e.target.closest && e.target.closest("[data-tip]")) chuGiai.style.opacity = "0";
+  });
+
+  function bang(tieuDe, hang) {
+    return "<details><summary>Xem bảng số</summary><div class='bang-cuon'><table><thead><tr>"
+      + tieuDe.map(function (t) { return "<th>" + t + "</th>"; }).join("")
+      + "</tr></thead><tbody>" + hang + "</tbody></table></div></details>";
+  }
+
+  // --- Cột theo ngày ---
+  function veCot(daily) {
+    if (!daily.length) return '<p class="rong">Chưa có dữ liệu trong khoảng này.</p>';
+
+    var dinh = Math.max.apply(null, daily.map(function (d) { return d.people; }));
+    var tran = Math.max(4, Math.ceil(dinh / 4) * 4);
+    if (tran === dinh) tran += 4;   // chừa chỗ cho nhãn trên cột cao nhất
+    var iDinh = daily.reduce(function (a, d, i) { return d.people > daily[a].people ? i : a; }, 0);
+    var buoc = Math.max(1, Math.ceil(daily.length / 10));
+
+    var luoi = "";
+    for (var t = 0; t <= 4; t++) {
+      var pct = 100 - t / 4 * 100;
+      luoi += "<i style='top:" + pct + "%'></i><span style='top:" + pct + "%'>"
+            + so(Math.round(tran * t / 4)) + "</span>";
+    }
+
+    var cot = "", truc = "";
+    daily.forEach(function (d, i) {
+      var cao = tran ? (d.people / tran * 100) : 0;
+      // Nhãn trực tiếp chỉ ở ngày cao nhất và ngày cuối — không dán số lên mọi cột
+      var nhan = (i === iDinh || i === daily.length - 1)
+        ? '<span class="cot-nhan">' + so(d.people) + "</span>" : "";
+      var tip = "<b>" + ngayNgan(d.date) + "</b><br>" + so(d.people) + " người · "
+              + so(d.sessions) + " phiên · " + so(d.events) + " lượt";
+      cot += '<div class="cot-o" data-tip="' + esc(tip) + '">'
+           + '<div class="cot" style="height:' + cao + '%">' + nhan + "</div></div>";
+      truc += "<div>" + (i % buoc === 0 || i === daily.length - 1 ? ngayNgan(d.date) : "") + "</div>";
+    });
+
+    var hang = daily.map(function (d) {
+      return "<tr><td>" + ngayNgan(d.date) + "</td><td>" + so(d.people)
+           + "</td><td>" + so(d.sessions) + "</td><td>" + so(d.events) + "</td></tr>";
+    }).join("");
+
+    return '<div class="cot-vung">'
+         + '<div class="cot-luoi">' + luoi + "</div>"
+         + '<div class="cot-hang">' + cot + "</div>"
+         + '<div class="cot-truc">' + truc + "</div></div>"
+         + bang(["Ngày", "Người dùng", "Phiên", "Lượt tương tác"], hang);
+  }
+
+  // --- Phễu ---
+  function vePhieu(funnel) {
+    var dau = funnel.length ? funnel[0].people : 0;
+    if (!dau) return '<p class="rong">Chưa ai mở app trong khoảng này.</p>';
+
+    var hangVe = funnel.map(function (f, i) {
+      var rong = f.people / dau * 100;
+      var tip = "<b>" + esc(f.step) + "</b><br>" + so(f.people) + " người · "
+              + f.pct_of_top + "% so với bậc đầu<br>Sự kiện: " + esc(f.events.join(", "));
+      return '<div class="thanh-dong">'
+        + '<div class="thanh-ten"><b>' + (i + 1) + ". " + esc(f.step) + "</b>"
+        + (i === 0 ? "bậc gốc" : f.pct_of_prev + "% người của bậc trên") + "</div>"
+        + '<div class="thanh-ray" data-tip="' + esc(tip) + '">'
+        + '<div class="thanh" style="width:' + rong + "%;background:var(--phieu-" + (i + 1) + ')"></div>'
+        + '<span class="thanh-so">' + so(f.people)
+        + "<small>" + f.pct_of_top + "%</small></span></div></div>";
+    }).join("");
+
+    var hangBang = funnel.map(function (f, i) {
+      return "<tr><td>" + (i + 1) + ". " + esc(f.step) + "</td><td>" + so(f.people)
+           + "</td><td>" + f.pct_of_top + "%</td><td>" + f.pct_of_prev + "%</td></tr>";
+    }).join("");
+
+    return '<div class="thanh-hang">' + hangVe + "</div>"
+      + bang(["Bậc", "Người", "So bậc đầu", "So bậc trên"], hangBang);
+  }
+
+  // --- Thanh ngang một sắc: top nội dung, lượt theo loại hành vi ---
+  function veThanh(items, khoaTen, khoaSo, tenCot) {
+    if (!items.length) return '<p class="rong">Chưa có dữ liệu.</p>';
+    var dinh = Math.max.apply(null, items.map(function (x) { return x[khoaSo]; }));
+
+    var hangVe = items.map(function (x) {
+      var rong = dinh ? x[khoaSo] / dinh * 100 : 0;
+      var tip = "<b>" + esc(x[khoaTen]) + "</b><br>" + so(x[khoaSo]) + " lượt";
+      return '<div class="thanh-dong">'
+        + '<div class="thanh-ten"><b>' + esc(x[khoaTen]) + "</b></div>"
+        + '<div class="thanh-ray" data-tip="' + esc(tip) + '">'
+        + '<div class="thanh" style="width:' + rong + '%"></div>'
+        + '<span class="thanh-so">' + so(x[khoaSo]) + "</span></div></div>";
+    }).join("");
+
+    var hangBang = items.map(function (x) {
+      return "<tr><td>" + esc(x[khoaTen]) + "</td><td>" + so(x[khoaSo]) + "</td></tr>";
+    }).join("");
+
+    return '<div class="thanh-hang">' + hangVe + "</div>"
+      + bang(["Mục", tenCot], hangBang);
+  }
+
+  // --- Khách đến từ đâu: thanh theo số người + bảng đầy đủ (luôn hiện, không gập) ---
+  var TEN_NGUON = { "truc-tiep": "Trực tiếp (gõ thẳng / dấu trang)", "chua-ro": "Chưa rõ (bản app cũ)",
+    "ban-cai-android": "Bản cài Android", "google-form": "Google Form", "qr": "Mã QR" };
+  function tenNguon(n) { return TEN_NGUON[n] || n; }
+  function veNguon(ds, taiKhoan) {
+    if (!ds || !ds.length) return '<p class="rong">Chưa có dữ liệu.</p>';
+    var nhom = {};
+    ds.forEach(function (x) {
+      var g = nhom[x.nguon] || (nhom[x.nguon] = { nguon: tenNguon(x.nguon), nguoi: 0 });
+      g.nguoi += x.nguoi;
+    });
+    var thanh = Object.keys(nhom).map(function (k) { return nhom[k]; })
+      .sort(function (a, b) { return b.nguoi - a.nguoi; });
+    var dinh = Math.max.apply(null, thanh.map(function (x) { return x.nguoi; }));
+    var hangVe = thanh.map(function (x) {
+      return '<div class="thanh-dong"><div class="thanh-ten"><b>' + esc(x.nguon) + "</b></div>"
+        + '<div class="thanh-ray"><div class="thanh" style="width:' + (dinh ? x.nguoi / dinh * 100 : 0)
+        + '%"></div><span class="thanh-so">' + so(x.nguoi) + " người</span></div></div>";
+    }).join("");
+    var hang = ds.map(function (x) {
+      return "<tr><td style='text-align:left'>" + esc(tenNguon(x.nguon)) + "</td><td style='text-align:left'>"
+        + esc(x.kenh || "—") + "</td><td style='text-align:left'>" + esc(x.chien_dich || "—")
+        + "</td><td style='text-align:left'>" + esc(x.noi_dung || "—")
+        + "</td><td>" + so(x.nguoi) + "</td><td>" + so(x.dang_ky)
+        + "</td><td>" + x.ti_le_dang_ky + "%</td><td>" + so(x.lam_quiz) + "</td><td>" + so(x.chat)
+        + "</td><td>" + so(x.bam_mua) + "</td></tr>";
+    }).join("");
+    var tk = (taiKhoan || []).map(function (x) { return esc(tenNguon(x.nguon)) + " " + so(x.so); }).join(" · ");
+    return '<div class="thanh-hang">' + hangVe + "</div>"
+      + "<div class='bang-cuon'><table><thead><tr><th style='text-align:left'>Nguồn</th>"
+      + "<th style='text-align:left'>Kênh</th><th style='text-align:left'>Chiến dịch</th>"
+      + "<th style='text-align:left'>Nội dung / group</th><th>Người vào</th><th>Đăng ký</th><th>Tỉ lệ ĐK</th>"
+      + "<th>Làm quiz</th><th>Chat</th><th>Bấm mua</th></tr></thead><tbody>" + hang + "</tbody></table></div>"
+      + (tk ? '<p class="mo-ta">Tài khoản tạo mới theo nguồn: ' + tk + ".</p>" : "");
+  }
+
+  // --- Phản hồi người dùng: NPS, sao, theo nguồn, góp ý mới nhất ---
+  function vePhanHoi(ph) {
+    if (!ph || !ph.so_luot) return '<p class="rong">Chưa có phản hồi trong khoảng này.</p>';
+    var n = ph.nps;
+    var the3 = '<div class="the-hang">'
+      + the("NPS", n ? (n.diem > 0 ? "+" : "") + n.diem : "—",
+            n ? so(n.so) + " người · ủng hộ " + n.ung_ho + "% · phản đối " + n.phan_doi + "%" : "chưa ai chấm")
+      + the("Số sao trung bình", ph.sao_tb === null ? "—" : ph.sao_tb, "trên 5 sao")
+      + the("Lượt phản hồi", ph.so_luot, "chịu trả lời " + ph.ti_le_tra_loi + "% số lần được hỏi")
+      + "</div>";
+    var hang = (ph.theo_nguon || []).map(function (x) {
+      return "<tr><td style='text-align:left'>" + esc(x.nhom) + "</td><td>" + so(x.so) + "</td><td>"
+        + (x.sao_tb === null ? "—" : x.sao_tb) + "</td><td>" + (x.nps ? x.nps.diem : "—") + "</td></tr>";
+    }).join("");
+    // Chip "muốn thêm trận nào" (21/10): góp ý "nội dung còn ít" không nói là trận nào,
+    // bảng này cho biết nên làm trận nào trước.
+    var muon = (ph.muon_them || []).map(function (x) {
+      return "<tr><td style='text-align:left'>" + esc(x.slug) + "</td><td>" + so(x.so) + "</td></tr>";
+    }).join("");
+    var gy = (ph.gop_y_moi || []).map(function (g) {
+      return "<li><b>" + esc(g.luc) + "</b> · " + esc(g.ngu_canh) + (g.target ? " (" + esc(g.target) + ")" : "")
+        + " · " + (g.diem ? g.diem + "★" : "") + " · nguồn " + esc(g.nguon) + "<br>“" + esc(g.gop_y) + "”</li>";
+    }).join("");
+    return the3
+      + "<div class='bang-cuon'><table><thead><tr><th style='text-align:left'>Nguồn / group</th>"
+      + "<th>Lượt</th><th>Sao TB</th><th>NPS</th></tr></thead><tbody>" + hang + "</tbody></table></div>"
+      + "<h3 style='margin-top:14px'>Người dùng muốn thêm trận nào</h3>"
+      + (muon ? "<div class='bang-cuon'><table><thead><tr><th style='text-align:left'>Trận / chủ đề</th>"
+        + "<th>Lượt chọn</th></tr></thead><tbody>" + muon + "</tbody></table></div>"
+        : "<p class='mo-ta'>Chưa ai chọn trong khoảng này.</p>")
+      + (gy ?"<h3 style='margin-top:14px'>Góp ý mới nhất</h3><ul class='gop-y'>" + gy + "</ul>" : "");
+  }
+
+  function the(nhan, giaTri, ghi) {
+    return '<div class="the"><div class="nhan">' + nhan + "</div>"
+      + '<div class="so">' + (typeof giaTri === "number" ? so(giaTri) : giaTri) + "</div>"
+      + '<div class="ghi">' + ghi + "</div></div>";
+  }
+
+
+  // --- Chỉ số mở rộng (05/10): giữ chân, thời gian, thiết bị, tài khoản ---
+  function phut(giay) {
+    if (giay == null) return "—";
+    if (giay < 60) return giay + " giây";
+    var p = Math.floor(giay / 60), g = giay % 60;
+    return p + " phút" + (g ? " " + g + " giây" : "");
+  }
+  function pt(x) { return x == null ? "—" : x + "%"; }
+  function veNhom(ds, tenCot) {
+    return veThanh((ds || []).map(function (x) {
+      return { ten: x.ten + (x.pct != null ? " (" + x.pct + "%)" : ""), so: x.so };
+    }), "ten", "so", tenCot || "Thiết bị");
+  }
+  function veGiuChan(g) {
+    var t = g.tong;
+    var the3 = [1, 7, 30].map(function (n) {
+      var x = t["d" + n];
+      return the("D" + n, pt(x.pct),
+        x.du_dieu_kien ? so(x.quay_lai) + "/" + so(x.du_dieu_kien) + " người mới quay lại đúng ngày thứ " + n
+          + "<br>Trong vòng " + n + " ngày: " + pt(x.pct_trong_vong)
+          : "chưa có người mới đủ " + n + " ngày");
+    }).join("");
+    var hang = (g.theo_tuan || []).map(function (w) {
+      return "<tr><td>Tuần từ " + ngayNgan(w.tuan) + "</td><td>" + so(w.so_moi) + "</td><td>"
+        + pt(w.d1) + "</td><td>" + pt(w.d7) + "</td><td>" + pt(w.d30) + "</td></tr>";
+    }).join("");
+    return '<div class="the-hang">' + the3 + "</div>"
+      + "<details open><summary>Theo đợt người mới (tuần mở app lần đầu)</summary><div class='bang-cuon'><table>"
+      + "<thead><tr><th>Đợt</th><th>Người mới</th><th>D1</th><th>D7</th><th>D30</th></tr></thead><tbody>"
+      + hang + "</tbody></table></div></details>"
+      + '<p class="mo-ta">“—” = đợt đó chưa đủ ngày để tính.</p>';
+  }
+  function veThoiGian(t, b) {
+    if (!t.so_phien) return '<p class="rong">Chưa có dữ liệu.</p>';
+    return '<div class="the-hang">'
+      + the("TB mỗi phiên", phut(t.tb_phien_giay), "trung vị " + phut(t.trung_vi_phien_giay))
+      + the("Phiên có tương tác", phut(t.tb_phien_co_tuong_tac_giay), "bỏ các phiên mở rồi đóng ngay")
+      + the("TB mỗi người", phut(t.tb_moi_nguoi_giay), "cộng mọi phiên trong " + t.so_ngay + " ngày")
+      + the("Phiên mỗi người", t.phien_moi_nguoi, "số lần mở app trung bình")
+      + the("Thoát ngay", pt(t.thoat_ngay_pct), "phiên chỉ có 1 hành vi")
+      + the("Độ bám (DAU/MAU)", pt(b.pct), "TB " + b.dau_tb + " người/ngày trên " + so(b.mau) + " người/tháng")
+      + "</div>";
+  }
+  function veThietBi(t) {
+    return '<div class="luoi-2">'
+      + "<div><h3>Nền tảng</h3>" + veNhom(t.nen_tang) + "</div>"
+      + "<div><h3>Loại máy</h3>" + veNhom(t.loai) + "</div>"
+      + "<div><h3>Hệ điều hành</h3>" + veNhom(t.hdh) + "</div>"
+      + "<div><h3>Trình duyệt</h3>" + veNhom(t.trinh_duyet) + "</div>"
+      + "</div>"
+      + '<p class="mo-ta">Loại máy, hệ điều hành, trình duyệt bắt đầu ghi từ 05/10/2026 — đã có '
+      + so(t.da_ghi_nhan) + "/" + so(t.tong) + " thiết bị. Không lưu nguyên thông tin trình duyệt, chỉ lưu nhóm.</p>";
+  }
+  function veTaiKhoan(k) {
+    return '<div class="the-hang">'
+      + the("Tổng tài khoản", k.tong, "từ trước tới nay")
+      + the("Tài khoản mới", k.moi_trong_ky, "trong khoảng đang xem")
+      + the("Tài khoản hoạt động", k.hoat_dong_trong_ky, "có dùng app khi đăng nhập")
+      + the("Máy có đăng nhập", pt(k.may_dang_nhap_pct), "trên tổng thiết bị hoạt động")
+      + "</div><div class='luoi-2'>"
+      + "<div><h3>Theo vai trò</h3>" + veNhom(k.theo_vai_tro, "Tài khoản") + "</div>"
+      + "<div><h3>Cách đăng ký</h3>" + veNhom(k.theo_cach_dang_ky, "Tài khoản") + "</div>"
+      + "</div>";
+  }
+
+  // --- Doanh thu & Premium ---
+  function tien(n) { return so(n) + " đ"; }
+  var TEN_GOI = { thang: "Premium 1 tháng", thu: "Gói thử (không tính doanh thu)" };
+  var TEN_NGUON_TRA = { sepay: "Tự động (SePay)", tay: "Xác nhận tay" };
+
+  // Trạng thái của khung xác nhận nằm NGOÀI chuỗi HTML: trang vẽ lại toàn bộ sau mỗi lần
+  // nạp số liệu, mà dòng kết quả "đã xác nhận" phải còn đó để quản trị đọc.
+  var dangXacNhan = null;   // { ma, sepay_id, so_tien } khi đang hỏi lại
+  var ketQuaXacNhan = null; // { loai: "ok" | "loi", chu }
+
+  function htmlHopXacNhan() {
+    if (dangXacNhan) {
+      return '<div class="dt-hop"><b>Xác nhận đơn ' + esc(dangXacNhan.ma) + "?</b><br>"
+        + "Hệ thống sẽ coi đơn này đã trả tiền và <b>cộng 30 ngày Premium</b> cho người mua"
+        + (dangXacNhan.so_tien ? " (khoản chuyển " + tien(dangXacNhan.so_tien) + ")" : "")
+        + ". Chỉ làm khi bạn đã thấy tiền về tài khoản ngân hàng."
+        + '<div class="dt-hang-nut"><button class="dt-nut" type="button" id="xn-dong-y">Đúng, xác nhận</button>'
+        + '<button class="dt-nut dt-nut-phu" type="button" id="xn-huy">Huỷ</button></div></div>';
+    }
+    if (ketQuaXacNhan) {
+      return '<div class="dt-hop ' + (ketQuaXacNhan.loai === "ok" ? "dt-ok" : "dt-loi") + '" role="status">'
+        + esc(ketQuaXacNhan.chu) + "</div>";
+    }
+    return "";
+  }
+  function capNhatHopXacNhan() {
+    var h = document.getElementById("hop-xac-nhan");
+    if (h) h.innerHTML = htmlHopXacNhan();
+  }
+
+  function veDoanhThuCot(ngay) {
+    var dinh = Math.max.apply(null, ngay.map(function (d) { return d.so_tien; }));
+    if (!dinh) return '<p class="rong">Chưa có đơn nào được trả trong khoảng này.</p>';
+    // Bậc lưới tròn chục nghìn: nhãn trục "40k, 80k…" dễ đọc hơn số lẻ theo đỉnh.
+    var buoc = Math.max(10000, Math.ceil(dinh * 1.1 / 4 / 10000) * 10000);
+    var tran = buoc * 4;
+    var iDinh = ngay.reduce(function (a, d, i) { return d.so_tien > ngay[a].so_tien ? i : a; }, 0);
+    var b = Math.max(1, Math.ceil(ngay.length / 10));
+    function ngan(n) {
+      if (n >= 1000000) return (n / 1000000).toFixed(1).replace(".", ",").replace(",0", "") + "tr";
+      return n >= 1000 ? Math.round(n / 1000) + "k" : String(n);
+    }
+
+    var luoi = "";
+    for (var t = 0; t <= 4; t++) {
+      var pct = 100 - t / 4 * 100;
+      luoi += "<i style='top:" + pct + "%'></i><span style='top:" + pct + "%'>" + ngan(buoc * t) + "</span>";
+    }
+    var cot = "", truc = "";
+    ngay.forEach(function (d, i) {
+      var nhan = (d.so_tien && (i === iDinh || i === ngay.length - 1))
+        ? '<span class="cot-nhan">' + ngan(d.so_tien) + "</span>" : "";
+      var tip = "<b>" + ngayNgan(d.ngay) + "</b><br>" + tien(d.so_tien) + " · " + so(d.so_don) + " đơn";
+      // Ngày 0 đồng thì không vẽ cột: min-height 2px của .cot sẽ trông như có bán được chút ít.
+      cot += '<div class="cot-o" data-tip="' + esc(tip) + '">'
+           + '<div class="cot" style="height:' + (d.so_tien / tran * 100) + '%' + (d.so_tien ? "" : ";min-height:0")
+           + '">' + nhan + "</div></div>";
+      truc += "<div>" + (i % b === 0 || i === ngay.length - 1 ? ngayNgan(d.ngay) : "") + "</div>";
+    });
+    var hang = ngay.map(function (d) {
+      return "<tr><td>" + ngayNgan(d.ngay) + "</td><td>" + tien(d.so_tien) + "</td><td>" + so(d.so_don) + "</td></tr>";
+    }).join("");
+    // margin-top chừa chỗ cho nhãn trục trên cùng khỏi đè lên tiêu đề phía trên.
+    return '<div class="cot-vung" style="margin-top:22px"><div class="cot-luoi">' + luoi + "</div>"
+         + '<div class="cot-hang">' + cot + "</div>"
+         + '<div class="cot-truc">' + truc + "</div></div>"
+         + bang(["Ngày", "Doanh thu", "Số đơn"], hang);
+  }
+
+  function veDonGanDay(ds) {
+    if (!ds.length) return '<p class="rong">Chưa có đơn nào được trả.</p>';
+    var hang = ds.map(function (x) {
+      return "<tr><td style='text-align:left'>" + esc(x.gio_tra || "—") + "</td><td style='text-align:left'>"
+        + esc(x.ma_don) + "</td><td style='text-align:left'>" + esc(TEN_GOI[x.goi] || x.goi)
+        + "</td><td style='text-align:left'>" + esc(x.nguoi_mua) + "</td><td>" + tien(x.so_tien)
+        + "</td><td style='text-align:left'>" + esc(TEN_NGUON_TRA[x.nguon] || x.nguon || "—") + "</td></tr>";
+    }).join("");
+    return "<div class='bang-cuon'><table><thead><tr><th style='text-align:left'>Giờ trả (VN)</th>"
+      + "<th style='text-align:left'>Mã đơn</th><th style='text-align:left'>Gói</th>"
+      + "<th style='text-align:left'>Người mua</th><th>Số tiền</th><th style='text-align:left'>Cách xác nhận</th>"
+      + "</tr></thead><tbody>" + hang + "</tbody></table></div>";
+  }
+
+  function veChuaKhop(ds) {
+    var khung = '<div id="hop-xac-nhan">' + htmlHopXacNhan() + "</div>";
+    if (!ds.length) return '<p class="rong">Không có giao dịch nào đang chờ xử lý.</p>' + khung;
+    var hang = ds.map(function (x) {
+      return "<tr><td style='text-align:left'>" + esc(x.gio || "—") + "</td><td>" + tien(x.so_tien)
+        + "</td><td style='text-align:left'>" + esc(x.noi_dung || "—") + "</td>"
+        + "<td style='text-align:left'><input class='dt-nhap' maxlength='16' placeholder='Mã đơn' "
+        + "aria-label='Mã đơn cho khoản chuyển " + x.sepay_id + "' data-nhap-sepay='" + x.sepay_id
+        + "' value=\"" + esc(x.ma_don || "") + "\"></td>"
+        + "<td style='text-align:left'><button class='dt-nut' type='button' data-xn-sepay='" + x.sepay_id
+        + "' data-xn-tien='" + x.so_tien + "'>Xác nhận tay</button></td></tr>";
+    }).join("");
+    return "<div class='bang-cuon'><table><thead><tr><th style='text-align:left'>Giờ nhận</th><th>Số tiền</th>"
+      + "<th style='text-align:left'>Nội dung chuyển khoản</th><th style='text-align:left'>Mã đơn (đoán được)</th>"
+      + "<th></th></tr></thead><tbody>" + hang + "</tbody></table></div>" + khung;
+  }
+
+  function veDoanhThu(k, days) {
+    var o = k.don, p = k.premium, n = k.nguon_tra;
+    return '<div class="the-hang">'
+      + the("Hôm nay", tien(k.hom_nay.so_tien), so(k.hom_nay.so_don) + " đơn")
+      + the("7 ngày", tien(k.bay_ngay.so_tien), so(k.bay_ngay.so_don) + " đơn")
+      + the("30 ngày", tien(k.ba_muoi_ngay.so_tien), so(k.ba_muoi_ngay.so_don) + " đơn")
+      + the(days + " ngày đang xem", tien(k.trong_khoang.so_tien), so(k.trong_khoang.so_don) + " đơn")
+      + "</div>"
+      + '<div class="the-hang">'
+      + the("Đơn đã tạo", o.da_tao, "bắt đầu mua trong khoảng này")
+      + the("Đơn đã trả", o.da_tra, "tỉ lệ trả " + o.ti_le_tra + "%")
+      + the("Đơn hết hạn", o.het_han, "quá 30 phút mà chưa trả" + (o.dang_cho ? " · còn " + o.dang_cho + " đang chờ" : ""))
+      + the("Trả tự động", n.sepay, "đơn khớp qua SePay")
+      + the("Xác nhận tay", n.tay, "quản trị bấm xác nhận")
+      + the("Gói thử", k.so_don_thu, "của quản trị, không tính doanh thu")
+      + "</div>"
+      + '<div class="the-hang">'
+      + the("Đang có Premium", p.dang_co, "không tính tài khoản quản trị")
+      + the("Sắp hết hạn", p.sap_het_han, "trong 3 ngày tới")
+      + the("Từng mua", p.tung_mua, "người đã trả gói tháng")
+      + the("Mua lại", p.mua_lai, "người mua từ 2 lần trở lên")
+      + "</div>"
+      + '<h3 class="dt-tieu-de" style="margin-top:6px">Doanh thu theo ngày</h3>'
+      + veDoanhThuCot(k.theo_ngay)
+      + '<h3 class="dt-tieu-de">20 đơn trả gần nhất</h3>'
+      + veDonGanDay(k.don_gan_day)
+      + '<h3 class="dt-tieu-de">Tiền đã về nhưng chưa khớp đơn nào</h3>'
+      + '<p class="mo-ta" style="margin:2px 0 0">Thường do người chuyển ghi sai hoặc thiếu mã đơn. '
+      + "Nhập đúng mã đơn rồi bấm “Xác nhận tay”.</p>"
+      + veChuaKhop(k.chua_khop);
+  }
+
+  function guiXacNhan() {
+    var x = dangXacNhan;
+    var nut = document.getElementById("xn-dong-y");
+    if (!x || !nut) return;
+    nut.disabled = true;
+    nut.textContent = "Đang xác nhận…";
+    fetch("xac-nhan-don" + (khoa ? "?key=" + encodeURIComponent(khoa) : ""), {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ ma_don: x.ma, sepay_id: x.sepay_id })
+    }).then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (b) { return { res: res, b: b }; });
+    }).then(function (kq) {
+      dangXacNhan = null;
+      if (kq.res.ok) {
+        var den = kq.b.premium_den
+          ? new Date(kq.b.premium_den).toLocaleDateString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }) : null;
+        ketQuaXacNhan = kq.b.vua_kich_hoat
+          ? { loai: "ok", chu: "Đã xác nhận đơn " + x.ma + (den ? " — Premium của người mua dùng được tới " + den : "") + "." }
+          : { loai: "ok", chu: "Đơn " + x.ma + " đã được trả từ trước nên không cộng thêm ngày Premium nào." };
+      } else {
+        var vi = kq.res.status === 404 ? "Không tìm thấy đơn " + x.ma + " — kiểm lại mã."
+          : kq.res.status === 401 ? "Sai khoá xem số liệu — thêm ?key=… vào URL."
+          : (kq.b && kq.b.detail ? String(kq.b.detail) : "Máy chủ trả về mã " + kq.res.status + ".");
+        ketQuaXacNhan = { loai: "loi", chu: "Chưa xác nhận được: " + vi };
+      }
+      capNhatHopXacNhan();
+      tai();   // nạp lại để đơn mới hiện trong bảng và khoản tiền rời danh sách chưa khớp
+    }).catch(function (e) {
+      dangXacNhan = null;
+      ketQuaXacNhan = { loai: "loi", chu: "Chưa xác nhận được: " + e.message };
+      capNhatHopXacNhan();
+    });
+  }
+
+  // Gắn một lần lên vùng nội dung: nút nằm trong HTML được vẽ lại, gắn riêng từng nút sẽ mất.
+  noiDung.addEventListener("click", function (e) {
+    var t = e.target;
+    if (!t || !t.closest) return;
+    var nut = t.closest("[data-xn-sepay]");
+    if (nut) {
+      var id = parseInt(nut.getAttribute("data-xn-sepay"), 10);
+      var o = noiDung.querySelector("input[data-nhap-sepay='" + id + "']");
+      var ma = o ? o.value.trim().toUpperCase() : "";
+      if (!ma) {
+        dangXacNhan = null;
+        ketQuaXacNhan = { loai: "loi", chu: "Nhập mã đơn (dạng HAI + 5 ký tự) trước khi xác nhận." };
+      } else {
+        ketQuaXacNhan = null;
+        dangXacNhan = { ma: ma, sepay_id: id, so_tien: parseInt(nut.getAttribute("data-xn-tien"), 10) || 0 };
+      }
+      capNhatHopXacNhan();
+      return;
+    }
+    if (t.closest("#xn-huy")) { dangXacNhan = null; capNhatHopXacNhan(); return; }
+    if (t.closest("#xn-dong-y")) guiXacNhan();
+  });
+
+  function ve(d) {
+    var t = d.totals, a = d.active, r = d.retention_d1;
+
+    // Gộp top nội dung của mọi loại sự kiện thành một bảng xếp hạng
+    var gop = {};
+    Object.keys(d.top_targets || {}).forEach(function (ev) {
+      d.top_targets[ev].forEach(function (x) {
+        gop[x.target] = (gop[x.target] || 0) + x.count;
+      });
+    });
+    var topND = Object.keys(gop).map(function (k) { return { target: k, count: gop[k] }; })
+      .sort(function (x, y) { return y.count - x.count; }).slice(0, 8);
+
+    noiDung.innerHTML = ""
+
+      + '<div class="hero"><div class="nhan">Người dùng hoạt động trong '
+      + d.range.days + ' ngày qua</div>'
+      + '<div class="so">' + so(a.mau) + "</div>"
+      + '<div class="ghi">Đếm theo thiết bị, gộp cả người chưa tạo tài khoản</div></div>'
+
+      + '<div class="the-hang">'
+      + the("Hôm nay", a.dau, "thiết bị mở app")
+      + the("7 ngày qua", a.wau, "thiết bị")
+      + the("Phiên sử dụng", t.sessions, "lượt mở app")
+      + the("Lượt tương tác", t.events, "tổng hành vi ghi nhận")
+      + the("Quay lại hôm sau", r.pct + "%", so(r.returned) + "/" + so(r.cohort) + " người mới")
+      + the("Đã tạo tài khoản", t.signed_in_users, "trong tổng số người dùng")
+      + "</div>"
+
+      + (d.doanh_thu ? ''
+        + '<div class="khoi"><h2>Doanh thu &amp; Premium</h2>'
+        + '<p class="mo-ta">Tiền thật đã về, tính theo ngày trả (giờ Việt Nam). Không gồm gói thử 2.000đ của '
+        + "quản trị. Số đơn tạo / trả / hết hạn và tỉ lệ trả tính theo ngày tạo đơn.</p>"
+        + veDoanhThu(d.doanh_thu, d.range.days) + "</div>" : "")
+
+      + (d.mo_rong ? ''
+        + '<div class="khoi"><h2>Giữ chân người dùng (D1 / D7 / D30)</h2>'
+        + '<p class="mo-ta">Trong số thiết bị lần đầu mở app vào một ngày, bao nhiêu % mở lại đúng 1, 7, 30 '
+        + 'ngày sau (giờ Việt Nam). Tính trên toàn bộ lịch sử, không chỉ khoảng đang xem.</p>'
+        + veGiuChan(d.mo_rong.giu_chan) + "</div>"
+        + '<div class="khoi"><h2>Thời gian sử dụng</h2>'
+        + '<p class="mo-ta">Thời lượng phiên = từ hành vi đầu tới hành vi cuối, nên thấp hơn thực tế '
+        + '(không biết người dùng còn đọc bao lâu sau thao tác cuối). Phiên quá 2 giờ tính là 2 giờ.</p>'
+        + veThoiGian(d.mo_rong.thoi_gian, d.mo_rong.do_bam) + "</div>"
+        + '<div class="khoi"><h2>Thiết bị</h2><p class="mo-ta">Đếm theo số thiết bị.</p>'
+        + veThietBi(d.mo_rong.thiet_bi) + "</div>"
+        + '<div class="khoi"><h2>Tài khoản</h2>'
+        + veTaiKhoan(d.mo_rong.tai_khoan) + "</div>" : "")
+
+      + '<div class="khoi"><h2>Người dùng theo ngày</h2>'
+      + '<p class="mo-ta">Mỗi cột là số thiết bị có hoạt động trong ngày đó.</p>'
+      + veCot(d.daily) + "</div>"
+
+      + '<div class="khoi"><h2>Phản hồi người dùng</h2>'
+      + '<p class="mo-ta">Hỏi ngay trong app sau khi làm quiz hoặc chat. NPS = % ủng hộ (chấm 9–10) '
+      + "trừ % phản đối (0–6), từ −100 tới +100.</p>"
+      + vePhanHoi(d.phan_hoi) + "</div>"
+
+      + '<div class="khoi"><h2>Khách đến từ đâu</h2>'
+      + '<p class="mo-ta">Mỗi thiết bị tính cho kênh đã đưa nó tới LẦN ĐẦU — quay lại bằng cách '
+      + "gõ thẳng địa chỉ vẫn tính công cho kênh ban đầu. Gắn nhãn link bằng ?utm_source=… hoặc ?ref=….</p>"
+      + veNguon(d.nguon, d.tai_khoan_theo_nguon) + "</div>"
+
+      + '<div class="khoi"><h2>Phễu từ mở app đến bấm mua</h2>'
+      + '<p class="mo-ta">Mỗi bậc đếm số người, không đếm số lượt — một người bấm '
+      + "mười lần vẫn tính là một.</p>"
+      + vePhieu(d.funnel) + "</div>"
+
+      + '<div class="khoi"><h2>Nội dung được mở nhiều nhất</h2>'
+      + '<p class="mo-ta">Gộp lượt mở sự kiện, chat vĩ nhân, quiz, hiện vật 3D và video.</p>'
+      + veThanh(topND, "target", "count", "Lượt") + "</div>"
+
+      + '<div class="khoi"><h2>Lượt theo loại hành vi</h2>'
+      + '<p class="mo-ta">Tên sự kiện đúng như trong danh mục đo lường của nhóm.</p>'
+      + veThanh(d.by_event.slice(0, 12), "name", "count", "Lượt") + "</div>";
+
+    var nen = Object.keys(t.platforms || {}).map(function (k) {
+      return k + " " + so(t.platforms[k]) + " lượt";
+    }).join(" · ");
+    var dmy = function (iso) { var p = iso.split("-"); return p[2] + "/" + p[1] + "/" + p[0]; };
+    ghiChan.innerHTML = "Khoảng " + dmy(d.range.from) + " → " + dmy(d.range.to)
+      + " (" + d.range.timezone + "). Dựng lúc " + d.range.generated_at + "."
+      + (nen ? "<br>Nền tảng: " + esc(nen) + "." : "")
+      + "<br>Quiz: " + so(d.quiz.submits) + " lượt nộp bài, trung bình "
+      + d.quiz.avg_correct + " câu đúng mỗi lượt."
+      + (d.mo_rong && d.mo_rong.da_loai_tu_dong ? "<br>Đã loại " + so(d.mo_rong.da_loai_tu_dong)
+        + " thiết bị kiểm thử của nhóm (link gắn kiem-thu, trình duyệt tự động) khỏi mọi số liệu." : "");
+  }
+
+  function tai() {
+    trangThai.textContent = "Đang tải…";
+    // Giữ bản vẽ cũ mờ đi thay vì xoá trắng — tránh trang giật khi đổi khoảng
+    noiDung.style.opacity = "0.45";
+    var url = "summary?days=" + soNgay + (khoa ? "&key=" + encodeURIComponent(khoa) : "");
+    fetch(url, { headers: { "Accept": "application/json" } })
+      .then(function (res) {
+        if (res.status === 401) throw new Error("Sai khoá xem số liệu — thêm ?key=… vào URL.");
+        if (!res.ok) throw new Error("Server trả về mã " + res.status + ".");
+        return res.json();
+      })
+      .then(function (d) {
+        ve(d);
+        noiDung.style.opacity = "1";
+        trangThai.textContent = "Cập nhật " + d.range.generated_at;
+      })
+      .catch(function (e) {
+        noiDung.style.opacity = "1";
+        noiDung.innerHTML = '<div class="loi">Không lấy được số liệu. ' + esc(e.message) + "</div>";
+        trangThai.textContent = "Lỗi";
+      });
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll("button.khoang"), function (b) {
+    b.addEventListener("click", function () {
+      soNgay = parseInt(b.getAttribute("data-ngay"), 10);
+      Array.prototype.forEach.call(document.querySelectorAll("button.khoang"), function (o) {
+        o.setAttribute("aria-pressed", String(o === b));
+      });
+      tai();
+    });
+  });
+
+  document.getElementById("bao-cao-tuan").addEventListener("click", function () {
+    var nut = this;
+    fetch("bao-cao-tuan" + (khoa ? "?key=" + encodeURIComponent(khoa) : ""))
+      .then(function (r) { if (!r.ok) throw new Error("mã " + r.status); return r.text(); })
+      .then(function (md) {
+        return navigator.clipboard.writeText(md).then(function () {
+          nut.textContent = "Đã chép ✓";
+          setTimeout(function () { nut.textContent = "Chép báo cáo tuần"; }, 2500);
+        }, function () {
+          var w = window.open("", "_blank"); w.document.write("<pre>" + esc(md) + "</pre>");
+        });
+      })
+      .catch(function (e) { alert("Không lấy được báo cáo tuần: " + e.message); });
+  });
+
+  tai();
+})();
+</script>
+</body>
+</html>

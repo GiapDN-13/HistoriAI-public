@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nền kem Imperial Light, khớp với AppColors.bg trong lib/core/theme.dart -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/nen_khoi_dong" />
+</layer-list>

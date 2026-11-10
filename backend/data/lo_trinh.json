@@ -1,0 +1,185 @@
+{
+ "_ghi_chu": "Bài học theo lộ trình (API GET /lo-trinh, màn chi tiết sự kiện). Tạo bằng tools/nhap_lo_trinh.py từ tài liệu .docx của nhóm — sửa ở tài liệu rồi chạy lại, đừng sửa tay ở đây. API chỉ trả lộ trình có da_duyet = true; bản nháp nhóm duyệt xong thì đổi da_duyet sang true.",
+ "lo_trinh": [
+  {
+   "ma": "bach-dang-938__bach-dang-1288",
+   "ten": "Bạch Đằng 938 – Kháng chiến chống Tống 981 – Bạch Đằng 1288",
+   "da_duyet": true,
+   "nguon": "Lộ-trình-học-giai-đoạn-Bạch-Đằng.docx",
+   "su_kien": [
+    {
+     "slug": "bach-dang-938",
+     "ten": "Trận Bạch Đằng năm 938",
+     "ten_ngan": "Bạch Đằng 938",
+     "muc_tieu": "Trình bày được vì sao Nam Hán tiến sang, kế đánh cọc của Ngô Quyền, diễn biến theo thủy triều và ý nghĩa của chiến thắng.",
+     "boi_canh": [
+      "Năm 937, Kiều Công Tiễn giết Dương Đình Nghệ để cướp quyền.",
+      "Ngô Quyền, con rể của Dương Đình Nghệ, kéo quân ra Bắc hỏi tội Kiều Công Tiễn.",
+      "Kiều Công Tiễn cầu cứu Nam Hán. Năm 938, vua Nam Hán sai con là Lưu Hoằng Tháo đem thủy quân sang xâm lược.",
+      "Ngô Quyền tiến vào Đại La, giết Kiều Công Tiễn và chuẩn bị chống quân Nam Hán."
+     ],
+     "kien_thuc": {
+      "tieu_de": "Kế sách chủ chốt",
+      "y": [
+       "Ngô Quyền nhận thấy quân Nam Hán mạnh về chiến thuyền.",
+       "Ông cho đóng cọc nhọn bịt sắt ngầm ở cửa sông Bạch Đằng.",
+       "Kế hoạch: lúc nước triều lên, cọc bị che khuất để nhử thuyền địch đi vào; khi nước rút, thuyền địch mắc cọc thì phản công."
+      ]
+     },
+     "dien_bien": [
+      "Cuối năm 938, đoàn thuyền của Lưu Hoằng Tháo tiến vào cửa sông Bạch Đằng.",
+      "Khi nước triều lên, Ngô Quyền cho thuyền nhỏ ra khiêu chiến và giả rút lui, nhử quân Nam Hán vượt qua bãi cọc ngầm.",
+      "Khi thủy triều rút, Ngô Quyền hạ lệnh tấn công.",
+      "Thuyền Nam Hán va vào cọc nhọn; quân Nam Hán hoảng loạn, thua chạy. Lưu Hoằng Tháo tử trận."
+     ],
+     "ket_qua": [
+      "Quân Nam Hán thất bại; nhà Nam Hán từ bỏ mộng xâm lược Tĩnh Hải quân.",
+      "Chiến thắng chấm dứt thời Bắc thuộc hơn một nghìn năm, mở ra thời kì độc lập, tự chủ lâu dài."
+     ],
+     "cau_chot": "Ngô Quyền dùng cọc ngầm và thủy triều, nhử quân Nam Hán vào Bạch Đằng rồi phản công khi nước rút, mở ra thời kì độc lập tự chủ."
+    },
+    {
+     "slug": "khang-chien-tong-981",
+     "ten": "Cuộc kháng chiến chống Tống năm 981",
+     "ten_ngan": "Chống Tống 981",
+     "muc_tieu": "Nêu được hoàn cảnh Lê Hoàn lên ngôi, diễn biến chính của cuộc kháng chiến chống Tống trên nhiều mặt trận, kết quả và ý nghĩa bảo vệ nền độc lập.",
+     "boi_canh": [
+      "Cuối thời Đinh, triều đình lục đục, chia rẽ.",
+      "Năm 979, Đinh Tiên Hoàng và Đinh Liễn bị ám hại; Đinh Toàn nối ngôi khi mới sáu tuổi.",
+      "Nhà Tống nhân cơ hội chuẩn bị xâm lược Đại Cồ Việt.",
+      "Trước nguy cơ đất nước, tướng sĩ suy tôn Thập đạo tướng quân Lê Hoàn lên ngôi Hoàng đế; nhà Tiền Lê được thành lập."
+     ],
+     "kien_thuc": {
+      "tieu_de": "Kiến thức cần nhớ",
+      "y": [
+       "Đầu năm 981, Hầu Nhân Bảo chỉ huy quân Tống tiến công Đại Cồ Việt bằng hai đường thủy và bộ.",
+       "Lê Hoàn trực tiếp lãnh đạo kháng chiến.",
+       "Quân Đại Cồ Việt tổ chức mai phục, chặn đánh quân Tống ở Lục Đầu Giang, Bạch Đằng, Tây Kết."
+      ]
+     },
+     "dien_bien": [
+      "Quân Tống tiến vào Đại Cồ Việt theo đường thủy và đường bộ.",
+      "Quân Đại Cồ Việt dưới sự lãnh đạo của Lê Hoàn mai phục, chặn đánh tại các địa điểm trọng yếu.",
+      "Hầu Nhân Bảo tử trận.",
+      "Quân Tống đại bại, phải rút về nước."
+     ],
+     "ket_qua": [
+      "Cuộc kháng chiến thắng lợi, nền độc lập của Đại Cồ Việt được giữ vững.",
+      "Sau cuộc chiến, đến năm 986, nhà Tống chấp nhận nhà Tiền Lê và ban chế phong cho Lê Đại Hành."
+     ],
+     "cau_chot": "Trong hoàn cảnh cuối thời Đinh rối ren, Lê Hoàn lên ngôi, lãnh đạo quân dân đánh bại cuộc xâm lược của Tống năm 981 và giữ vững độc lập Đại Cồ Việt."
+    },
+    {
+     "slug": "bach-dang-1288",
+     "ten": "Trận Bạch Đằng năm 1288",
+     "ten_ngan": "Bạch Đằng 1288",
+     "muc_tieu": "Trình bày được nguyên nhân quân Nguyên phải rút lui, vai trò của trận Vân Đồn, kế đánh ở Bạch Đằng và kết quả của cuộc kháng chiến năm 1287–1288.",
+     "boi_canh": [
+      "Sau hai lần thất bại ở Đại Việt, nhà Nguyên tiếp tục xâm lược lần thứ ba.",
+      "Tháng 12 năm 1287, Thoát Hoan chỉ huy quân bộ tiến vào; Ô Mã Nhi chỉ huy thủy quân; phía sau có đoàn thuyền lương.",
+      "Quân dân nhà Trần, với Hưng Đạo Vương Trần Quốc Tuấn, khẩn trương chuẩn bị kháng chiến. Hưng Đạo Vương nhận định: “Năm nay đánh giặc nhàn”.",
+      "Sách giáo khoa nêu 50 vạn quân bộ và hơn 600 chiến thuyền; các tài liệu khác có số liệu khác nhau, nên không cần học thuộc số lượng."
+     ],
+     "kien_thuc": {
+      "tieu_de": "Vì sao quân Nguyên phải rút?",
+      "y": [
+       "Tại Vân Đồn, Trần Khánh Dư chỉ huy quân Trần phục kích, đánh tan đoàn thuyền lương của Trương Văn Hổ.",
+       "Quân Nguyên chiếm được Thăng Long nhưng gặp tình thế “vườn không nhà trống” và ngày càng thiếu lương thực.",
+       "Thoát Hoan quyết định rút quân về nước; thủy quân của Ô Mã Nhi rút theo đường sông."
+      ]
+     },
+     "dien_bien": [
+      "Tháng 4 năm 1288, Trần Quốc Tuấn bố trí trận địa mai phục trên sông Bạch Đằng: đóng cọc ngầm và phủ cỏ lên trên.",
+      "Khi nước triều lên, quân Trần khiêu chiến rồi giả thua chạy, nhử thuyền quân Nguyên vào trận địa.",
+      "Khi nước triều rút, thuyền quân Nguyên vướng cọc.",
+      "Quân Trần phản công từ nhiều hướng; hai vua Trần tiếp quân đánh lớn.",
+      "Toàn bộ cánh quân thủy của Nguyên bị tiêu diệt; Ô Mã Nhi bị bắt sống. Cánh quân của Thoát Hoan rút chạy bằng đường bộ cũng bị truy đuổi quyết liệt."
+     ],
+     "ket_qua": [
+      "Cuộc kháng chiến chống Nguyên năm 1287–1288 kết thúc thắng lợi; kế hoạch xâm lược của nhà Nguyên thất bại, nền độc lập của Đại Việt được bảo toàn.",
+      "Trận Bạch Đằng năm 1288 là thắng lợi tiêu biểu trong ba lần kháng chiến chống quân Nguyên–Mông."
+     ],
+     "cau_chot": "Sau khi cắt đứt thuyền lương ở Vân Đồn, quân Trần nhử thủy quân Ô Mã Nhi vào bãi cọc Bạch Đằng lúc nước lên, phản công khi nước rút và giành thắng lợi quyết định."
+    }
+   ]
+  },
+  {
+   "ma": "lam-son-1428__quang-trung-1789",
+   "ten": "Khởi nghĩa Lam Sơn (1418–1427) – Quang Trung đại phá quân Thanh (1789)",
+   "da_duyet": false,
+   "nguon": "Lộ-trình-học-Lam-Sơn-Quang-Trung (BẢN NHÁP chờ duyệt).docx",
+   "su_kien": [
+    {
+     "slug": "lam-son-1428",
+     "ten": "Khởi nghĩa Lam Sơn (1418–1427)",
+     "ten_ngan": "Lam Sơn 1428",
+     "muc_tieu": "Trình bày được hoàn cảnh Lê Lợi dựng cờ khởi nghĩa, các giai đoạn chính của cuộc khởi nghĩa Lam Sơn, các trận thắng tiêu biểu và ý nghĩa của thắng lợi.",
+     "boi_canh": [
+      "Năm 1407, cuộc kháng chiến của nhà Hồ thất bại; nước ta rơi vào ách đô hộ của nhà Minh.",
+      "Nhà Minh cai trị hà khắc. Nhiều cuộc khởi nghĩa chống quân Minh nổ ra nhưng đều thất bại.",
+      "Lê Lợi, một hào trưởng có uy tín ở vùng Lam Sơn (Thanh Hoá), tập hợp lực lượng, chuẩn bị khởi nghĩa."
+     ],
+     "kien_thuc": {
+      "tieu_de": "Kiến thức cần nhớ",
+      "y": [
+       "Cuộc khởi nghĩa trải qua ba giai đoạn: ở vùng núi Thanh Hoá (1418–1423); giải phóng Nghệ An, Tân Bình, Thuận Hoá và tiến quân ra Bắc (1424–1426); tổng tiến công và toàn thắng (cuối năm 1426–1427).",
+       "Bước ngoặt là năm 1424: theo kế của Nguyễn Chích, nghĩa quân rời vùng núi Thanh Hoá, chuyển vào Nghệ An, nơi đất rộng, người đông, địa thế hiểm yếu.",
+       "Hai trận thắng lớn cần nhớ: Tốt Động – Chúc Động (cuối năm 1426) và Chi Lăng – Xương Giang (năm 1427)."
+      ]
+     },
+     "dien_bien": [
+      "Đầu năm 1418, Lê Lợi dựng cờ khởi nghĩa ở Lam Sơn, tự xưng là Bình Định Vương.",
+      "Những năm đầu, nghĩa quân hoạt động ở vùng núi Thanh Hoá, gặp rất nhiều khó khăn: lực lượng còn yếu, thiếu lương thực, nhiều lần bị quân Minh vây đánh.",
+      "Năm 1424, theo kế của Nguyễn Chích, nghĩa quân chuyển vào Nghệ An và nhanh chóng lớn mạnh.",
+      "Năm 1425, nghĩa quân giải phóng Tân Bình, Thuận Hoá; vùng giải phóng mở rộng từ Thanh Hoá vào đến Thuận Hoá.",
+      "Năm 1426, nghĩa quân tiến ra Bắc. Cuối năm 1426, nghĩa quân đánh tan viện binh của Vương Thông ở Tốt Động – Chúc Động, rồi vây hãm thành Đông Quan.",
+      "Năm 1427, viện binh nhà Minh do Liễu Thăng và Mộc Thạnh chỉ huy kéo sang. Nghĩa quân phục kích ở ải Chi Lăng, Liễu Thăng tử trận; quân Minh tiếp tục bị đánh tan ở Xương Giang. Mộc Thạnh nghe tin cũng rút chạy.",
+      "Cuối năm 1427, Vương Thông xin hoà, chấp nhận hội thề ở Đông Quan và rút quân về nước."
+     ],
+     "ket_qua": [
+      "Đầu năm 1428, quân Minh rút hết về nước; khởi nghĩa Lam Sơn kết thúc thắng lợi, chấm dứt 20 năm đô hộ của nhà Minh.",
+      "Năm 1428, Lê Lợi lên ngôi Hoàng đế, khôi phục quốc hiệu Đại Việt, mở đầu triều Lê sơ (nhà Hậu Lê).",
+      "Nguyễn Trãi thay lời Lê Lợi soạn Bình Ngô đại cáo, tuyên bố nền độc lập; tác phẩm được xem như một bản tuyên ngôn độc lập.",
+      "Lưu ý mốc năm: SGK ghi khởi nghĩa Lam Sơn (1418–1427); năm 1428 là năm quân Minh rút hết và Lê Lợi lên ngôi."
+     ],
+     "cau_chot": "Lê Lợi dựng cờ ở Lam Sơn năm 1418, vượt qua những năm khó khăn ở vùng núi Thanh Hoá, chuyển vào Nghệ An rồi tiến ra Bắc, thắng Tốt Động – Chúc Động và Chi Lăng – Xương Giang, buộc quân Minh rút về nước; năm 1428 Lê Lợi lên ngôi."
+    },
+    {
+     "slug": "quang-trung-1789",
+     "ten": "Quang Trung đại phá quân Thanh (1789)",
+     "ten_ngan": "Quang Trung 1789",
+     "muc_tieu": "Trình bày được vì sao quân Thanh kéo sang nước ta, cuộc hành quân thần tốc của Quang Trung, diễn biến các trận Hà Hồi, Ngọc Hồi – Đống Đa dịp Tết Kỷ Dậu và ý nghĩa của chiến thắng năm 1789.",
+     "boi_canh": [
+      "Năm 1786, quân Tây Sơn do Nguyễn Huệ chỉ huy tiến ra Bắc, lật đổ chính quyền họ Trịnh.",
+      "Vua Lê Chiêu Thống sai người sang cầu cứu nhà Thanh.",
+      "Lấy cớ giúp nhà Lê, nhà Thanh sai Tôn Sĩ Nghị đem quân sang xâm lược nước ta. Theo SGK khoảng 29 vạn quân; các tài liệu khác ghi số khác nhau, không cần học thuộc số lượng.",
+      "Cuối năm 1788, quân Thanh kéo vào Thăng Long. Quân Tây Sơn ở Bắc Hà chủ động rút về giữ phòng tuyến Tam Điệp – Biện Sơn để bảo toàn lực lượng."
+     ],
+     "kien_thuc": {
+      "tieu_de": "Kế sách chủ chốt",
+      "y": [
+       "Nhận tin quân Thanh chiếm Thăng Long, Nguyễn Huệ lên ngôi Hoàng đế rồi lập tức tiến quân ra Bắc.",
+       "Hành quân thần tốc; trên đường đi dừng ở Nghệ An, Thanh Hoá để tuyển thêm quân.",
+       "Cho quân ăn Tết trước, đánh vào dịp Tết Kỷ Dậu khi quân Thanh chủ quan, không phòng bị."
+      ]
+     },
+     "dien_bien": [
+      "Cuối năm 1788, Nguyễn Huệ lên ngôi Hoàng đế ở Phú Xuân, lấy niên hiệu Quang Trung, và tiến quân ra Bắc.",
+      "Đến Tam Điệp, đại quân hội quân với cánh quân Tây Sơn ở Bắc Hà. Quang Trung cho quân ăn Tết trước, hẹn mồng 7 Tết vào Thăng Long.",
+      "Đêm mồng 3 Tết Kỷ Dậu, quân Tây Sơn bí mật vây đồn Hà Hồi; quân Thanh hoảng sợ, xin hàng.",
+      "Mờ sáng mồng 5 Tết, quân Tây Sơn tấn công đồn Ngọc Hồi, tiến lên sau những tấm ván bọc rơm ướt làm lá chắn. Quân Thanh thua chạy.",
+      "Cùng ngày, một cánh quân Tây Sơn đánh đồn Đống Đa; tướng giữ đồn là Sầm Nghi Đống thắt cổ tự tử.",
+      "Tôn Sĩ Nghị hoảng sợ bỏ chạy về nước; Lê Chiêu Thống cũng chạy theo quân Thanh.",
+      "Trưa mồng 5 Tết Kỷ Dậu (năm 1789), Quang Trung dẫn đại quân tiến vào Thăng Long — sớm hơn lời hẹn."
+     ],
+     "ket_qua": [
+      "Quân Thanh xâm lược bị đánh tan; nền độc lập và lãnh thổ của đất nước được bảo vệ.",
+      "Chiến thắng thể hiện tài chỉ huy quân sự của Quang Trung: hành quân thần tốc, đánh bất ngờ, táo bạo.",
+      "Các tài liệu ghi số quân và cách đổi ngày Tết sang dương lịch khác nhau, không cần học thuộc; chỉ cần nhớ các trận diễn ra trong dịp Tết Kỷ Dậu, đầu năm 1789."
+     ],
+     "cau_chot": "Lê Chiêu Thống cầu cứu, quân Thanh chiếm Thăng Long; Quang Trung lên ngôi ở Phú Xuân, hành quân thần tốc ra Bắc, phá Hà Hồi, Ngọc Hồi – Đống Đa dịp Tết Kỷ Dậu 1789 và trưa mồng 5 Tết đã vào Thăng Long."
+    }
+   ]
+  }
+ ]
+}

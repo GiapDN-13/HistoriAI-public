@@ -1,0 +1,254 @@
+{
+ "thuc_the": [
+  {
+   "slug": "bach-dang-938",
+   "loai": "su_kien",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trận Bạch Đằng (938)",
+    "pageid": 136946,
+    "qid": "Q2890760"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THPT-11-04",
+    "THPT-11-10"
+   ]
+  },
+  {
+   "slug": "khang-chien-tong-981",
+   "loai": "su_kien",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Chiến tranh Tống–Việt lần thứ nhất",
+    "pageid": 136938,
+    "qid": "Q1073429"
+   },
+   "ma": [
+    "THCS-7-05",
+    "THPT-11-04"
+   ]
+  },
+  {
+   "slug": "bach-dang-1288",
+   "loai": "su_kien",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trận Bạch Đằng (1288)",
+    "pageid": 136933,
+    "qid": "Q1369379"
+   },
+   "ma": [
+    "THCS-7-05",
+    "THPT-11-04"
+   ]
+  },
+  {
+   "slug": "lam-son-1428",
+   "loai": "su_kien",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Khởi nghĩa Lam Sơn",
+    "pageid": 62574,
+    "qid": "Q1848807"
+   },
+   "ma": [
+    "THCS-7-05",
+    "THPT-11-04"
+   ]
+  },
+  {
+   "slug": "quang-trung-1789",
+   "loai": "su_kien",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trận Ngọc Hồi – Đống Đa",
+    "pageid": 187496,
+    "qid": "Q3539853"
+   },
+   "ma": [
+    "THCS-8-03",
+    "THPT-11-04"
+   ]
+  },
+  {
+   "slug": "tran-hung-dao",
+   "loai": "nhan_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trần Hưng Đạo",
+    "pageid": 746,
+    "qid": "Q511375"
+   },
+   "ma": [
+    "THCS-7-05",
+    "THPT-11-04",
+    "THPT-11-10"
+   ]
+  },
+  {
+   "slug": "quang-trung",
+   "loai": "nhan_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Quang Trung",
+    "pageid": 116,
+    "qid": "Q379775"
+   },
+   "ma": [
+    "THCS-8-03",
+    "THPT-11-04"
+   ]
+  },
+  {
+   "slug": "trong-dong-dong-son",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trống đồng Đông Sơn",
+    "pageid": 40412,
+    "qid": "Q1078822"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THCS-8-09",
+    "THCS-9-09",
+    "THPT-10-06",
+    "THPT-10-10"
+   ]
+  },
+  {
+   "slug": "trong-dong-khai-quat",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trống đồng Đông Sơn",
+    "pageid": 40412,
+    "qid": "Q1078822"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THCS-8-09",
+    "THCS-9-09",
+    "THPT-10-06",
+    "THPT-10-10"
+   ]
+  },
+  {
+   "slug": "trong-dong-hoa-van",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Trống đồng Đông Sơn",
+    "pageid": 40412,
+    "qid": "Q1078822"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THCS-8-09",
+    "THCS-9-09",
+    "THPT-10-06",
+    "THPT-10-10"
+   ]
+  },
+  {
+   "slug": "coc-bach-dang-1288",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Các trận địa bãi cọc trong lịch sử Việt Nam",
+    "pageid": 16374120,
+    "qid": "Q86006161"
+   },
+   "ma": [
+    "THCS-7-05",
+    "THPT-11-04"
+   ]
+  },
+  {
+   "slug": "thuyen-chien-dong-son",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Văn hóa Đông Sơn",
+    "pageid": 40231,
+    "qid": "Q996912"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THPT-10-06",
+    "THPT-10-10"
+   ]
+  },
+  {
+   "slug": "kiem-dong-son",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Văn hóa Đông Sơn",
+    "pageid": 40231,
+    "qid": "Q996912"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THPT-10-06",
+    "THPT-10-10"
+   ]
+  },
+  {
+   "slug": "nghe-den-vua-dinh",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Đền thờ Vua Đinh Tiên Hoàng",
+    "pageid": 421173,
+    "qid": "Q10841714"
+   },
+   "ma": [
+    "THCS-7-05",
+    "THPT-11-10"
+   ]
+  },
+  {
+   "slug": "rong-co-loa",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": {
+    "title": "Thành Cổ Loa",
+    "pageid": 37634,
+    "qid": "Q798059"
+   },
+   "ma": [
+    "THCS-6-05",
+    "THPT-10-06",
+    "THPT-10-08",
+    "THPT-11-07"
+   ]
+  },
+  {
+   "slug": "hu-tien-dong",
+   "loai": "co_vat",
+   "vong": 1,
+   "co_san": true,
+   "bai_wp": null,
+   "ma": []
+  }
+ ],
+ "bi_loai": [],
+ "vong_2_xong": false
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Đấu trường">
+  <path fill="#D89A25" d="m18 37 14 8 14-8-4 21H22z"/>
+  <path fill="#FDD141" d="m23 40 9 5 9-5-3 14H26z"/>
+  <circle cx="32" cy="27" r="22" fill="#7A2218" stroke="#D89A25" stroke-width="4"/>
+  <circle cx="32" cy="27" r="16" fill="#FDD141"/>
+  <path fill="#FBF3E6" d="M20 22q2-9 12-9t12 9l-3 10H23z"/>
+  <path fill="#D89A25" d="M20 22h24v5H20zm10-10h4v20h-4z"/>
+  <path fill="#7A2218" d="m32 17 2 4 4 .6-3 3 .7 4.4-3.7-2-3.7 2L29 24.6l-3-3 4-.6z"/>
+  <path fill="#D89A25" d="M17 24h6v4h-6zm24 0h6v4h-6z"/>
+</svg>

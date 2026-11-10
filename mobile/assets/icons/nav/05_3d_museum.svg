@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bảo tàng">
+  <path fill="#D89A25" d="M7 21 32 8l25 13v4H7z"/>
+  <path fill="#FDD141" d="m15 20 17-9 17 9H15z"/>
+  <path fill="#FBF3E6" d="M12 29h40v23H12z"/>
+  <path fill="#D89A25" d="M16 31h6v18h-6zm13 0h6v18h-6zm13 0h6v18h-6z"/>
+  <path fill="#7A2218" d="M9 26h46v4H9zM8 51h48v5H8z"/>
+  <circle cx="32" cy="18" r="3" fill="#7A2218"/>
+  <path fill="#FDD141" d="M30 57h4v4h-4z"/>
+</svg>

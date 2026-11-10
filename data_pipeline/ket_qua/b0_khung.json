@@ -1,0 +1,3430 @@
+{
+ "nguon": {
+  "THCS": "Chương trình GDPT môn Lịch sử và Địa lí, ban hành kèm TT 32/2018/TT-BGDĐT",
+  "THPT": "Chương trình GDPT môn Lịch sử, sửa đổi theo TT 13/2022/TT-BGDĐT (bản chính thức: datafiles.chinhphu.vn/cpp/files/vbpq/2022/08/13-bgddt.signed.pdf)"
+ },
+ "doi_chieu_ban_chinh_thuc": {
+  "trang_thai": "OCR chưa xong (0/68 trang) — chưa đối chiếu"
+ },
+ "chu_de": [
+  {
+   "cap": "THCS",
+   "lop": 6,
+   "mon": "lich_su",
+   "chu_de": "TẠI SAO CẦN HỌC LỊCH SỬ?",
+   "trang": 15,
+   "muc": [
+    {
+     "noi_dung": "Lịch sử là gì?",
+     "yccd": [
+      "Nêu được khái niệm lịch sử và môn Lịch sử.",
+      "Hiểu được lịch sử là những gì đã diễn ra trong quá khứ.",
+      "Giải thích được vì sao cần thiết phải học môn Lịch sử."
+     ],
+     "trang": 15,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Dựa vào đâu để biết và dựng lại lịch sử?",
+     "yccd": [
+      "Phân biệt được các nguồn sử liệu cơ bản, ý nghĩa và giá trị của các nguồn sử liệu (tư liệu gốc, truyền miệng, hiện vật, chữ viết,...)."
+     ],
+     "trang": 15,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Thời gian trong lịch sử",
+     "yccd": [
+      "Biết được một số khái niệm và cách tính thời gian trong lịch sử: thập kỉ, thế kỉ, thiên niên kỉ, trước Công nguyên, sau Công nguyên, âm lịch, dương lịch,..."
+     ],
+     "trang": 16,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-6-01",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 6,
+   "mon": "lich_su",
+   "chu_de": "THỜI NGUYÊN THUỶ",
+   "trang": 16,
+   "muc": [
+    {
+     "noi_dung": "Nguồn gốc loài người",
+     "yccd": [
+      "Giới thiệu được sơ lược quá trình tiến hoá từ vượn người thành người trên Trái Đất.",
+      "Xác định được những dấu tích của người tối cổ ở Đông Nam Á.",
+      "Kể được tên được những địa điểm tìm thấy dấu tích của người tối cổ trên đất nước Việt Nam."
+     ],
+     "trang": 16,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Xã hội nguyên thuỷ",
+     "yccd": [
+      "Mô tả được sơ lược các giai đoạn tiến triển của xã hội người nguyên thuỷ.",
+      "Trình bày được những nét chính về đời sống của người thời nguyên thuỷ (vật chất, tinh thần, tổ chức xã hội,...).",
+      "Nhận biết được vai trò của lao động đối với quá trình phát triển của người nguyên thuỷ cũng như của con người và xã hội loài người.",
+      "Nêu được đôi nét về đời sống của người nguyên thuỷ trên đất nước Việt Nam."
+     ],
+     "trang": 16,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Sự chuyển biến từ xã hội nguyên thuỷ sang xã hội có giai cấp",
+     "yccd": [
+      "Trình bày được quá trình phát hiện ra kim loại và vai trò của nó đối với sự chuyển biến từ xã hội nguyên thuỷ sang xã hội có giai cấp."
+     ],
+     "trang": 16,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự chuyển biến và phân hóa của xã hội nguyên thuỷ",
+     "yccd": [
+      "Mô tả được sự hình thành xã hội có giai cấp.",
+      "Giải thích được vì sao xã hội nguyên thuỷ tan rã.",
+      "Trình bày được quá trình phát hiện ra kim loại và vai trò của nó đối với sự chuyển biến và phân hóa của xã hội nguyên thuỷ.",
+      "Mô tả được sự hình thành xã hội có giai cấp.",
+      "Mô tả và giải thích được sự phân hóa không triệt để của xã hội nguyên thủy ở phương Đông.",
+      "Nêu được một số nét cơ bản của xã hội nguyên thủy ở Việt Nam (qua các nền văn hóa khảo cổ Phùng Nguyên – Đồng Đậu – Gò Mun)."
+     ],
+     "trang": 16,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-6-02",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 6,
+   "mon": "lich_su",
+   "chu_de": "XÃ HỘI CỔ ĐẠI",
+   "trang": 17,
+   "muc": [
+    {
+     "noi_dung": "Ai Cập và Lưỡng Hà",
+     "yccd": [
+      "Nêu được tác động của điều kiện tự nhiên (các dòng sông, đất đai màu mỡ) đối với sự hình thành nền văn minh Ai Cập và Lưỡng Hà.",
+      "Trình bày được quá trình thành lập nhà nước của người Ai Cập và người Lưỡng Hà.",
+      "Kể được tên và nêu được những thành tựu chủ yếu về văn hoá ở Ai Cập, Lưỡng Hà."
+     ],
+     "trang": 17,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ấn Độ",
+     "yccd": [
+      "Giới thiệu được điều kiện tự nhiên của lưu vực sông Ấn, sông Hằng.",
+      "Trình bày được những điểm chính về chế độ xã hội của Ấn Độ.",
+      "Nhận biết được những thành tựu văn hoá tiêu biểu của Ấn Độ."
+     ],
+     "trang": 17,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Trung Quốc",
+     "yccd": [
+      "Giới thiệu được những đặc điểm về điều kiện tự nhiên của Trung Quốc cổ đại.",
+      "Mô tả được sơ lược quá trình thống nhất và sự xác lập chế độ phong kiến ở Trung Quốc dưới thời Tần Thuỷ Hoàng.",
+      "Xây dựng được đường thời gian từ đế chế Hán, Nam Bắc triều đến nhà Tuỳ.",
+      "Nêu được những thành tựu cơ bản của nền văn minh Trung Quốc."
+     ],
+     "trang": 17,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Hy Lạp và La Mã",
+     "yccd": [
+      "Giới thiệu và nhận xét được tác động về điều kiện tự nhiên (hải cảng, biển đảo) đối với sự hình thành, phát triển của nền văn minh Hy Lạp và La Mã.",
+      "Trình bày được tổ chức nhà nước thành bang, nhà nước đế chế ở Hy Lạp và La Mã.",
+      "Nêu được một số thành tựu văn hoá tiêu biểu của Hy Lạp, La Mã."
+     ],
+     "trang": 18,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-6-03",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 6,
+   "mon": "lich_su",
+   "chu_de": "ĐÔNG NAM Á TỪ NHỮNG THẾ KỈ TIẾP GIÁP CÔNG NGUYÊN ĐẾN THẾ KỈ X",
+   "trang": 18,
+   "muc": [
+    {
+     "noi_dung": "Khái lược về khu vực Đông Nam Á",
+     "yccd": [
+      "Trình bày sơ lược về vị trí địa lí của vùng Đông Nam Á."
+     ],
+     "trang": 18,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các vương quốc cổ ở Đông Nam Á",
+     "yccd": [
+      "Trình bày được quá trình xuất hiện các vương quốc cổ ở Đông Nam Á từ đầu Công nguyên đến thế kỉ VII.",
+      "Nêu được sự hình thành và phát triển ban đầu của các vương quốc phong kiến từ thế kỉ VII đến thế kỉ X ở Đông Nam Á.",
+      "Phân tích được những tác động chính của quá trình giao lưu thương"
+     ],
+     "trang": 18,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Giao lưu thương mại và văn hóa ở Đông Nam Á từ đầu Công nguyên đến thế kỉ X",
+     "yccd": [
+      "mại và văn hóa ở Đông Nam Á từ đầu Công nguyên đến thế kỉ X."
+     ],
+     "trang": 18,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-6-04",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 6,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ KHOẢNG THẾ KỈ VII TRƯỚC CÔNG NGUYÊN ĐẾN ĐẦU THẾ KỈ X",
+   "trang": 18,
+   "muc": [
+    {
+     "noi_dung": "Nhà nước Văn Lang, Âu Lạc",
+     "yccd": [
+      "Nêu được khoảng thời gian thành lập và xác định được phạm vi không gian của nước Văn Lang, Âu Lạc trên bản đồ hoặc lược đồ."
+     ],
+     "trang": 18,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nhà nước Văn Lang, Âu Lạc › Nhà nước Văn Lang",
+     "yccd": [],
+     "trang": 18,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nhà nước Văn Lang, Âu Lạc › Nhà nước Âu Lạc",
+     "yccd": [
+      "Trình bày được tổ chức nhà nước của Văn Lang, Âu Lạc.",
+      "Mô tả được đời sống vật chất và tinh thần của cư dân Văn Lang, Âu Lạc."
+     ],
+     "trang": 19,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thời kì Bắc thuộc và chống Bắc thuộc từ thế kỉ II trước Công nguyên đến năm 938",
+     "yccd": [],
+     "trang": 19,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thời kì Bắc thuộc và chống Bắc thuộc từ thế kỉ II trước Công nguyên đến năm 938 › Chính sách cai trị của các triều đại phong kiến phương Bắc",
+     "yccd": [
+      "Nêu được một số chính sách cai trị của phong kiến phương Bắc trong thời kì Bắc thuộc."
+     ],
+     "trang": 19,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thời kì Bắc thuộc và chống Bắc thuộc từ thế kỉ II trước Công nguyên đến năm 938 › Sự chuyển biến về kinh tế, văn hoá trong thời kì Bắc thuộc",
+     "yccd": [
+      "Nhận biết được một số chuyển biến quan trọng về kinh tế, xã hội, văn hoá ở Việt Nam trong thời kì Bắc thuộc."
+     ],
+     "trang": 19,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thời kì Bắc thuộc và chống Bắc thuộc từ thế kỉ II trước Công nguyên đến năm 938 › Các cuộc đấu tranh giành lại độc lập và bảo vệ bản sắc văn hoá của dân tộc",
+     "yccd": [
+      "Lập được biểu đồ, sơ đồ và trình bày được những nét chính; giải thích được nguyên nhân, nêu được kết quả và ý nghĩa của các cuộc khởi nghĩa tiêu biểu của nhân dân Việt Nam trong thời kì Bắc thuộc (khởi nghĩa Hai Bà Trưng, Bà Triệu, Lý Bí, Mai Thúc Loan, Phùng Hưng,...).",
+      "Giới thiệu được những nét chính của cuộc đấu tranh về văn hoá và bảo vệ bản sắc văn hoá của nhân dân Việt Nam trong thời kì Bắc thuộc."
+     ],
+     "trang": 19,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thời kì Bắc thuộc và chống Bắc thuộc từ thế kỉ II trước Công nguyên đến năm 938 › Bước ngoặt lịch sử ở đầu thế kỉ X",
+     "yccd": [
+      "Trình bày được những nét chính (nội dung, kết quả) về các cuộc vận động giành quyền tự chủ của nhân dân Việt Nam dưới sự lãnh đạo của họ Khúc và họ Dương.",
+      "Mô tả được những nét chính trận chiến Bạch Đằng lịch sử năm 938 và những điểm độc đáo trong tổ chức đánh giặc của Ngô Quyền.",
+      "Nêu được ý nghĩa lịch sử của chiến thắng Bạch Đằng năm 938."
+     ],
+     "trang": 19,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Vương quốc Champa",
+     "yccd": [
+      "Mô tả được sự thành lập, quá trình phát triển của Champa.",
+      "Trình bày được những nét chính về tổ chức xã hội và kinh tế của Champa.",
+      "Nhận biết được một số thành tựu văn hoá của Champa."
+     ],
+     "trang": 20,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Vương quốc Phù Nam",
+     "yccd": [
+      "Mô tả được sự thành lập, quá trình phát triển và suy vong của Phù Nam.",
+      "Trình bày được những nét chính về tổ chức xã hội và kinh tế của Phù Nam.",
+      "Nhận biết được một số thành tựu văn hoá của Phù Nam."
+     ],
+     "trang": 20,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-6-05",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "lich_su",
+   "chu_de": "TÂY ÂU TỪ THẾ KỈ V ĐẾN NỬA ĐẦU THẾ KỈ XVI",
+   "trang": 24,
+   "muc": [
+    {
+     "noi_dung": "Quá trình hình thành và phát triển chế độ phong kiến ở Tây Âu",
+     "yccd": [
+      "Kể lại được những sự kiện chủ yếu về quá trình hình thành xã hội phong kiến ở Tây Âu.",
+      "Trình bày được đặc điểm của lãnh địa phong kiến và quan hệ xã hội của chế độ phong kiến Tây Âu.",
+      "Phân tích được vai trò của thành thị trung đại.",
+      "Mô tả được sơ lược sự ra đời của Thiên Chúa giáo."
+     ],
+     "trang": 24,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các cuộc phát kiến địa lí",
+     "yccd": [
+      "Sử dụng lược đồ hoặc bản đồ, giới thiệu được những nét chính về hành trình của một số cuộc phát kiến địa lí lớn trên thế giới.",
+      "Nêu được hệ quả của các cuộc phát kiến địa lí."
+     ],
+     "trang": 24,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Văn hoá Phục hưng",
+     "yccd": [
+      "Giới thiệu được sự biến đổi quan trọng về kinh tế – xã hội của Tây Âu từ thế kỉ XIII đến thế kỉ XVI.",
+      "Trình bày được những thành tựu tiêu biểu của phong trào văn hoá Phục hưng.",
+      "Nhận biết được ý nghĩa và tác động của phong trào văn hoá Phục hưng đối với xã hội Tây Âu."
+     ],
+     "trang": 24,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cải cách tôn giáo",
+     "yccd": [
+      "Nêu và giải thích được nguyên nhân của phong trào cải cách tôn giáo.",
+      "Mô tả khái quát được nội dung cơ bản của các cuộc cải cách tôn giáo.",
+      "Nêu được tác động của cải cách tôn giáo đối với xã hội Tây Âu."
+     ],
+     "trang": 25,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự hình thành quan hệ sản xuất tư bản chủ nghĩa ở Tây Âu trung đại",
+     "yccd": [
+      "Xác định được những biến đổi chính trong xã hội và sự nảy sinh phương thức sản xuất tư bản chủ nghĩa ở Tây Âu."
+     ],
+     "trang": 25,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-7-01",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "lich_su",
+   "chu_de": "TRUNG QUỐC TỪ THẾ KỈ VII ĐẾN GIỮA THẾ KỈ XIX",
+   "trang": 25,
+   "muc": [
+    {
+     "noi_dung": "Khái lược tiến trình lịch sử của Trung Quốc từ thế kỉ VII đến giữa thế kỉ XIX",
+     "yccd": [
+      "Lập được sơ đồ tiến trình phát triển của Trung Quốc từ thế kỉ VII đến giữa thế kỉ XIX (các thời Đường, Tống, Nguyên, Minh, Thanh)."
+     ],
+     "trang": 25,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Thành tựu chính trị, kinh tế, văn hóa của Trung Quốc từ thế kỉ VII đến giữa thế kỉ XIX",
+     "yccd": [
+      "Nêu được những nét chính về sự thịnh vượng của Trung Quốc dưới thời Đường.",
+      "Mô tả được sự phát triển kinh tế dưới thời Minh – Thanh.",
+      "Giới thiệu và nhận xét được những thành tựu chủ yếu của văn hoá Trung Quốc từ thế kỉ VII đến giữa thế kỉ XIX (Nho giáo, sử học, kiến trúc,...)."
+     ],
+     "trang": 25,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-7-02",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "lich_su",
+   "chu_de": "ẤN ĐỘ TỪ THẾ KỈ IV ĐẾN GIỮA THẾ KỈ XIX",
+   "trang": 26,
+   "muc": [
+    {
+     "noi_dung": "Vương triều Gupta",
+     "yccd": [
+      "Nêu được những nét chính về điều kiện tự nhiên của Ấn Độ."
+     ],
+     "trang": 26,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Vương triều Hồi giáo Delhi",
+     "yccd": [
+      "Trình bày khái quát được sự ra đời và tình hình chính trị, kinh tế, xã hội của Ấn Độ dưới thời các vương triều Gupta, Delhi và đế quốc"
+     ],
+     "trang": 26,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Đế quốc Mogul",
+     "yccd": [
+      "Mogul.",
+      "Giới thiệu và nhận xét được một số thành tựu tiêu biểu về văn hoá của Ấn Độ từ thế kỉ IV đến giữa thế kỉ XIX."
+     ],
+     "trang": 26,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-7-03",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "lich_su",
+   "chu_de": "ĐÔNG NAM Á TỪ NỬA SAU THẾ KỈ X ĐẾN NỬA ĐẦU THẾ KỈ XVI",
+   "trang": 26,
+   "muc": [
+    {
+     "noi_dung": "Khái quát về Đông Nam Á từ nửa sau thế kỉ X đến nửa đầu thế kỉ XVI",
+     "yccd": [
+      "Mô tả được quá trình hình thành, phát triển của các quốc gia Đông Nam Á từ nửa sau thế kỉ X đến nửa đầu thế kỉ XVI.",
+      "Giới thiệu và nhận xét được những thành tựu văn hoá tiêu biểu của Đông Nam Á từ nửa sau thế kỉ X đến nửa đầu thế kỉ XVI."
+     ],
+     "trang": 26,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Vương quốc Campuchia",
+     "yccd": [
+      "Mô tả được quá trình hình thành và phát triển của Vương quốc Campuchia.",
+      "Nhận biết và đánh giá được sự phát triển của Vương quốc Campuchia thời Angkor.",
+      "Nêu được một số nét tiêu biểu về văn hoá của Vương quốc Campuchia."
+     ],
+     "trang": 26,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Vương quốc Lào",
+     "yccd": [
+      "Mô tả được quá trình hình thành và phát triển của Vương quốc Lào.",
+      "Nhận biết và đánh giá được sự phát triển của Vương quốc Lào thời Lan Xang.",
+      "Nêu được một số nét tiêu biểu về văn hoá của Vương quốc Lào."
+     ],
+     "trang": 26,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-7-04",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ ĐẦU THẾ KỈ X ĐẾN ĐẦU THẾ KỈ XVI",
+   "trang": 27,
+   "muc": [
+    {
+     "noi_dung": "Việt Nam từ năm 938 đến năm 1009: thời Ngô – Đinh – Tiền Lê",
+     "yccd": [
+      "Nêu được những nét chính về thời Ngô.",
+      "Trình bày được công cuộc thống nhất đất nước của Đinh Bộ Lĩnh và sự thành lập nhà Đinh.",
+      "Mô tả được cuộc kháng chiến chống Tống của Lê Hoàn năm 981.",
+      "Giới thiệu được những nét chính về tổ chức chính quyền thời Ngô – Đinh – Tiền Lê.",
+      "Nhận biết được đời sống xã hội, văn hoá thời Ngô – Đinh – Tiền Lê."
+     ],
+     "trang": 27,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam từ thế kỉ XI đến đầu thế kỉ XIII: thời Lý",
+     "yccd": [
+      "Trình bày được sự thành lập nhà Lý. Đánh giá được sự kiện dời đô ra Đại La của Lý Công Uẩn.",
+      "Mô tả được những nét chính về chính trị, kinh tế, xã hội, văn hóa, tôn giáo thời Lý.",
+      "Đánh giá được những nét độc đáo của cuộc kháng chiến chống Tống và vai trò của Lý Thường Kiệt trong cuộc kháng chiến chống Tống (1075 – 1077).",
+      "Giới thiệu được những thành tựu tiêu biểu về văn hoá, giáo dục thời Lý (Văn Miếu – Quốc Tử Giám, mở khoa thi,...)."
+     ],
+     "trang": 27,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam từ thế kỉ XIII đến đầu thế kỉ XV: thời Trần, Hồ",
+     "yccd": [],
+     "trang": 27,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam từ thế kỉ XIII đến đầu thế kỉ XV: thời Trần, Hồ › Thời Trần",
+     "yccd": [
+      "Mô tả được sự thành lập nhà Trần.",
+      "Trình bày được những nét chính về tình hình chính trị, kinh tế, xã hội, văn hóa, tôn giáo thời Trần.",
+      "Lập được lược đồ diễn biến chính của ba lần kháng chiến chống quân xâm lược Mông – Nguyên.",
+      "Phân tích được nguyên nhân thắng lợi, nêu được ý nghĩa lịch sử của ba lần kháng chiến chống quân xâm lược Mông – Nguyên, nhận thức được sâu sắc tinh thần đoàn kết và quyết tâm chống giặc ngoại xâm của quân dân Đại Việt.",
+      "Nêu được những thành tựu chủ yếu về văn hoá và đánh giá được vai trò của một số nhân vật lịch sử tiêu biểu thời Trần: Trần Thủ Độ, Trần Quốc Tuấn, Trần Nhân Tông,..."
+     ],
+     "trang": 27,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam từ thế kỉ XIII đến đầu thế kỉ XV: thời Trần, Hồ › Thời Hồ",
+     "yccd": [
+      "Trình bày được sự ra đời của nhà Hồ.",
+      "Giới thiệu được một số nội dung chủ yếu trong cải cách của Hồ Quý Ly và nêu được tác động của những cải cách ấy đối với xã hội thời nhà Hồ.",
+      "Mô tả được những nét chính về cuộc kháng chiến chống quân xâm lược nhà Minh.",
+      "Giải thích được nguyên nhân thất bại của cuộc kháng chiến chống quân Minh xâm lược."
+     ],
+     "trang": 28,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Cuộc khởi nghĩa Lam Sơn (1418 – 1427)",
+     "yccd": [
+      "Trình bày được một số sự kiện tiêu biểu của cuộc khởi nghĩa Lam Sơn.",
+      "Giải thích được nguyên nhân chính dẫn đến thắng lợi của cuộc khởi nghĩa Lam Sơn.",
+      "Nêu được ý nghĩa của cuộc khởi nghĩa Lam Sơn và đánh giá được vai trò của một số nhân vật tiêu biểu: Lê Lợi, Nguyễn Trãi, Nguyễn Chích,..."
+     ],
+     "trang": 28,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam thời Lê sơ (1428 – 1527)",
+     "yccd": [
+      "Mô tả được sự thành lập nhà Lê sơ.",
+      "Nhận biết được tình hình kinh tế – xã hội thời Lê sơ.",
+      "Giới thiệu được sự phát triển văn hoá, giáo dục và một số danh nhân văn hoá tiêu biểu thời Lê sơ."
+     ],
+     "trang": 29,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Vùng đất phía nam từ đầu thế kỉ X đến đầu thế kỉ XVI",
+     "yccd": [
+      "Nêu được những diễn biến cơ bản về chính trị, kinh tế văn hoá ở vùng đất phía nam từ đầu thế kỉ X đến đầu thế kỉ XVI."
+     ],
+     "trang": 29,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-7-05",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "chung",
+   "chu_de": "CÁC CUỘC ĐẠI PHÁT KIẾN ĐỊA LÍ",
+   "trang": 29,
+   "muc": [
+    {
+     "noi_dung": "Nguyên nhân của các cuộc phát kiến địa lí",
+     "yccd": [
+      "Giải thích được nguyên nhân và những yếu tố tác động đến các cuộc đại phát kiến địa lí."
+     ],
+     "trang": 29,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Một số cuộc đại phát kiến địa lí",
+     "yccd": [
+      "Mô tả được các cuộc đại phát kiến địa lí: Christopher Colombus tìm ra châu Mỹ (1492 – 1502), cuộc thám hiểm của Ferdinand Magellan vòng quanh Trái Đất (1519 – 1522)."
+     ],
+     "trang": 29,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tác động của các cuộc đại phát kiến địa lí đối với tiến trình lịch sử",
+     "yccd": [
+      "Phân tích được tác động của các cuộc đại phát kiến địa lí đối với tiến trình lịch sử."
+     ],
+     "trang": 29,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-7-06",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 7,
+   "mon": "chung",
+   "chu_de": "ĐÔ THỊ: LỊCH SỬ VÀ HIỆN TẠI (1)",
+   "trang": 29,
+   "muc": [
+    {
+     "noi_dung": "Các đô thị cổ đại và các nền văn minh cổ đại",
+     "yccd": [
+      "Phân tích được các điều kiện địa lí và lịch sử góp phần hình thành và phát triển một đô thị cổ đại và trung đại (qua một số trường hợp cụ thể)."
+     ],
+     "trang": 30,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các đô thị trung đại châu Âu và giới thương nhân – Trình bày được mối quan hệ giữa đô thị với các nền văn minh",
+     "yccd": [
+      "cổ đại; vai trò của giới thương nhân với sự phát triển đô thị châu Âu trung đại."
+     ],
+     "trang": 30,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-7-07",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "CHÂU ÂU VÀ BẮC MỸ TỪ NỬA SAU THẾ KỈ XVI ĐẾN THẾ KỈ XVIII",
+   "trang": 33,
+   "muc": [
+    {
+     "noi_dung": "Cách mạng tư sản Anh",
+     "yccd": [
+      "Xác định được trên bản đồ thế giới địa điểm diễn ra các cuộc cách mạng tư sản tiêu biểu từ thế kỉ XVI đến thế kỉ XVIII."
+     ],
+     "trang": 33,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ.",
+     "yccd": [
+      "Trình bày được những nét chung về nguyên nhân, kết quả, ý nghĩa, tính chất của cách mạng tư sản."
+     ],
+     "trang": 33,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cách mạng tư sản Pháp",
+     "yccd": [
+      "Nêu được một số đặc điểm chính của các cuộc cách mạng tư sản tiêu biểu ở Anh, Pháp, Mỹ."
+     ],
+     "trang": 33,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cách mạng công nghiệp",
+     "yccd": [
+      "Trình bày được những thành tựu tiêu biểu của cách mạng công nghiệp.",
+      "Nêu được những tác động quan trọng của cách mạng công nghiệp đối với sản xuất và đời sống."
+     ],
+     "trang": 33,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-8-01",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "ĐÔNG NAM Á TỪ NỬA SAU THẾ KỈ XVI ĐẾN THẾ KỈ XIX",
+   "trang": 34,
+   "muc": [
+    {
+     "noi_dung": "Quá trình xâm lược Đông Nam Á của thực dân phương Tây",
+     "yccd": [
+      "Trình bày được những nét chính trong quá trình xâm nhập của tư bản phương Tây vào các nước Đông Nam Á."
+     ],
+     "trang": 34,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tình hình chính trị, kinh tế, văn hoá – xã hội của các nước Đông Nam Á",
+     "yccd": [
+      "Nêu được những nét nổi bật về tình hình chính trị, kinh tế, văn hoá – xã hội của các nước Đông Nam Á dưới ách đô hộ của thực dân phương Tây."
+     ],
+     "trang": 34,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cuộc đấu tranh chống ách đô hộ của thực dân phương Tây ở Đông Nam Á",
+     "yccd": [
+      "Mô tả được những nét chính về cuộc đấu tranh của các nước Đông Nam Á chống lại ách đô hộ của thực dân phương Tây."
+     ],
+     "trang": 34,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-8-02",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ ĐẦU THẾ KỈ XVI ĐẾN THẾ KỈ XVIII",
+   "trang": 34,
+   "muc": [
+    {
+     "noi_dung": "Xung đột Nam – Bắc triều, Trịnh – Nguyễn",
+     "yccd": [
+      "Nêu được những nét chính về sự ra đời của Vương triều Mạc.",
+      "Giải thích được nguyên nhân bùng nổ xung đột Nam – Bắc triều, Trịnh – Nguyễn.",
+      "Nêu được hệ quả của xung đột Nam – Bắc triều, Trịnh – Nguyễn."
+     ],
+     "trang": 34,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Những nét chính trong quá trình mở cõi từ thế kỉ XVI đến thế kỉ XVIII",
+     "yccd": [
+      "Trình bày được khái quát về quá trình mở cõi của Đại Việt trong các thế kỉ XVI – XVIII.",
+      "Mô tả và nêu được ý nghĩa của quá trình thực thi chủ quyền đối với quần đảo Hoàng Sa và quần đảo Trường Sa của các chúa Nguyễn."
+     ],
+     "trang": 34,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khởi nghĩa nông dân ở Đàng Ngoài thế kỉ XVIII",
+     "yccd": [
+      "Nêu được một số nét chính (bối cảnh lịch sử, diễn biến, kết quả và ý nghĩa) của phong trào nông dân ở Đàng Ngoài thế kỉ XVIII.",
+      "Nêu được tác động của phong trào nông dân ở Đàng Ngoài đối với xã hội Đại Việt thế kỉ XVIII."
+     ],
+     "trang": 34,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Phong trào Tây Sơn",
+     "yccd": [
+      "Trình bày được một số nét chính về nguyên nhân bùng nổ và mô tả được một số thắng lợi tiêu biểu của phong trào Tây Sơn: lật đổ chúa Nguyễn, chúa Trịnh, vua Lê; đánh bại quân Xiêm xâm lược (1785) và đại phá quân Thanh xâm lược (1789),...",
+      "Nêu được nguyên nhân thắng lợi, ý nghĩa lịch sử và đánh giá được vai trò của Nguyễn Huệ – Quang Trung trong phong trào Tây Sơn."
+     ],
+     "trang": 35,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Kinh tế, văn hoá, tôn giáo trong các thế kỉ XVI –",
+     "yccd": [
+      "Nêu được những nét chính về tình hình kinh tế."
+     ],
+     "trang": 35,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-8-03",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "XVIII",
+   "trang": 35,
+   "muc": [
+    {
+     "noi_dung": "",
+     "yccd": [
+      "Mô tả và nhận xét được những nét chính về sự chuyển biến văn hoá và tôn giáo ở Đại Việt trong các thế kỉ XVI – XVIII."
+     ],
+     "trang": 35,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-8-04",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "CHÂU ÂU VÀ NƯỚC MỸ TỪ CUỐI THẾ KỈ XVIII ĐẾN ĐẦU THẾ KỈ XX",
+   "trang": 35,
+   "muc": [
+    {
+     "noi_dung": "Sự hình thành của chủ nghĩa đế quốc",
+     "yccd": [
+      "Mô tả được những nét chính về quá trình hình thành của chủ nghĩa đế quốc."
+     ],
+     "trang": 35,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các nước Âu – Mỹ từ cuối thế kỉ XIX đến đầu thế kỉ XX",
+     "yccd": [
+      "Trình bày những nét chính về Công xã Paris (1871) và ý nghĩa lịch sử của việc thành lập nhà nước kiểu mới – nhà nước của giai cấp vô sản đầu tiên trên thế giới.",
+      "Nhận biết được những chuyển biến lớn về kinh tế, chính sách đối nội, đối ngoại của các đế quốc Anh, Pháp, Đức, Mỹ từ cuối thế kỉ XIX đến đầu thế kỉ XX."
+     ],
+     "trang": 35,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Phong trào công nhân và sự ra đời của chủ nghĩa Marx",
+     "yccd": [
+      "Nêu được sự ra đời của giai cấp công nhân.",
+      "Trình bày được một số hoạt động chính của Karl Marx, Friedrich Engels và sự ra đời của chủ nghĩa xã hội khoa học.",
+      "Mô tả được một số hoạt động tiêu biểu của phong trào cộng sản và công nhân quốc tế cuối thế kỉ XIX, đầu thế kỉ XX (phong trào công nhân, sự ra đời và hoạt động của các Đảng và các tổ chức cộng sản,...)."
+     ],
+     "trang": 35,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chiến tranh thế giới thứ nhất (1914 – 1918)",
+     "yccd": [
+      "Nêu được nguyên nhân bùng nổ Chiến tranh thế giới thứ nhất.",
+      "Phân tích, đánh giá được hậu quả và tác động của Chiến tranh thế giới thứ nhất (1914 – 1918) đối với lịch sử nhân loại."
+     ],
+     "trang": 36,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cách mạng tháng Mười Nga năm 1917",
+     "yccd": [
+      "Nêu được một số nét chính (nguyên nhân, diễn biến, tác động và ý nghĩa lịch sử) của Cách mạng tháng Mười Nga năm 1917."
+     ],
+     "trang": 36,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-8-05",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "SỰ PHÁT TRIỂN CỦA KHOA HỌC, KĨ THUẬT, VĂN HỌC, NGHỆ THUẬT TRONG CÁC THẾ KỈ XVIII – XIX",
+   "trang": 36,
+   "muc": [
+    {
+     "noi_dung": "Một số thành tựu khoa học, kĩ thuật, văn học, nghệ thuật của nhân loại trong các thế kỉ XVIII – XIX",
+     "yccd": [
+      "Mô tả được một số thành tựu tiêu biểu về khoa học, kĩ thuật, văn học, nghệ thuật trong các thế kỉ XVIII – XIX."
+     ],
+     "trang": 36,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tác động của sự phát triển khoa học, kĩ thuật, văn học, nghệ thuật trong các thế kỉ XVIII – XIX",
+     "yccd": [
+      "Phân tích được tác động của sự phát triển khoa học, kĩ thuật, văn học, nghệ thuật trong các thế kỉ XVIII – XIX."
+     ],
+     "trang": 36,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-8-06",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "CHÂU Á TỪ NỬA SAU THẾ KỈ XIX ĐẾN ĐẦU THẾ KỈ XX",
+   "trang": 36,
+   "muc": [
+    {
+     "noi_dung": "Trung Quốc",
+     "yccd": [
+      "Mô tả được quá trình xâm lược Trung Quốc của các nước đế quốc.",
+      "Trình bày được sơ lược về Cách mạng Tân Hợi.",
+      "Nhận biết được nguyên nhân thắng lợi và nêu được ý nghĩa của Cách mạng Tân Hợi."
+     ],
+     "trang": 36,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nhật Bản",
+     "yccd": [
+      "Nêu được những nội dung chính của cuộc Duy tân Minh Trị.",
+      "Trình bày được ý nghĩa lịch sử của cuộc Duy tân Minh Trị.",
+      "Trình bày được những biểu hiện của sự hình thành chủ nghĩa đế quốc ở Nhật Bản vào cuối thế kỉ XIX, đầu thế kỉ XX."
+     ],
+     "trang": 36,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ấn Độ",
+     "yccd": [
+      "Trình bày được tình hình chính trị, kinh tế, xã hội Ấn Độ nửa sau thế kỉ XIX."
+     ],
+     "trang": 37,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Đông Nam Á",
+     "yccd": [
+      "Nêu được một số sự kiện về phong trào giải phóng dân tộc ở Đông Nam Á từ nửa sau thế kỉ XIX đến đầu thế kỉ XX."
+     ],
+     "trang": 37,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-8-07",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ THẾ KỈ XIX ĐẾN ĐẦU THẾ KỈ XX",
+   "trang": 37,
+   "muc": [
+    {
+     "noi_dung": "Việt Nam nửa đầu thế kỉ XIX",
+     "yccd": [
+      "Mô tả được sự ra đời của nhà Nguyễn.",
+      "Trình bày được những nét chính về tình hình chính trị, sự phát triển kinh tế, văn hoá, xã hội của Việt Nam thời nhà Nguyễn.",
+      "Mô tả được quá trình thực thi chủ quyền đối với quần đảo Hoàng Sa và quần đảo Trường Sa của các vua Nguyễn."
+     ],
+     "trang": 37,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam nửa sau thế kỉ XIX",
+     "yccd": [
+      "Nêu được quá trình thực dân Pháp xâm lược Việt Nam và cuộc kháng chiến chống thực dân Pháp xâm lược của nhân dân Việt Nam (1858 – 1884).",
+      "Nhận biết được nguyên nhân, một số nội dung chính trong các đề nghị cải cách của các quan lại, sĩ phu yêu nước.",
+      "Trình bày được một số cuộc khởi nghĩa tiêu biểu trong phong trào Cần vương và cuộc khởi nghĩa Yên Thế."
+     ],
+     "trang": 37,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam đầu thế kỉ XX",
+     "yccd": [
+      "Nêu được tác động của cuộc khai thác thuộc địa lần thứ nhất của người Pháp đối với xã hội Việt Nam.",
+      "Giới thiệu được những nét chính về hoạt động yêu nước của Phan Bội Châu, Phan Châu Trinh, Nguyễn Tất Thành."
+     ],
+     "trang": 37,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-8-08",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "chung",
+   "chu_de": "VĂN MINH CHÂU THỔ SÔNG HỒNG VÀ SÔNG CỬU LONG (1)",
+   "trang": 38,
+   "muc": [
+    {
+     "noi_dung": "Quá trình hình thành và phát triển châu thổ; chế độ nước của các dòng sông chính",
+     "yccd": [
+      "Trình bày được quá trình hình thành và phát triển châu thổ; mô tả được chế độ nước của các dòng sông chính."
+     ],
+     "trang": 38,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quá trình con người khai khẩn và cải tạo châu thổ, chế ngự các dòng sông",
+     "yccd": [
+      "Trình bày được quá trình con người khai khẩn và cải tạo châu thổ, chế ngự và thích ứng với chế độ nước của sông Hồng và sông Cửu Long."
+     ],
+     "trang": 38,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-8-09",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 8,
+   "mon": "chung",
+   "chu_de": "BẢO VỆ CHỦ QUYỀN, CÁC QUYỀN VÀ LỢI ÍCH HỢP PHÁP CỦA VIỆT NAM Ở BIỂN ĐÔNG (1)",
+   "trang": 38,
+   "muc": [
+    {
+     "noi_dung": "Phạm vi các vùng biển và hải đảo Việt Nam",
+     "yccd": [
+      "Xác định được vị trí, phạm vi của vùng biển và hải đảo Việt Nam (theo Luật Biển Việt Nam)."
+     ],
+     "trang": 38,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đặc điểm môi trường và tài nguyên biển, đảo",
+     "yccd": [
+      "Trình bày được những nét chính về môi trường, tài nguyên thiên nhiên; phân tích được những thuận lợi và khó khăn đối với phát triển kinh tế và bảo vệ chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam ở Biển Đông."
+     ],
+     "trang": 38,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quá trình xác lập chủ quyền biển đảo trong lịch sử Việt Nam",
+     "yccd": [
+      "Trình bày được quá trình xác lập chủ quyền biển đảo của Việt Nam trong lịch sử."
+     ],
+     "trang": 38,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-8-10",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "THẾ GIỚI TỪ NĂM 1918 ĐẾN NĂM 1945",
+   "trang": 45,
+   "muc": [
+    {
+     "noi_dung": "Nước Nga và Liên Xô từ năm 1918 đến năm 1945 – Nêu được những nét chính về nước Nga trước khi Liên Xô được",
+     "yccd": [
+      "thành lập.",
+      "Trình bày được những thành tựu và chỉ ra được hạn chế của công cuộc xây dựng chủ nghĩa xã hội ở Liên Xô."
+     ],
+     "trang": 45,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Châu Âu và nước Mỹ từ năm 1918 đến năm 1945 – Trình bày được những nét chính về: phong trào cách mạng và",
+     "yccd": [
+      "sự thành lập Quốc tế Cộng sản; đại suy thoái kinh tế 1929 – 1933; sự hình thành chủ nghĩa phát xít ở châu Âu.",
+      "Nhận biết được tình hình chính trị và sự phát triển kinh tế của nước Mỹ giữa hai cuộc chiến tranh thế giới."
+     ],
+     "trang": 45,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Châu Á từ năm 1918 đến năm 1945",
+     "yccd": [
+      "Nêu được những nét chính về tình hình châu Á từ năm 1918 đến năm 1945."
+     ],
+     "trang": 46,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chiến tranh thế giới thứ hai (1939 – 1945)",
+     "yccd": [
+      "Trình bày được nguyên nhân và diễn biến chủ yếu của Chiến tranh thế giới thứ hai.",
+      "Phân tích được hậu quả của Chiến tranh thế giới thứ hai đối với lịch sử nhân loại.",
+      "Nêu được nguyên nhân thắng lợi, ý nghĩa lịch sử, vai trò của Liên Xô và các nước trong Đồng minh trong chiến thắng chủ nghĩa phát xít."
+     ],
+     "trang": 46,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-9-01",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ NĂM 1918 ĐẾN NĂM 1945",
+   "trang": 46,
+   "muc": [
+    {
+     "noi_dung": "Phong trào dân tộc dân chủ những năm 1918 – 1930 – Mô tả được những nét chính của phong trào dân tộc dân chủ những",
+     "yccd": [
+      "năm 1918 – 1930."
+     ],
+     "trang": 46,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hoạt động của Nguyễn Ái Quốc và sự thành lập Đảng Cộng sản Việt Nam",
+     "yccd": [
+      "Nêu được những nét chính về hoạt động của Nguyễn Ái Quốc trong những năm 1918 – 1930.",
+      "Nhận biết được quá trình và ý nghĩa của việc thành lập Đảng Cộng sản Việt Nam; đánh giá được vai trò của Nguyễn Ái Quốc trong quá trình thành lập Đảng Cộng sản Việt Nam."
+     ],
+     "trang": 46,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Phong trào cách mạng Việt Nam thời kì 1930 – 1939 – Mô tả được những nét chủ yếu của phong trào cách mạng giai đoạn",
+     "yccd": [
+      "1930 – 1931 và 1936 – 1939."
+     ],
+     "trang": 46,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Cách mạng tháng Tám năm 1945",
+     "yccd": [
+      "Nêu được tình hình Việt Nam dưới ách thống trị của Pháp – Nhật Bản.",
+      "Nhận biết được sự chuẩn bị của nhân dân Việt Nam tiến tới khởi nghĩa giành chính quyền: chuyển hướng chiến lược của Đảng Cộng sản Đông Dương; sự ra đời của Mặt trận Việt Minh; cao trào kháng Nhật cứu nước.",
+      "Trình bày được diễn biến chính của Cách mạng tháng Tám năm 1945 và sự ra đời của nước Việt Nam Dân chủ Cộng hoà.",
+      "Nêu được nguyên nhân thắng lợi, ý nghĩa lịch sử của Cách mạng tháng Tám năm 1945 và đánh giá được vai trò của Đảng Cộng sản Đông Dương trong Cách mạng tháng Tám năm 1945."
+     ],
+     "trang": 47,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-02",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "THẾ GIỚI TỪ NĂM 1945 ĐẾN NĂM 1991",
+   "trang": 47,
+   "muc": [
+    {
+     "noi_dung": "Chiến tranh lạnh (1947 – 1989)",
+     "yccd": [
+      "Nhận biết được nguyên nhân, những biểu hiện và hậu quả của Chiến tranh lạnh."
+     ],
+     "trang": 47,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Liên Xô và các nước Đông Âu từ năm 1945 đến năm 1991",
+     "yccd": [
+      "Trình bày được tình hình chính trị, kinh tế, xã hội, văn hoá của Liên Xô và Đông Âu từ năm 1945 đến năm 1991.",
+      "Giải thích được sự sụp đổ của chế độ xã hội chủ nghĩa ở Liên Xô và Đông Âu."
+     ],
+     "trang": 47,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nước Mỹ và các nước Tây Âu từ năm 1945 đến năm 1991",
+     "yccd": [
+      "Nêu được những nét chính về chính trị, kinh tế của nước Mỹ và các nước Tây Âu từ năm 1945 đến năm 1991."
+     ],
+     "trang": 47,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Mỹ Latinh từ năm 1945 đến năm 1991",
+     "yccd": [
+      "Mô tả được đôi nét về các nước Mỹ Latinh từ năm 1945 đến năm 1991.",
+      "Trình bày được một cách khái quát về cách mạng Cuba và đánh giá được kết quả công cuộc xây dựng chủ nghĩa xã hội ở Cuba."
+     ],
+     "trang": 47,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Châu Á từ năm 1945 đến năm 1991",
+     "yccd": [
+      "Giới thiệu được những nét chính về Nhật Bản, Trung Quốc, Ấn Độ từ năm 1945 đến năm 1991.",
+      "Trình bày được cuộc đấu tranh giành độc lập dân tộc và quá trình phát triển của các nước Đông Nam Á, sự hình thành và phát triển của Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+     ],
+     "trang": 48,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-9-03",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ NĂM 1945 ĐẾN NĂM 1991",
+   "trang": 48,
+   "muc": [
+    {
+     "noi_dung": "Việt Nam trong năm đầu sau Cách mạng tháng Tám",
+     "yccd": [
+      "Nhận biết được những biện pháp chủ yếu để xây dựng và củng cố chính quyền cách mạng, giải quyết những khó khăn về kinh tế, văn hoá, giáo dục, quân sự,... trong năm đầu sau Cách mạng tháng Tám năm 1945.",
+      "Trình bày được những nét chính về cuộc kháng chiến chống thực dân Pháp xâm lược của nhân dân Nam Bộ."
+     ],
+     "trang": 48,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam từ năm 1946 đến năm 1954",
+     "yccd": [
+      "Giải thích được nguyên nhân bùng nổ cuộc kháng chiến toàn quốc chống thực dân Pháp xâm lược (1946).",
+      "Nhận biết và giải thích được đường lối kháng chiến chống thực dân Pháp xâm lược của Đảng.",
+      "Mô tả được những thắng lợi tiêu biểu trên mặt trận quân sự, kinh tế, văn hoá, ngoại giao,... trong kháng chiến chống thực dân Pháp.",
+      "Nêu được ý nghĩa lịch sử và nguyên nhân thắng lợi của cuộc kháng chiến chống thực dân Pháp (1945 – 1954)."
+     ],
+     "trang": 48,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam từ năm 1954 đến năm 1975",
+     "yccd": [
+      "Giới thiệu được những thành tựu tiêu biểu trong công cuộc xây dựng miền Bắc xã hội chủ nghĩa (hoàn thành cải cách ruộng đất, khôi phục và phát triển kinh tế, chi viện cho cách mạng miền Nam, chống chiến tranh phá hoại của đế quốc Mỹ,...).",
+      "Mô tả được các thắng lợi tiêu biểu về quân sự của nhân dân miền Nam trong kháng chiến chống Mỹ, cứu nước giai đoạn 1954 – 1975 (phong trào Đồng khởi; đánh bại các chiến lược “Chiến tranh đặc biệt”, “Chiến tranh cục bộ” và “Việt Nam hoá chiến tranh” của Mỹ; Tổng tiến công nổi dậy năm 1968, 1972; Chiến dịch Hồ Chí Minh năm 1975,...).",
+      "Nêu được nguyên nhân thắng lợi và ý nghĩa lịch sử của cuộc kháng chiến chống Mỹ, cứu nước."
+     ],
+     "trang": 49,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam trong những năm 1976 – 1991",
+     "yccd": [
+      "Trình bày được sự thống nhất đất nước về mặt nhà nước, cuộc đấu tranh bảo vệ Tổ quốc ở vùng biên giới Tây Nam và vùng biên giới phía Bắc trong những năm 1975 – 1979, đấu tranh bảo vệ chủ quyền biển đảo.",
+      "Nêu được tình hình chính trị, kinh tế, xã hội Việt Nam trong những năm 1976 – 1985.",
+      "Mô tả được đường lối Đổi mới của Đảng và Nhà nước ta, giải thích được nguyên nhân, nêu được kết quả và ý nghĩa của công cuộc Đổi mới trong giai đoạn 1986 – 1991.",
+      "Đánh giá được thành tựu và hạn chế trong việc thực hiện đường lối Đổi mới."
+     ],
+     "trang": 49,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-04",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "THẾ GIỚI TỪ NĂM 1991 ĐẾN NAY",
+   "trang": 50,
+   "muc": [
+    {
+     "noi_dung": "Trật tự thế giới mới",
+     "yccd": [
+      "Nhận biết được xu hướng và sự hình thành trật tự thế giới mới sau Chiến tranh lạnh."
+     ],
+     "trang": 50,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Liên bang Nga từ năm 1991 đến nay",
+     "yccd": [
+      "Nêu được tình hình chính trị, kinh tế của Liên bang Nga từ năm 1991 đến nay."
+     ],
+     "trang": 50,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nước Mỹ từ năm 1991 đến nay",
+     "yccd": [
+      "Trình bày được tình hình chính trị, kinh tế của nước Mỹ từ năm 1991 đến nay."
+     ],
+     "trang": 50,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Châu Á từ năm 1991 đến nay",
+     "yccd": [
+      "Giới thiệu được sự phát triển kinh tế – xã hội của các nước Đông Bắc Á (Trung Quốc, Nhật Bản, Hàn Quốc) từ năm 1991 đến nay.",
+      "Mô tả được quá trình phát triển của ASEAN từ năm 1991 đến nay và những nét chính của Cộng đồng ASEAN."
+     ],
+     "trang": 50,
+     "viet_nam": false
+    }
+   ],
+   "ma": "THCS-9-05",
+   "chuyen_de": false,
+   "viet_nam": false
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "VIỆT NAM TỪ NĂM 1991 ĐẾN NAY",
+   "trang": 50,
+   "muc": [
+    {
+     "noi_dung": "Khái lược công cuộc Đổi mới đất nước từ năm 1991 đến nay",
+     "yccd": [
+      "Chỉ ra được những thành tựu tiêu biểu (trên các lĩnh vực kinh tế, chính trị, xã hội, văn hóa, quốc phòng, an ninh,…) của công cuộc Đổi mới đất nước từ năm 1991 đến nay."
+     ],
+     "trang": 50,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thành tựu của công cuộc Đổi mới đất nước từ năm 1991 đến nay",
+     "yccd": [],
+     "trang": 50,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-06",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "lich_su",
+   "chu_de": "CÁCH MẠNG KHOA HỌC KĨ THUẬT VÀ XU THẾ TOÀN CẦU HOÁ",
+   "trang": 50,
+   "muc": [
+    {
+     "noi_dung": "",
+     "yccd": [
+      "Mô tả được những thành tựu chủ yếu của cách mạng khoa học kĩ thuật trên thế giới và ảnh hưởng của cuộc cách mạng đó đến Việt Nam.",
+      "Trình bày được những nét cơ bản về xu hướng toàn cầu hoá và đánh giá được tác động của toàn cầu hoá đối với thế giới và Việt Nam."
+     ],
+     "trang": 50,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-07",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "chung",
+   "chu_de": "ĐÔ THỊ: LỊCH SỬ VÀ HIỆN TẠI (2)",
+   "trang": 51,
+   "muc": [
+    {
+     "noi_dung": "Các đô thị hiện đại",
+     "yccd": [
+      "Trình bày được vai trò của đô thị đối với sự phát triển vùng với tư cách là trung tâm quyền lực và kinh tế của vùng, đất nước, khu vực."
+     ],
+     "trang": 51,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Xu hướng đô thị hoá trên thế giới",
+     "yccd": [
+      "Mô tả được quá trình đô thị hoá thời kì xã hội công nghiệp và hậu công nghiệp."
+     ],
+     "trang": 51,
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Đô thị hoá ở Việt Nam; đô thị và phát triển vùng",
+     "yccd": [
+      "Nêu được tác động của đô thị hoá đối với sự phát triển kinh tế – xã hội."
+     ],
+     "trang": 51,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-08",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "chung",
+   "chu_de": "VĂN MINH CHÂU THỔ SÔNG HỒNG VÀ SÔNG CỬU LONG (2)",
+   "trang": 51,
+   "muc": [
+    {
+     "noi_dung": "Văn minh các dòng sông",
+     "yccd": [
+      "Trình bày được những nét đặc sắc về văn hoá ở châu thổ sông Hồng và sông Cửu Long thông qua việc tìm hiểu về văn minh các dòng sông."
+     ],
+     "trang": 51,
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Biến đổi khí hậu và biện pháp ứng phó với biến đổi khí hậu ở vùng châu thổ của hai đồng bằng hiện đại",
+     "yccd": [
+      "Phân tích được những biểu hiện của biến đổi khí hậu ở hai vùng châu thổ sông Hồng và sông Cửu Long.",
+      "Nêu được tác động của biến đổi khí hậu đối với sự phát triển kinh tế – xã hội ở châu thổ sông Hồng và sông Cửu Long.",
+      "Đề xuất được ở mức độ đơn giản một số biện pháp ứng phó với biến đổi khí hậu liên quan đến vùng châu thổ của hai đồng bằng hiện đại."
+     ],
+     "trang": 51,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-09",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THCS",
+   "lop": 9,
+   "mon": "chung",
+   "chu_de": "BẢO VỆ CHỦ QUYỀN, CÁC QUYỀN VÀ LỢI ÍCH HỢP PHÁP CỦA VIỆT NAM Ở BIỂN ĐÔNG (2)",
+   "trang": 51,
+   "muc": [
+    {
+     "noi_dung": "Chứng cứ lịch sử, pháp lí về chủ quyền biển đảo của Việt Nam",
+     "yccd": [
+      "Trình bày được những chứng cứ lịch sử, pháp lí về chủ quyền biển đảo Việt Nam."
+     ],
+     "trang": 51,
+     "viet_nam": true
+    }
+   ],
+   "ma": "THCS-9-10",
+   "chuyen_de": false,
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "LỊCH SỬ VÀ SỬ HỌC",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Hiện thực lịch sử và lịch sử được con người nhận thức › Lịch sử › Hiện thực lịch sử › Lịch sử được con người nhận thức",
+     "yccd": [
+      "Trình bày được khái niệm lịch sử.",
+      "Phân biệt được hiện thực lịch sử và lịch sử được con người nhận thức."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sử học › Khái niệm sử học › Đối tượng nghiên cứu của sử học › Chức năng, nhiệm vụ của sử học",
+     "yccd": [
+      "Giải thích được khái niệm sử học.",
+      "Trình bày được đối tượng nghiên cứu của sử học.",
+      "Nêu được chức năng, nhiệm vụ của sử học."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tri thức lịch sử và cuộc sống: Học tập và khám phá lịch sử suốt đời › Sự cần thiết của việc học tập, khám phá lịch sử suốt đời › Thu thập thông tin, sử liệu, làm giàu tri thức lịch sử › Kết nối kiến thức, bài học lịch sử vào cuộc sống",
+     "yccd": [
+      "Giải thích được sự cần thiết phải học tập và khám phá lịch sử suốt đời.",
+      "Biết cách sưu tầm , thu thập, xử lí thông tin, sử liệu để học tập, khám phá lịch sử.",
+      "Vận dụng kiến thức, bài học lịch sử để giải thích những vấn đề thời sự trong nước và thế giới, những vấn đề trong thực tiễn cuộc sống (ở mức độ đơn giản).",
+      "Quan tâm, yêu thích và tham gia các hoạt động tìm hiểu lịch sử, văn hoá của dân tộc Việt Nam và thế giới."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-01",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "VAI TRÒ CỦA SỬ HỌC",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá, di sản thiên nhiên › Mối quan hệ giữa sử học với công tác bảo tồn và phát huy giá trị các di sản văn hoá › Vai trò của công tác bảo tồn và phát huy giá trị di sản văn hoá và di sản thiên nhiên",
+     "yccd": [
+      "Nêu được mối quan hệ giữa sử học với công tác bảo tồn và phát huy giá trị di sản văn hoá và di sản thiên nhiên.",
+      "Có ý thức vận động các bạn và mọi người ở xung quanh cùng tham gia bảo vệ các di sản văn hoá và di sản thiên nhiên ở địa phương."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sử học với sự phát triển du lịch › Vai trò của lịch sử và văn hoá đối với sự phát triển du lịch › Vai trò của du lịch đối với công tác bảo tồn di tích lịch sử, di sản văn hoá",
+     "yccd": [
+      "Giải thích được vai trò của lịch sử và văn hoá đối với sự phát triển du lịch.",
+      "Nêu được tác động của du lịch với công tác bảo tồn di tích lịch sử, văn hoá."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-10-02",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "MỘT SỐ NỀN VĂN MINH THẾ GIỚI THỜI CỔ - TRUNG ĐẠI",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Khái niệm văn minh › Khái niệm văn minh › Phân biệt văn minh và văn hoá",
+     "yccd": [
+      "Giải thích được khái niệm văn minh.",
+      "Phân biệt được khái niệm văn minh, văn hoá."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Một số nền văn minh phương Đông › Văn minh Ai Cập › Những thành tựu tiêu biểu › Ý nghĩa",
+     "yccd": [
+      "Biết cách sư u tầm và sử dụng tư liệu lịch sử để tìm hiểu về các nền văn minh cổ đại phương Đông.",
+      "Nêu được thành tựu tiêu biểu và ý nghĩa của văn minh Ai Cập về chữ viết, khoa học tự nhiên , kiến trúc, điêu khắc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Văn minh Trung Hoa › Những thành tựu tiêu biểu › Ý nghĩa",
+     "yccd": [
+      "Nêu được thành tựu tiêu biểu và ý nghĩa của văn minh Trung Hoa về chữ viết, văn học nghệ thuật, sử học, khoa học tự nhiên, y học, thiên văn học, lịch pháp, tư tưởng, tôn giáo."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Văn minh Ấn Độ › Những thành tựu tiêu biểu",
+     "yccd": [
+      "Nêu được những thành tựu tiêu biểu và ý nghĩa của văn minh Ấn Độ về chữ viết, văn học nghệ thuật, khoa học tự nhiên, tư tưởng, tôn giáo."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ý nghĩa",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Một số nền văn minh phương Tây › Văn minh Hy Lạp - La Mã › Những thành tựu tiêu biểu › Ý nghĩa",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về các nền văn minh phương Tây thời cổ - trung đại.",
+      "Nêu được những thành tựu tiêu biểu và ý nghĩa của văn minh Hy Lạp - La Mã về chữ viết, thiên văn học, lịch pháp, văn học, nghệ thuật, khoa học tự nhiên, tư tưởng, tôn giáo, thể thao."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Văn minh thời Phục hưng › Những thành tựu tiêu biểu › Ý nghĩa",
+     "yccd": [
+      "Nêu được những thành tựu tiêu biểu và ý nghĩa của văn minh thời Phục hưng về tư tưởng, văn học, nghệ thuật, khoa học kĩ thuật, thiên văn học."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-10-03",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "CÁC CUỘC CÁCH MẠNG CÔNG NGHIỆP TRONG LỊCH SỬ THẾ GIỚI",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Cách mạng công nghiệp thời cận đại › Cách mạng công nghiệp lần thứ nhất › Những thành tựu cơ bản",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng một số tư liệu để tìm hiểu về các cuộc cách mạng công nghiệp.",
+      "Nếu được thành tựu cơ bản của Cách mạng công nghiệp lần thứ nhất."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cách mạng công nghiệp lần thứ hai › Những thành tựu cơ bản",
+     "yccd": [
+      "Nêu được những thành tựu cơ bản của Cách mạng công nghiệp lần thứ hai."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ý nghĩa của Cách mạng công nghiệp lần thứ nhất và lần thứ hai › Về kinh tế › Về xã hội, văn hoá",
+     "yccd": [
+      "Nêu được ý nghĩa của Cách mạng công nghiệp lần thứ nhất và lần thứ hai về kinh tế, xã hội, văn hoá."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cách mạng công nghiệp thời hiện đại › Cách mạng công nghiệp lần thứ ba › Những thành tựu cơ bản",
+     "yccd": [
+      "Nêu được những thành tựu cơ bản của cuộc Cách mạng công nghiệp lần thứ ba."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cách mạng công nghiệp lần thứ tư (Cách mạng 4.0) › Những thành tựu cơ bản",
+     "yccd": [
+      "Nêu được những thành tựu cơ bản của cuộc Cách mạng công nghiệp lần thứ tư."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ý nghĩa của Cách mạng công nghiệp lần thứ ba và lần thứ tư › Về kinh tế › Về xã hội, văn hoá",
+     "yccd": [
+      "Nêu được ý nghĩa của Cách mạng công nghiệp lần thứ ba và lần thứ tư về kinh tế, xã hội, văn hoá.",
+      "Có thái độ trân trọng những thành quả của cuộc cách mạng công nghiệp đối với sự phát triển của lịch sử.",
+      "Vận dụng được những hiểu biết về tác động hai mặt của Cách mạng công nghiệp lần thứ ba và lần thứ tư để tuân thủ những quy định của pháp luật trong cách thức giao tiếp trên Internet, mạng xã hội."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-10-04",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "VĂN MINH ĐÔNG NAM Á THỜI CỔ - TRUNG ĐẠI",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Hành trình phát triển và thành tựu của văn mình Đông Nam Á thời cổ - trung đại › Hành trình phát triển › Một số thành tựu tiêu biểu › Tôn giáo và tín ngưỡng › Văn tự và văn học › Kiến trúc và điêu khắc",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng một số tư liệu để tìm hiểu về lịch sử văn minh Đông Nam Á.",
+      "Trình bày được các thời kì phát triển của văn minh Đông Nam Á.",
+      "Nêu được một số thành tựu tiêu biểu của văn minh Đông Nam Á về tôn giáo và tín ngưỡng, văn tự và văn học, kiến trúc và điêu khắc.",
+      "Biết trân trọng giá trị trường tồn của các di sản văn minh Đông Nam Á, tham gia bảo tồn các di sản văn minh Đông Nam Á nói chung và ở Việt Nam nói riêng."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-05",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "MỘT SỐ NỀN VĂN MINH TRÊN ĐẤT NƯỚC VIỆT NAM (TRƯỚC NĂM 1858)",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Một số nền văn minh cổ trên đất nước Việt Nam › Văn minh Văn Lang - Âu Lạc › Cơ sở hình thành › Những thành tựu tiêu biểu",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về văn minh Văn Lang - Âu Lạc.",
+      "Nêu được cơ sở hình thành văn minh Văn Lang - Âu Lạc.",
+      "Nêu được những thành tựu tiêu biểu của nền văn minh Văn Lang - Âu Lạc về đời sống vật chất, đời sống tinh thần, tổ chức xã hội, Nhà nước."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Văn minh Champa › Cơ sở hình thành › Những thành tựu tiêu biểu",
+     "yccd": [
+      "Nêu được cơ sở hình thành văn minh Champa.",
+      "Trình bày được những thành tựu tiêu biểu của văn minh Champa về đời sống vật chất, đời sống tinh thần, tổ chức xã hội, Nhà nước."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Văn minh Phù Nam › Cơ sở hình thành › Những thành tựu tiêu biểu",
+     "yccd": [
+      "Nêu được cơ sở hình thành văn minh Phù Nam.",
+      "Trình bày được những thành tựu tiêu biểu của văn minh Phù Nam về đời sống vật chất, đời sống tinh thần, tổ chức xã hội, Nhà nước.",
+      "Biết vận dụng hiểu biết về các nền văn minh cổ để giới thiệu về đất nước, con người Việt Nam. Nhận thức được giá trị trường tồn của các nền văn minh cổ trên đất nước Việt Nam. Có ý thức trân trọng truyền thống lao động cần cù, sáng tạo của dân tộc Việt Nam trong lịch sử. Có trách nhiệm trong việc góp phần bảo tồn các di sản văn hoá của dân tộc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Văn minh Đại Việt › Cơ sở hình thành và quá trình phát triển của văn minh Đại Việt › Khái niệm văn minh Đại Việt › Cơ sở hình thành › Quá trình phát triển",
+     "yccd": [
+      "Giải thích được khái niệm văn minh Đại Việt.",
+      "Trình bày được cơ sở hình thành văn minh Đại Việt về k ế thừa văn minh Văn Lang - Âu Lạc, nền độc lập tự chủ của đất nước, tiếp thu ảnh hưởng của văn hoá Trung Quốc, Ấn Độ.",
+      "Nêu được quá trình phát triển của văn minh Đại Việt."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số thành tựu của văn minh Đại Việt › Về kinh tế › Về chính trị › Về tư tưởng, tôn giáo › Về văn hoá, giáo dục, văn học, nghệ thuật",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về những thành tựu của văn minh Đại Việt.",
+      "Nêu được một số thành tựu cơ bản của nền văn minh Đại Việt về kinh tế, chính trị, tư tưởng, tôn giáo, văn hoá, giáo dục, văn học, nghệ thuật."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Ý nghĩa của văn minh Đại Việt trong lịch sử dân tộc Việt Nam",
+     "yccd": [
+      "Phân tích được ý nghĩa của nền văn minh Đại Việt trong lịch sử dân tộc Việt Nam.",
+      "Trân trọng giá trị của nền văn minh Đại Việt, vận dụng hiểu biết về văn minh Đại Việt để giới thiệu, quảng bá về đất nước, con người, di sản văn hoá Việt Nam."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-06",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "CỘNG ĐỒNG CÁC DÂN TỘC VIỆT NAM",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Các dân tộc trên đất nước Việt Nam › Thành phần dân tộc theo dân số › Thành phần dân tộc theo ngữ hệ",
+     "yccd": [
+      "Nêu được thành phần dân tộc theo dân số.",
+      "Trình bày được việc phân chia tộc người theo ngữ hệ."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khái quát về đời sống vật chất và tinh thần của cộng đồng các dân tộc Việt Nam › Đời sống vật chất › Đời sống tinh thần",
+     "yccd": [
+      "Trình bày được nét chính về đời sống vật chất của cộng đồng các dân tộc Việt Nam.",
+      "Nêu được nét chính về đời sống tinh thần của cộng đồng các dân tộc Việt Nam."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khối đại đoàn kết dân tộc trong lịch sử Việt Nam › Khối đại đoàn kết dân tộc trong lịch sử Việt Nam › Sự hình thành khối đại đoàn kết dân tộc › Vai trò của khối đại đoàn kết dân tộc trong lịch sử dựng nước và giữ nước › Vai trò của khối đại đoàn kết dân tộc trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay",
+     "yccd": [
+      "Nêu được nét chính về sự hình thành khối đại đoàn kết dân tộc trong lịch sử Việt Nam.",
+      "Nêu được vai trò, tầm quan trọng của khối đại đoàn kết dân tộc trong lịch sử dựng nước và giữ nước.",
+      "Nêu được vai trò, tầm quan trọng của khối đại đoàn kết dân tộc trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Chính sách dân tộc của Đảng và Nhà nước hiện nay › Quan điểm của Đảng và Nhà nước về chính sách dân tộc › Nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước",
+     "yccd": [
+      "Nêu được quan điểm nhất quán của Đảng và Nhà nước về chính sách dân tộc bình đẳng, đoàn kết, tôn trọng và giúp nhau cùng phát triển.",
+      "Nêu được nội dung cơ bản trong chính sách dân tộc của Đảng và Nhà nước hiện nay về phát triển kinh tế, văn hoá, xã hội, quốc phòng và an ninh.",
+      "Có ý thức trân trọng sự bình đẳng giữa các dân tộc, có hành động cụ thể góp phần tham gia vào việc giữ gìn khối đại đoàn kết dân tộc."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-07",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "THỰC HÀNH LỊCH SỬ",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Tổ chức các hoạt động thực hành lịch sử tại lớp học. › Tiến hành các hoạt động giáo dục lịch sử gắn với thực địa (di sản lịch sử, văn hoá),... › Học tập tại các bảo tàng, xem phim tài liệu lịch sử. › Tổ chức các câu lạc bộ, các cuộc thi “ Em yêu lịch sử”, “Nhà sử học trẻ tuổi”, các trò chơi lịch sử.",
+     "yccd": [
+      "Củng cố , khắc sâu kiến thức lịch sử.",
+      "Rèn luyện các kĩ năng thực hành bộ môn, phát triển năng lực lịch sử.",
+      "Tạo hứng thú trong học tập."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-08",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "Chuyên đề 10.1: CÁC LĨNH VỰC CỦA SỬ HỌC",
+   "chuyen_de": true,
+   "muc": [
+    {
+     "noi_dung": "Thông sử và Lịch sử theo lĩnh vực › Khái quát về một số cách trình bày lịch sử truyền thống › Kể chuyện về quá khứ › Lịch sử biên niên › ......",
+     "yccd": [
+      "Tóm tắt được một số cách trình bày lịch sử truyền thống thông qua ví dụ cụ thể."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Thông sử › Khái niệm › Nội dung chính",
+     "yccd": [
+      "Giải thích được khái niệm thông sử.",
+      "Nêu được nội dung chính của thông sử."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Lịch sử theo lĩnh vực › Khái quát về các lĩnh vực của lịch sử › Ý nghĩa của việc phân chia lịch sử theo lĩnh vực › Lịch sử dân tộc và lịch sử thế giới › Lịch sử dân tộc › Lịch sử thế giới",
+     "yccd": [
+      "Nêu được nét khái quát về các lĩnh vực của lịch sử",
+      "Giải thích được ý nghĩa của việc phân chia lịch sử theo lĩnh vực.",
+      "Nêu được khái niệm và nội dung chính của lịch sử dân tộc",
+      "Nêu được khái niệm và nội dung chính của lịch sử thế giới."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Một số lĩnh vực của lịch sử Việt Nam › Lịch sử văn hoá Việt Nam › Đối tượng và phạm vi của lịch sử văn hoá Việt Nam › Khái lược tiến trình lịch sử văn hoá Việt Nam › Lịch sử tư tưởng Việt Nam › Đối tượng, phạm vi của lịch sử tư tưởng Việt Nam › Khái lược lịch sử tư tưởng Việt Nam",
+     "yccd": [
+      "Nêu được đối tượng và phạm vi của lịch sử văn hoá Việt Nam.",
+      "Tóm tắt được nét chính của lịch sử văn hoá Việt Nam trên đường thời gian.",
+      "Nêu được đối tượng và phạm vi của lịch sử tư tưởng Việt Nam.",
+      "Tóm tắt được nét chính của lịch sử tư tưởng Việt Nam trên đường thời gian."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Lịch sử xã hội Việt Nam › Đối tượng của lịch sử xã hội › Khái lược về xã hội Việt Nam truyền thống và hiện đại",
+     "yccd": [
+      "Giải thích được đối tượng của lịch sử xã hội.",
+      "Tóm tắt được nét chính của lịch sử xã hội Việt Nam trên đường thời gian."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Lịch sử kinh tế Việt Nam › Đối tượng của lịch sử kinh tế › Khái lược lịch sử kinh tế Việt Nam",
+     "yccd": [
+      "Giải thích được đối tượng của lịch sử kinh tế.",
+      "Tóm tắt được nét chính của lịch sử kinh tế Việt Nam trên đường thời gian."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-09",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "Chuyên đề 10.2: BẢO TỒN VÀ PHÁT HUY GIÁ TRỊ DI SẢN VĂN HOÁ Ở VIỆT NAM",
+   "chuyen_de": true,
+   "muc": [
+    {
+     "noi_dung": "Di sản văn hoá › Khái niệm di sản văn hoá › Khái niệm di sản văn hoá › Ý nghĩa của di sản văn hoá › Phân loại di sản văn hoá và xếp hạng di tích lịch sử - văn hoá › Phân loại di sản văn hóa › Xếp hạng di sản văn hoá",
+     "yccd": [
+      "Giải thích được khái niệm di sản văn hoá.",
+      "Nêu được ý nghĩa của di sản văn hoá: tài sản vô giá của cộng đồng, dân tộc, nhân loại được kế t hừa từ các thế hệ trước cho các thế hệ mai sau.",
+      "Chỉ ra được một số cách phân loại, xếp hạng di sản văn hoá.",
+      "Phân tích được mục đích và ý nghĩa của việc phân loại, xếp hạng di sản văn hoá."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Bảo tồn và phát huy giá trị di sản văn hoá › Mối quan hệ giữa bảo tồn và phát triển › Khái niệm bảo tồn di sản văn hoá › Mối quan hệ giữa bảo tồn và phát huy giá trị di sản văn hoá",
+     "yccd": [
+      "Giải thích được khái niệm bảo tồn di sản văn hoá.",
+      "Phân tích được mối quan hệ giữa bảo tồn và phát huy giá trị di sản văn hoá: bảo tồn phải đặt trong bối cảnh phát triển bền vững để bảo tồn không trở thành gánh nặng và rào cản của phát triển."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giải pháp bảo tồn và phát huy giá trị di sản › Cơ sở khoa học của công tác bảo tồn, phát huy giá trị di sản văn hoá › Các giải pháp bảo tồn và phát huy giá trị di sản văn hoá › Vai trò, trách nhiệm của các bên liên quan › Vai trò của hệ thống chính trị, doanh nghiệp, cộng đồng dân cư và của mỗi cá nhân trong việc bảo tồn và phát huy giá trị di sản văn hoá. › Trách nhiệm của các bên liên quan: Nhà nước, tổ chức xã hội, nhà trường, cộng đồng, công dân trong việc bảo tồn và phát huy giá trị các di sản văn hoá",
+     "yccd": [
+      "Phân tích được cơ sở khoa học của công tác bảo tồn di sản văn hoá trong quá trình phát triển bền vững của đất nước.",
+      "Nêu được các giải pháp bảo tồn và phát huy giá trị di sản văn hoá: tuyên truyền giáo dục ý thức bảo tồn di sản, đầu tư cơ sở vật chất, tăng cường biện pháp bảo vệ di sản,...",
+      "Giải thích được vai trò của hệ thống chính trị, doanh nghiệp, cộng đồng dân cư và của mỗi cá nhân trong công tác bảo tồn và phát huy giá trị di sản văn hoá.",
+      "Trình bày được trách nhiệm của Nhà nước, tổ chức xã hội, nhà trường, cộng đồng, công dân trong việc bảo tồn và phát huy giá trị di sản thông qua ví dụ cụ thể.",
+      "Có ý thức trách nhiệm và sẵn sàng đóng góp và vận động người khác cùng tham gia vào việc bảo tồn và phát huy giá trị các di sản văn hoá ở địa phương và đất nước."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số di sản văn hoá tiêu biểu của dân tộc Việt Nam (gợi ý) › Giới thiệu một số di sản văn hoá phi vật thể tiêu biểu › Dân ca quan họ Bắc Ninh › Ca trù › Không gian văn hoá cồng chiên g Tây Nguyên › Nhã nhạc cung đình Huế › Đờn ca tài tử Nam Bộ › ........",
+     "yccd": [
+      "Xác định được vị trí phân bố các di sản văn hoá phi vật thể tiêu biểu trên bản đồ.",
+      "Giới thiệu được nét cơ bản về một trong số những di sản văn hoá phi vật thể tiêu biểu."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giới thiệu một số di sản văn hoá vật thể tiêu biểu › Trống đồng Đông Sơn › Thành Cổ Loa › Hoàng thành Thăng Long › Văn Miếu - Quốc Tử Giám (Hà Nội) › Quảng trường Ba Đình và Di tích lịch sử Khu lưu niệm Chủ tịch Hồ Chí Minh › Thành Nhà Hồ › Cố đô Huế › Tháp Chăm › ....",
+     "yccd": [
+      "Xác định được vị trí phân bố các di sản lịch sử văn hoá vật thể tiêu biểu trên bản đồ.",
+      "Giới thiệu được nét cơ bản về một trong số di sản lịch sử văn hoá vật thể tiêu biểu."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giới thiệu một số di sản thiên nhiên tiêu biểu › Các Công viên địa chất: Cao nguyên đá Đồng Văn, Non nước Cao Bằng › Vịnh Hạ Long › Vườn quốc gia Cú c Phương › Vườn quốc gia Cát Tiên › .....",
+     "yccd": [
+      "Xác định vị trí phân bố các di sản thiên nhiên tiêu biểu trên bản đồ.",
+      "Giới thiệu được những nét cơ bản về một trong số những di sản thiên nhiên tiêu biểu."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giới thiệu một số di sản phức hợp tiêu biểu › Khu di tích - danh thắng Trà ng An (Ninh Bình) › Khu di tích - danh thắng Yên Tử (Quảng Ninh)",
+     "yccd": [
+      "Xác định được vị trí phân bố các di sản phức hợp tiêu biểu trên bản đồ.",
+      "Giới thiệu được những nét cơ bản về một trong số các di sản phức hợp tiêu biểu."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-10",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 10,
+   "mon": "lich_su",
+   "chu_de": "Chuyên đề 10.3: NHÀ NƯỚC VÀ PHÁP LUẬT VIỆT NAM TRONG LỊCH SỬ",
+   "chuyen_de": true,
+   "muc": [
+    {
+     "noi_dung": "Nhà nước và pháp luật trong lịch sử Việt Nam (trước năm 1858) › Một số mô hình nhà nước quân chủ Việt Nam tiêu biểu › Nhà nước quân chủ thời Lý - Trần › Nhà nước quân chủ thời Lê sơ › Nhà nước quân chủ thời Nguyễn › Một số bộ luật tiêu biểu trong lịch sử Việt Nam trước năm 1858 › Quốc triều hình luật › Hoàng Việt luật lệ",
+     "yccd": [
+      "Sưu tầm tư liệu để tìm hiểu về một số mô hình nhà nước quân chủ Việt Nam tiêu biểu: Nhà nước quân chủ thời Lý - Trần, thời Lê sơ, thời Nguyễn.",
+      "Nêu và phân tích được đặc điểm của mô hình nhà nước quân chủ Việt Nam thông qua ví dụ cụ thể: Nhà nước quân chủ thời Lý - Trần, thời Lê sơ, thời Nguyễn.",
+      "Phân tích được nét chính của hai bộ luật tiêu biểu của nhà nước quân chủ Việt Nam: Quốc triều hình luật và Hoàng Việt luật lệ."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nhà nước Việt Nam Dân chủ Cộng hoà (1945 -1976) › Sự ra đời của Nhà nước Việt Nam Dân chủ Cộng hoà › Bối cảnh ra đời của Nhà nước Việt Nam Dân chủ Cộng hoà › Ý nghĩa lịch sử của việc ra đời Nhà nước Việt Nam Dân chủ Cộng hoà",
+     "yccd": [
+      "Phân tích được bối cảnh ra đời của Nhà nước Việt Nam Dân chủ Cộng hoà.",
+      "Nêu được ý nghĩa của việc ra đời Nhà nước Việt Nam Dân chủ Cộng hoà."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Vai trò của Nhà nước Việt Nam Dân chủ Cộng hoà › Đặc điểm và tính chất của Nhà nước Việt Nam Dân chủ Cộng hoà › Vai trò của Nhà nước Việt Nam Dân chủ Cộng hoà trong quá trình kháng chiến chống giặc ngoại xâm và xây dựng đất nước thời kì 1945 - 1976",
+     "yccd": [
+      "Phân tích được đặc điểm và tính chất của Nhà nước Việt Nam Dân chủ Cộng hoà.",
+      "Nêu được vai trò của Nhà nước Việt Nam Dân chủ Cộng hoà trong quá trình kháng chiến chống giặc ngoại xâm và xây dựng đất nước thời kì 1945 - 1976."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam từ năm 1976 đến nay › Sự ra đời của Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam › Bối cảnh ra đời của Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam › Ý nghĩa lịch sử của việc ra đời Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam › Vai trò của Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam › Vai trò của Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam trong quá trình đổi mới và hội nhập quốc tế",
+     "yccd": [
+      "Phân tích được bối cảnh ra đời của Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam.",
+      "Nêu được ý nghĩa lịch sử của việc ra đời Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam.",
+      "Nêu được vai trò của Nhà nước Cộng hoà Xã hội chủ nghĩa Việt Nam trong quá trình đổi mới và hội nhập quốc tế."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số bản Hiến pháp Việt Nam từ năm 1946 đến nay › Một số điểm chung của các bản H iế n pháp Việt Nam từ năm 1946 đến nay › Bối cảnh ra đời của các bản Hiến pháp Việt Nam: các năm 1946, 1959, 1980, 1992 và 2013 › Một số điểm chung của các bản Hiến pháp Việt Nam",
+     "yccd": [
+      "Nêu được điểm chung về bối cảnh ra đời của các bản Hiến pháp ở Việt Nam từ năm 1946 đến nay (1946, 1959, 1980, 1992 và 2013): những thay đổi quan trọng về chính trị, kinh tế, xã hội, văn hoá, gắn với một giai đoạn phát triển của lịch sử dân tộc.",
+      "Phân tích được một số điểm chính của các bản Hiến pháp Việt Nam: cơ sở pháp lí để xây dựng hệ thống pháp luật, tổ chức hoạt động của bộ máy Nhà nước,..."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hiến pháp đầu tiên của Việt Nam: Hiến pháp năm 1946 › Một số nội dung chính của Hiến pháp năm 1946 › Ý nghĩa lịch sử › Hiến pháp của thời kì đổi mới: Hiến pháp năm 1992 và Hiến pháp năm 2013 › Hiến pháp năm 1992: Hiến pháp đầu tiên của thời kì đổi mới › Hiến pháp năm 2013: Hiến pháp thứ hai của thời kì đổi mới",
+     "yccd": [
+      "Nêu được một số nội dung chính của Hiến pháp năm 1946: ghi nhận thành quả của Cách mạng tháng Tám 1945, quyền bình đẳng và nghĩa vụ công dân, cơ cấu hệ thống chính trị,...",
+      "Phân tích được ý nghĩa của Hiến pháp năm 1946 - Hiến pháp đầu tiên trong lịch sử Việt Nam.",
+      "Nêu được một số nét chính của Hiến pháp năm 1992: ban hành trong những năm đầu của công cuộc Đổi mới, là cơ sở chính trị - pháp lí quan trọng để thực hiện công cuộc Đổi mới,...",
+      "Phân tích được điểm mới của Hiến pháp năm 2013: sự tiến bộ về tư tưởng dân chủ, cơ cấu Nhà nước, kĩ thuật lập hiến,...",
+      "Có ý thức trân trọng lịch sử lập hiến của dân tộc, có trách nhiệm và sẵn sàng vận động người khác cùng tuân thủ pháp luật."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-10-11",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "CÁCH MẠNG TƯ SẢN VÀ SỰ PHÁT TRIỂN CỦA CHỦ NGHĨA TƯ BẢN",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Một số vấn đề chung về cách mạng tư sản › Tiền đề của các cuộc cách mạng tư sản › Kinh tế › Chính trị › Xã hội › Tư tưởng",
+     "yccd": [
+      "Trình bày được tiền đề của các cuộc cách mạng tư sản về kinh tế, chính trị, xã hội, tư tưởng."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Mục tiêu, nhiệm vụ, giai cấp lãnh đạo, động lực của các cuộc cách mạng tư sản › Mục tiêu và nhiệm vụ › Giai cấp lãnh đạo và động lực cách mạng",
+     "yccd": [
+      "Phân tích được mục tiêu, nhiệm vụ, giai cấp lãnh đạo, động lực của các cuộc cách mạng tư sản."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Kết quả, ý nghĩa của các cuộc cách mạng tư sản › Kết quả › Ý nghĩa",
+     "yccd": [
+      "Trình bày được kết quả, ý nghĩa của các cuộc cách mạng tư sản."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự xác lập và phát triển của chủ nghĩa tư bản › Sự xác lập chủ nghĩa tư bản ở châu Âu và Bắc Mỹ",
+     "yccd": [
+      "Trình bày được sự xác lập của chủ nghĩa tư bản ở châu Âu và Bắc Mỹ."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự phát triển của chủ nghĩa tư bản › Chủ nghĩa đế quốc và quá trình mở rộng xâm lược thuộc địa › Sự mở rộng và phát triển của chủ nghĩa tư bản › Chủ nghĩa tư bản từ tự do cạnh tranh sang độc quyền › Chủ nghĩa tư bản hiện đại › Khái niệm chủ nghĩa tư bản hiện đại › Tiềm năng và thách thức của chủ nghĩa tư bản hiện đại",
+     "yccd": [
+      "Trình bày được quá trình mở rộng xâm lược thuộc địa và phát triển của chủ nghĩa tư bản.",
+      "Trình bày được sự phát triển của chủ nghĩa tư bản từ tự do cạnh tranh sang độc quyền.",
+      "Nêu được khái niệm chủ nghĩa tư bản hiện đại.",
+      "Nêu được tiềm năng và thách thức của chủ nghĩa tư bản hiện đại.",
+      "Có nhận thức đúng đắn về tiềm năng và những hạn chế của chủ nghĩa tư bản. Vận dụng được những hiểu biết về lịch sử chủ nghĩa tư bản để giải thích những vấn đề thời sự của xã hội tư bản hiện nay."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-11-01",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "CHỦ NGHĨA XÃ HỘI TỪ NĂM 1917 ĐẾN NAY",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Sự hình thành Liên bang Cộng hoà xã hội chủ nghĩa Xô viết › Quá trình hình thành Liên bang Cộng hoà xã hội chủ nghĩa Xô viết › Ý nghĩa sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết",
+     "yccd": [
+      "Trình bày được quá trình hình thành Liên bang Cộng hoà xã hội chủ nghĩa Xô viết.",
+      "Phân tích được ý nghĩa sự ra đời của Liên bang Cộng hoà xã hội chủ nghĩa Xô viết."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự phát triển của chủ nghĩa xã hội sau Chiến tranh thế g i ới thứ hai › Sự phát triển của chủ nghĩa xã hội ở Đông Âu › Sự mở rộng chủ nghĩa xã hội ở châu Á và khu vực Mỹ Latinh › Nguyên nhân khủng hoảng và sụ p đổ của chủ nghĩa xã hội ở Đông Âu và Liên Xô",
+     "yccd": [
+      "Trình bày được sự phát triển của chủ nghĩa xã hội ở các nước Đông Âu sau Chiến tranh thế giới thứ hai.",
+      "Nêu được sự mở rộng của chủ nghĩa xã hội ở khu vực châu Á, khu vực Mỹ Lat i nh.",
+      "Giải thích được nguyên nhân dẫn tới sự sụp đổ mô hình chủ nghĩa xã hội ở Đông Âu và Liên Xô."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chủ nghĩa xã hội từ năm 1991 đến nay › Khái quát về chủ nghĩa xã hội từ năm 1991 đến nay › Thành tựu chính của công cuộc cải cách mở cửa ở Trung Quốc",
+     "yccd": [
+      "Nêu được nét chính về chủ nghĩa xã hội từ năm 1991 đến nay.",
+      "Nêu được những thành tựu chính và ý nghĩa của công cuộc cải cách mở cửa của Trung Quốc.",
+      "Có ý thức trân trọng những thành tựu , giá trị của chủ nghĩa xã hội, sẵn sàng tham gia đóng góp vào công cuộc xây dựng chủ nghĩa xã hội ở Việt Nam."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-02",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "QUÁ TRÌNH GIÀNH ĐỘC LẬP DÂN TỘC CỦA CÁC QUỐC GIA ĐÔNG NAM Á",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Quá trình xâm lược và cai trị của chủ nghĩa thực dân ở Đông Nam Á › Quá trình xâm lược và cai trị › Đông Nam Á hải đảo › Đông Nam Á lục địa",
+     "yccd": [
+      "Trình bày được quá trình các nước thực dân phương Tây xâm lược và thiết lập nền thống trị ở Đông Nam Á (Đông Nam Á hải đảo và Đông Nam Á lục địa)."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Công cuộc cải cách ở Xiêm › Công cuộc cải cách ở Xiêm › Ý nghĩa của công cuộc cải cách ở Xiêm",
+     "yccd": [
+      "Trình bày được công cuộc cải cách ở Xiêm.",
+      "Giải thích được vì sao Xiêm là nước duy nhất ở Đông Nam Á không trở thành thuộc địa của thực dân phương Tây."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Hành trình đi đến độc lập dân tộc ở Đông Nam Á › Phong trào đấu tranh chống thực dân xâm lược ở Đông Nam Á › Đông Nam Á hải đảo › Đông Nam Á lục địa",
+     "yccd": [
+      "Tóm tắt được nét chính về cuộc đấu tranh chống thực dân xâm lược ở một số nước Đông Nam Á hải đảo (In don esia, Philippines) và Đông Nam Á lục địa (Myanmar, ba nước Đông Dương)."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Các giai đoạn phát triển của cuộc đấu tranh giành độc lập dân tộc ở Đông Nam Á › Cuối thế kỉ XIX đến năm 1920 › Từ năm 1920 đến năm 1945 › Từ năm 1945 đến năm 1975",
+     "yccd": [
+      "Nêu được các giai đoạn phát triển của cuộc đấu tranh giành độc lập dân tộc ở Đông Nam Á."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Thời kì tái thiết và phát triển sau khi giành được độc lập › Những ảnh hưởng của chế độ thực dân › Quá trình tái thiết và phát triển",
+     "yccd": [
+      "Nêu được những ảnh hưởng của chế độ thực dân đối với các thuộc địa. Liên hệ với thực tế ở Việt Nam.",
+      "Tóm tắt được nét chính về quá trình tái thiết và phát triển ở Đông Nam Á.",
+      "Có ý thức trân trọng những thành quả đấu tranh giành độc lập và phát triển của các dân tộc ở Đông Nam Á hiện nay."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-03",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "CHIẾN TRANH BẢO VỆ TỔ QUỐC VÀ CHIẾN TRANH GIẢI PHÓNG DÂN TỘC TRONG LỊCH SỬ VIỆT NAM (TRƯỚC CÁCH MẠNG THÁNG TÁM NĂM 1945)",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Khái quát về chiến tranh bảo vệ Tổ quốc trong lịch sử Việt Nam › Chiến tranh bảo vệ Tổ quốc trong lịch sử Việt Nam › Vị trí địa chi ến lược của Việt Nam › Vai trò, ý nghĩa của chiến tranh bảo vệ Tổ quốc trong lịch sử Việt Nam",
+     "yccd": [
+      "Nêu được vị trí địa chiến lược của Việt Nam.",
+      "Phân tích được vai trò, ý nghĩa của chiến tranh bảo vệ Tổ quốc trong lịch sử Việt Nam.",
+      "Biết trân trọng truyền thống đấu tranh bảo vệ Tổ quốc của các thế hệ Việt Nam trong lịch sử, tham gia vào công tác đền ơn đáp nghĩa ở địa phương."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số cuộc kháng chiến thắng lợi tiêu biểu › Cuộc kháng chiến chống quân Nam Hán và chiến thắng Bạch Đằng năm 938 › Cuộc kháng chiến chống Tống năm 981 và những năm 1075-1077 › Ba lần kháng chiến chống quân Mông - Nguyên › Kháng chiến chống quân Xiêm những năm 1784 - 1785 › Kháng chiến chống quân Thanh năm 1789",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về các cuộc kháng chiến thắng lợi tiêu biểu của dân tộc Việt Nam.",
+      "Trình bày được nội dung chính của các cuộc kháng chiến thắng lợi tiêu biểu của dân tộc Việt Nam về thời gian, địa điểm, đối tượng xâm lược, những trận đánh lớn, kết quả.",
+      "Giải thích được nguyên nhân chính dẫn đến thắng lợi của các cuộc kháng chiến chống xâm lược."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số cuộc kháng chiến không thành công › Kháng chiến chống quân Triệu › Kháng chiến chống Minh › Kháng chiến chống thực dân Pháp nửa sau thế kỉ XIX › Nguyên nhân không thành công",
+     "yccd": [
+      "Trình bày được nội dung chính của các cuộc kháng chiến không thành công về thời gian, địa điểm, đối tượng xâm lược, những trận đánh lớn, kết quả.",
+      "Giải thích được nguyên nhân không thành công của một số cuộc kháng chiến trong lịch sử.",
+      "Vận dụng kiến thức đã học, rút ra được những bài học lịch sử cơ bản từ lịch sử chống ngoại xâm của dân tộc Việt Nam, nhận thức được giá trị của các bài học lịch sử đối với sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay.",
+      "Có ý thức trân trọng, tự hào về truyền thống đấu tranh bảo vệ, xây dựng đất nước của dân tộc Việt Nam và sẵn sàng tham gia đóng góp xây dựng, bảo vệ Tổ quốc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số cuộc khởi nghĩa và chiến tranh giải phóng trong lịch sử Việt Nam (từ thế kỉ III TCN - đến cuối thế kỉ XIX) › Một số cuộc khởi nghĩa tiêu biểu trong thời kì Bắc thuộc › Khởi nghĩa Hai Bà Trưng › Khởi nghĩa Bà Triệu › Khởi nghĩa Lý Bí › Khởi nghĩa Phùng Hưng",
+     "yccd": [
+      "Trình bày được nội dung chính của các cuộc khởi nghĩa tiêu biểu trong thời kì Bắc thuộc.",
+      "Nêu được ý nghĩa của một số cuộc khởi nghĩa tiêu biểu."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khởi nghĩa Lam Sơn › Bối cảnh lịch sử › Diễn biến chính › Ý nghĩa lịch sử",
+     "yccd": [
+      "Nêu được bối cảnh lịch sử của khởi nghĩa Lam Sơn.",
+      "Trình bày được diễn biến chính của khởi nghĩa Lam Sơn.",
+      "Nêu được ý nghĩa của khởi nghĩa Lam Sơn."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Phong trào Tây Sơn › Bối cảnh lịch sử › Diễn biến chính › Ý nghĩa lịch sử",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử về phong trào Tây Sơn.",
+      "Trình bày được bối cảnh lịch sử và những diễn biến chính của phong trào Tây Sơn.",
+      "Nêu được ý nghĩa của phong trào Tây Sơn."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số bài học lịch sử › Về quá trình tập hợp lực lượng › Về vai trò của khối đại đoàn kết dân tộc › Về nghệ thuật quân sự › Bài học lịch sử đối với sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay",
+     "yccd": [
+      "Rút ra được những bài học lịch sử chính của các cuộc khởi nghĩa và chiến tranh giải phóng trong lịch sử Việt Nam về quá trình vận động, tập hợp quần chúng nhân dân tham gia, vai trò của khối đại đoàn kết dân tộc, nghệ thuật quân sự.",
+      "Nêu được các bài học lịch sử đối với sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay.",
+      "Tự hào về truyền thống đấu tranh bất khuất của dân tộc Việt Nam trong lịch sử, sẵn sàng tham gia đóng góp vào sự nghiệp xây dựng và bảo vệ Tổ quốc."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-04",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "MỘT SỐ CUỘC CẢI CÁCH LỚN TRONG LỊCH SỬ VIỆT NAM (TRƯỚC NĂM 1858)",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Cuộc cải cách của Hồ Quý Ly và triều Hồ (đầu thế kỉ XV) › Bối cảnh lịch sử › Nội dung chính › Kết quả",
+     "yccd": [
+      "Trình bày được bối cảnh lịch sử, nội dung, kết quả, ý nghĩa cuộc cải cách của nhà Hồ."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Cuộc cải cách của Lê Thánh Tông thế kỉ XV › Bối cảnh lịch sử › Nội dung chính › Kết quả",
+     "yccd": [
+      "Trình bày được bối cảnh lịch sử, nội dung, kết quả, ý nghĩa của cuộc cải cách của Lê Thánh Tông."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Cuộc cải cách của Minh Mạng nửa đầu thế kỉ XIX › Bối cảnh lịch sử › Nội dung chính › Kết quả",
+     "yccd": [
+      "Trình bày được bối cảnh lịch sử, nội dung, kết quả, ý nghĩa của cuộc cải cách của Minh Mạng.",
+      "Có ý thức trân trọng giá trị của các cuộc cải cách trong lịch sử dâ n tộc."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-05",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "LỊCH SỬ BẢO VỆ CHỦ QUYỀN, CÁC QUYỀN VÀ LỢI ÍCH HỢP PHÁP CỦA VIỆT NAM Ở BIỂN ĐÔNG",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Vị trí và tầm quan trọng của Biển Đông › Vị trí của Biển Đông",
+     "yccd": [
+      "Xác định được vị trí của Biển Đông trên bản đồ."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Tầm quan trọng chiến lược của Biển Đông › Tuyến đường giao thông biển huyết mạch › Địa bàn chiến lược quan trọng ở khu vực châu Á - Thái Bình Dương › Nguồn tài nguyên thiên nhiên biển",
+     "yccd": [
+      "Giải thích được tầm quan trọng chiến lược của Biển Đông về giao thông biển, vị trí chiến lược, nguồn tài nguyên thiên nhiên biển."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Tầm quan trọng chiến lược của các đảo và quần đảo ở Biển Đông › Vị trí của quần đảo Hoàng Sa và quần đảo Trường Sa › Tầm quan trọng chiến lược của quần đảo Hoàng Sa và quần đảo Trường Sa",
+     "yccd": [
+      "Xác định được vị trí của các đảo và quần đảo ở Biển Đông trên bản đồ.",
+      "Giải thích được tầm quan trọng chiến lược của các đảo và quần đảo ở Biển Đông."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Việt Nam và Biển Đông › Tầm quan trọng của Biển Đông đối với Việt Nam › Về quốc phòng, an ninh › Về phát triển các ngành kinh tế trọng điểm",
+     "yccd": [
+      "Nêu được tầm quan trọng chiến lược của Biển Đông đối với Việt Nam về quốc phòng, an ninh, về phát triển các ngành kinh tế trọng điểm."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Lịch sử bảo vệ chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam đối với quần đảo Hoàng Sa và quần đảo Trường Sa › Quá trình Việt Nam xác lập chủ quyền và quản lí đối với quần đảo Hoàng Sa và quần đảo Trường Sa › Cuộc đấu tranh bảo vệ và thực thi chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam ở Biển Đông",
+     "yccd": [
+      "Nêu được Việt Nam là Nhà nước đầu tiên xác lập chủ quyền và quản lí liên tục đối với quần đảo Hoàng Sa và quần đảo Trường Sa trong lịch sử.",
+      "Trình bày được nét chính về cuộc đấu tranh bảo vệ và thực thi chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam ở Biển Đông."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Chủ trương của Việt Nam giải quyết các tranh chấp ở Biển Đông bằng biện pháp hoà bình › Ban hành văn bản pháp luật k hẳng định chủ quyền › Tham gia Công ước Luật biển năm 1982 của Liên hợp quốc (UNCLOS) › Thông qua Luật Biển Việt Nam năm 2012 › Thúc đẩy và thực hiện đầy đủ Tuyên bố về ứng xử của các bên ở Biển Đông (DOC)",
+     "yccd": [
+      "Nêu được chủ trương của Việt Nam giải quyết các tranh chấp ở Biển Đông bằng biện pháp hoà bình.",
+      "Trân trọng những thành quả đấu tranh bảo vệ chủ quyền, các quyền và lợi ích hợp pháp của Việt Nam ở Biển Đông trong lịch sử, sẵn sàng tham gia đóng góp vào cuộc đấu tranh bảo vệ chủ quyền, các quyền và lợi ích hợp pháp của Nhà nước Việt Nam."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-06",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "THỰC HÀNH LỊCH SỬ",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Tổ chức các hoạt động thực hành lịch sử tại lớp học. › Tiến hành các hoạt động giáo dục lịch sử gắn với thực địa (di sản lịch sử, văn hoá),... › Học tập tại các bảo tàng, xem phim tài liệu lịch sử. › Tổ chức các câu lạc bộ, các cuộc thi “ Em yêu lịch sử”, “Nhà sử học trẻ tuổi”, các trò chơi lịch sử.",
+     "yccd": [
+      "Củng cố, khắc sâu kiến thức lịch sử.",
+      "Rèn luyện các kĩ năng thực hành bộ môn, phát triển năng lực lịch sử.",
+      "Tạo hứng thú trong học tập."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-07",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "Chuyên đề 11.1: LỊCH SỬ NGHỆ THUẬT TRUYỀN THỐNG VIỆT NAM",
+   "chuyen_de": true,
+   "muc": [
+    {
+     "noi_dung": "Nghệ thuật thời Lý - Trần",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Lý › Kiến trúc › Điêu khắc",
+     "yccd": [
+      "Nêu được những nét cơ bản của nghệ thuật thời Lý về kiến trúc, điêu khắc thông qua hoạt động trải nghiệm thực tế hoặc sưu tầm tranh ảnh, tài liệu,..."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Trần › Kiến trúc › Điêu khắc",
+     "yccd": [
+      "Nêu được những thành tựu nghệ thuật chính thời Trần về kiến trúc và điêu khắc thông qua hoạt động trải nghiệm thực tế hoặc sưu tầm tranh ảnh, tài liệu,..."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Lê sơ và thời Mạc",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Lê sơ › Kiến trúc › Điêu khắc",
+     "yccd": [
+      "Nêu được những thành tựu nghệ thuật chính thời Lê sơ về kiến trúc và điêu khắc thông qua hoạt động trải nghiệm thực tế hoặc sưu tầm tranh ảnh, tài liệu,..."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Mạc › Kiến trúc › Điêu khắc",
+     "yccd": [
+      "Liệt kê được những thành tựu nghệ thuật chính thời Mạc.",
+      "Nêu được những điểm chính của nghệ thuật kiến trúc thời Mạc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Lê trung hưng và thời Nguyễn",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Lê trung hưng › Kiến trúc › Điêu khắc › Mỹ thuật",
+     "yccd": [
+      "Nêu được những nét cơ bản của nghệ thuật thời Lê trung hưng về kiến trúc, điêu khắc, mỹ thuật thông qua hoạt động trải nghiệm thực tế hoặc sưu tầm tranh ảnh, tài liệu,...",
+      "Phân tích được những điểm mới về nghệ thuật thời Lê trung hưng."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nghệ thuật thời Nguyễn › Kiến trúc › Điêu khắc › Mỹ thuật › Âm nhạc",
+     "yccd": [
+      "Mô tả được những nét cơ bản về nghệ thuật thời Nguyễn về kiến trúc, điêu khắc, mỹ thuật, âm nhạc thông qua hoạt động trải nghiệm thực tế hoặc sưu tầm tranh ảnh, tài liệu,...",
+      "Nêu được những điểm mới của nghệ thuật thời Nguyễn."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-08",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "Chuyên đề 11.2: CHIẾN TRANH VÀ HOÀ BÌNH TRONG THẾ KỈ XX",
+   "chuyen_de": true,
+   "muc": [
+    {
+     "noi_dung": "Chiến tranh và hoà bình nửa đầu thế kỉ XX › Hai cuộc chiến tranh thế giới nửa đầu thế kỉ XX",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chiến tranh thế giới thứ nhất (1914 - 1918): nguyên nhân, hậu quả và tác động",
+     "yccd": [
+      "Giải thích được nguyên nhân cơ bản dẫn đến hai cuộc chiến tranh thế giới."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chiến tranh thế giới thứ hai (1939 - 1945): nguyên nhân, hậu quả và tác động",
+     "yccd": [
+      "Đánh giá được những hậu quả và tác động của hai cuộc chiến tranh thế giới."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cuộc đấu tranh vì hoà bình giữa hai cuộc chiến tranh thế giới",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sắc lệnh hoà bình của Lênin năm 1917, chính sách ngoại giao hoà bình của Liên Xô › Hệ thống an ninh tập thể ở châu Âu giữa hai cuộc chiến tranh thế giới › Phong trào Mặt trận nhân dân chống phát xít và nguy cơ chiến tranh",
+     "yccd": [
+      "Phân tích được khát vọng hoà bình và cuộc đấu tranh vì hoà bình của nhân dân thế giới thông qua ví dụ cụ thể: Sắc lệnh hoà bình của Lênin năm 1917, chính sách ngoại giao hoà bình của Liên Xô; Những nỗ lực xây dựng hệ thống an ninh tập thể ở châu Âu; Phong trào Mặt trận nhân dân chống phát xít và nguy cơ chiến tranh,..."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Phong trào kháng chiến chống phát xít trong Chiến tranh thế giới thứ hai",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Phong trào kháng chiến chống phát xít ở châu Âu, châu Á, châu Phi",
+     "yccd": [
+      "Nêu được ý nghĩa của phong trào kháng chiến chống phát xít vì hoà bình của nhân dân thế giới trong Chiến tranh thế giới thứ hai."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cuộc chiến tranh vệ quốc vĩ đại của nhân dân Liên Xô",
+     "yccd": [
+      "Phân tích được ý nghĩa của cuộc chiến tranh vệ quốc vĩ đại của nhân dân Liên Xô."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chiến tranh và hoà bình từ sau năm 1945 đến nay › Chiến tranh lạnh (1947 - 1989)",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nguyên nhân, đặc điểm › Hậu quả",
+     "yccd": [
+      "Nêu được nét chính về nguyên nhân, đặc điểm của Chiến tranh lạnh."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Kết thúc Chiến tranh lạnh: nguyên nhân và tác động",
+     "yccd": [
+      "Đánh giá được những hậu quả của cuộc Chiến tranh lạnh đối với thế giới nói chung và Việt Nam nói riêng.",
+      "Phân tích được nguyên nhân kết thúc Chiến tranh lạnh và tác động đối với thế giới nói chung và Việt Nam nói riêng."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Chiến tranh, xung đột quân sự sau Chiến tranh lạnh",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các cuộc nội chiến, xung đột quân sự khu vực › Cuộc tấn công khủng bố ngày 11 tháng 9 năm 2001 và cuộc chiến chống khủng bố toàn cầu của Mỹ",
+     "yccd": [
+      "Giải thích được vì sao sau Chiến tranh lạnh, các cuộc chiến tranh, xung đột vẫn tiếp diễn thông qua ví dụ cụ thể: sự kiện ngày 11 tháng 9 năm 2001, cuộc chiến chống khủng bố toàn cầu của Mỹ, chiến tranh Iraq, Afghanistan, các cuộc chiến tranh ở khu vực Trung Đông,..."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Đấu tranh vì hoà bình của nhân dân thế giới",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Đấu tranh chống chạy đua vũ trang, vì hoà bình của nhân dân thế giới trong Chiến tranh lạnh",
+     "yccd": [
+      "Sưu tầm tư liệu để tìm hiểu về cuộc đấu tranh vì hoà bình của nhân dân thế giới trong Chiến tranh lạnh: Đại hội hoà",
+      "bình thế giới ngày 26 tháng 4 năm 1949 (Paris), sự thành lập Hội đồng Hoà bình thế giới và các hoạt động chính."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Phong trào quốc tế ủng hộ cuộc đấu tranh giải phóng dân tộc, ủng hộ cuộc kháng chiến chống Mỹ, cứu nước của nhân dân Việt Nam",
+     "yccd": [
+      "Nêu được nét chính về phong trào quốc tế ủng hộ cuộc đấu tranh giải phóng dân tộc, ủng hộ cuộc kháng chiến chống Mỹ, cứu nước của nhân dân Việt Nam thông qua ví dụ cụ thể."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đấu tranh vì hoà bình của nhân dân thế giới sau Chiến tranh lạnh",
+     "yccd": [
+      "Giải thích được vì sao cuộc đấu tranh vì hoà bình của nhân dân thế giới vẫn tiếp diễn sau khi Chiến tranh lạnh kết thúc.",
+      "Có ý thức trân trọng và góp phần tham gia vào cuộc đấu tranh vì hoà bình của nhân dân thế giới."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-11-09",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 11,
+   "mon": "lich_su",
+   "chu_de": "Chuyên đề 11.3: DANH NHÂN TRONG LỊCH SỬ VIỆT NAM",
+   "chuyen_de": true,
+   "muc": [
+    {
+     "noi_dung": "Khái quát về danh nhân trong lịch sử dân tộc",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khái niệm danh nhân › Vai trò của danh nhân trong lịch sử dân tộc",
+     "yccd": [
+      "Giải thích được khái niệm danh nhân.",
+      "Nêu được nét chính về vai trò của danh nhân trong lịch sử dân tộc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số nhà chính trị nổi tiếng của Việt Nam thời cổ - trung đại (Gợi ý lựa chọn) › Đinh Bộ Lĩnh › Trần Thủ Độ › Lê Thánh Tông › Minh Mệnh › ...",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để hiểu được thân thế, sự nghiệp của một số nhà chính trị nổi tiếng trong lịch sử Việt Nam thời cổ - trung đại.",
+      "Nêu được nhận xét về những đóng góp chính của các nhà chính trị nổi tiếng trong lịch sử Việt Nam thời cổ - trung đại.",
+      "Có ý thức trân trọng những đóng góp của các nhà chính trị nổi tiếng trong lịch sử dân tộc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số danh nhân quân sự Việt Nam (Gợi ý lựa chọn) › Ngô Quyền › Trần Quốc Tuấn › Nguyễn Huệ › Võ Nguyên Giáp › ...",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để hiểu được thân thế, sự nghiệp của một số danh nhân quân sự trong lịch sử Việt Nam.",
+      "Đánh giá được vai trò của danh nhân quân sự trong lịch sử Việt Nam.",
+      "Có ý thức trân trọng những đóng góp của danh nhân quân sự trong lịch sử dân tộc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số danh nhân văn hoá Việt Nam (Gợi ý lựa chọn) › Trần Nhân Tông Nguyễn Trãi Nguyễn Du › Hồ Xuân Hương › …",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để hiểu về một số danh nhân văn hoá trong lịch sử Việt Nam.",
+      "Nêu được nhận xét về những đóng góp chính của danh nhân văn hoá trong lịch sử Việt Nam thông qua ví dụ cụ thể.",
+      "Có ý thức trân trọng những đóng góp của danh nhân văn hoá trong lịch sử dân tộc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số danh nhân Việt Nam trong lĩnh vực khoa học - công nghệ và giáo dục - đào tạo (Gợi ý lựa chọn) › Chu Văn An › Lê Quý Đôn › Tuệ Tĩnh › Trần Đại Nghĩa › Tôn Thất Tùng › Đào Duy Anh › …",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để hiểu về một số danh nhân trong lịch sử Việt Nam về lĩnh vực khoa học - công nghệ và giáo dục - đào tạo.",
+      "Nêu được nhận xét về đóng góp chính của danh nhân trong lĩnh vực khoa học - công nghệ và giáo dục - đào tạo thông qua ví dụ cụ thể.",
+      "Có ý thức trân trọng những đóng góp của danh nhân khoa học - công nghệ và giáo dục - đào tạo trong lịch sử dân tộc."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-11-10",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "THẾ GIỚI TRONG VÀ SAU CHIẾN TRANH LẠNH",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Liên hợp quốc",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Một số vấn đề cơ bản về Liên hợp quốc › Lịch sử hình thành",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về quá trình thành lập Liên hợp quốc.",
+      "Phân tích được bối cảnh lịch sử và quá trình hình thành Liên hợp quốc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Mục tiêu, nguyên tắc hoạt động",
+     "yccd": [
+      "Trình bày được mục tiêu và nguyên tắc cơ bản của Liên hợp quốc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cơ cấu tổ chức",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tài liệu để tìm hiểu về cơ cấu tổ chức của Liên hợp quốc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Vai trò của Liên hợp quốc",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Trong lĩnh vực hoà bình, an ninh quốc tế › Trong lĩnh vực phát triển",
+     "yccd": [
+      "Nêu được vai trò của Liên hợp quốc trong việc duy trì hoà bình, an ninh quốc tế thông qua ví dụ cụ thể.",
+      "Phân tích được vai trò của Liên hợp quốc trong lĩnh vực thúc đẩy phát triển, tạo môi trường thuận lợi để phát triển kinh tế, tài chính, thương mại quốc tế, nâng cao đời sống người dân."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Trong lĩnh vực quyền con người, văn hoá, xã hội và các lĩnh vực khác",
+     "yccd": [
+      "Phân tích được vai trò của Liên hợp quốc trong việc đảm bảo quyền con người, phát triển văn hoá, xã hội và các lĩnh vực khác."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Liên hợp quốc và Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hoạt động của các tổ chức quốc tế của Liên hợp quốc ở Việt Nam",
+     "yccd": [
+      "Nêu được nhận xét về vai trò của các tổ chức quốc tế của Liên hợp quốc ở Việt Nam thông qua ví dụ cụ thể."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đóng góp của Việt Nam đối với các hoạt động của Liên hợp quốc",
+     "yccd": [
+      "Nêu được nhận xét về đóng góp của Việt Nam đối với các hoạt động của Liên hợp quốc. Tự hào về vai trò và đóng góp của Việt Nam và có ý thức sẵn sàng đóng góp sự nghiệp chung của Liên hợp quốc và cộng đồng quốc tế."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Trật tự thế giới trong Chiến tranh lạnh › Trật tự thế giới hai cực Yalta",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về Trật tự thế giới hai cực Yalta."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự hình thành",
+     "yccd": [
+      "Phân tích được sự hình thành Trật tự thế giới hai cực Yalta."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nội dung",
+     "yccd": [
+      "Trình bày được những nét chính của Trật tự thế giới hai cực Yalta."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự sụp đổ của Trật tự thế giới hai cực Yalta",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nguyên nhân sụp đổ",
+     "yccd": [
+      "Nêu được nguyên nhân dẫn đến sự sụp đổ của Trật tự thế giới hai cực Yalta."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Hệ quả và tác động",
+     "yccd": [
+      "Phân tích được hệ quả và tác động sự sụp đổ Trật tự thế giới hai cực Yalta đối với tình hình thế giới."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Trật tự thế giới sau Chiến tranh lạnh › Những chuyển biến của tình hình thế giới sau Chiến tranh lạnh",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Xu thế phát triển chính của thế giới sau Chiến tranh lạnh",
+     "yccd": [
+      "Phân tích được xu thế phát triển chính của thế giới sau Chiến tranh lạnh."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự điều chỉnh chiến lược phát triển của các quốc gia",
+     "yccd": [
+      "Giải thích được vì sao các quốc gia phải điều chỉnh chiến lược phát triển sau khi Chiến tranh lạnh kết thúc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Xu thế đa cực trong quan hệ quốc tế",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Khái niệm đa cực › Xu thế đa cực",
+     "yccd": [
+      "Trình bày được khái niệm đa cực.",
+      "Giải thích được vì sao thế giới hướng tới xu thế đa cực trong quan hệ quốc tế sau Chiến tranh lạnh.",
+      "Vận dụng được những hiểu biết về thế giới sau Chiến tranh lạnh để hiểu và giải thích những vấn đề thời sự trong quan hệ quốc tế."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-12-01",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "QUÁ TRÌNH PHÁT TRIỂN KINH TẾ - XÃ HỘI MỸ TỪ NĂM 1945 ĐẾN NAY",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Giai đoạn từ sau Chiến tranh thế giới thứ hai đến năm 1973",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự phát triển kinh tế (1945 - 1973)",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Sự phát triển kinh tế (1945 - 1960) › Sụ suy giảm kinh tế (1960 - 1973)",
+     "yccd": [
+      "Giải thích được nguyên nhân dẫn đến sự phát triển (1945 - 1960) và sự suy giảm của nền kinh tế Mỹ (1960 - 1973)."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tình hình chính trị - xã hội (1945 - 1973)",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các chương trình cải cách xã hội › Phong trào đòi quyền công dân",
+     "yccd": [
+      "Giải thích được vì sao những năm 1960 - 1973 ở Mỹ được gọi là “thời kì của những thay đổi”."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Giai đoạn từ năm 1973 đến năm 2000",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cuộc khủng hoảng dầu mỏ năm 1973 và tác động đối với nước Mỹ",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nước Mỹ với cuộc khủng hoảng dầu mỏ năm 1973 › Thời kì lạm phát, đình đốn của nền kinh tế › Những vấn đề chính trị - xã hội",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về diễn biến cuộc khủng hoảng dầu mỏ năm 1973.",
+      "Chỉ ra được tác động của cuộc khủng hoảng dầu mỏ đối với nước Mỹ.",
+      "Phân tích được nét chính về tình hình kinh tế, chính trị - xã hội của nước Mỹ trong thập niên 70 của thế kỉ XX."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Những biện pháp điều chỉnh kinh tế - xã hội thập niên 80 của thế kỉ XX",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Chính sách kinh tế của Chính quyền Reagan",
+     "yccd": [
+      "Phân tích được những nội dung chính của chính sách kinh tế của chính quyền Reagan."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tình hình chính trị - xã hội",
+     "yccd": [
+      "Nêu được nét chính về tình hình chính trị - xã hội nước Mỹ thập niên 80 của thế kỉ XX."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Thời kì tăng trưởng (thập niên 90 của thế kỉ XX) › Tăng trưởng kinh tế, tự do hoá thương mại › Tình hình chính trị - xã hội",
+     "yccd": [
+      "Giải thích được nguyên nhân kinh tế Mỹ tăng trưởng trong thập niên 90 của thế kỉ XX.",
+      "Nêu được nét chính về tình hình chính trị - xã hội nước Mỹ thập niên 90 của thế kỉ XX."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Những năm đầu thế kỉ XXI đến nay",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nước Mỹ từ đầu thế kỉ XXI đến nay",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Tác động của sự kiện ngày 11 tháng 9 năm 2001 đối với nước Mỹ",
+     "yccd": [
+      "Giải thích được tác động của cuộc tấn công khủng bố ngày 11 tháng 9 năm 2001 đối với nước Mỹ."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Khái lược tình hình kinh tế - xã hội Mỹ những năm đầu thế kỉ XXI",
+     "yccd": [
+      "Nêu được những sự kiện chính về tình hình kinh tế, chính trị, xã hội Mỹ những năm đầu thế kỉ XXI."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Những nét chính về quá trình phát triển kinh tế - xã hội Mỹ từ năm 1945 đến nay › Về sự phát triển kinh tế › Về những biến đổi chính trị, xã hội",
+     "yccd": [
+      "Phân tích được nét chính về sự phát triển kinh tế của nước Mỹ từ năm 1945 đến nay.",
+      "Phân tích được những nét chính về những biến đổi chính trị, xã hội nước Mỹ từ năm 1945 đến nay.",
+      "Vận dụng được hiểu biết về quá trình phát triển kinh tế - xã hội Mỹ để giải thích được vấn đề thời sự của Mỹ hiện nay."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-12-02",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "CÔNG CUỘC CẢI CÁCH MỞ CỬA Ở TRUNG QUỐC TỪ NĂM 1978 ĐẾN NAY",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Bối cảnh lịch sử › Khái quát các thời kì phát triển chính của Trung Quốc từ năm 1949 đến năm 1978",
+     "yccd": [
+      "Nêu được các thời kì phát triển chính của Trung Quốc trên đường thời gian: Thập niên đầu xây dựng chế độ mới (1949 - 1959); hai thập niên không ổn định (1959 - 1978)."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Bối cảnh Trung Quốc tiến hành cải cách mở cửa › Những sai lầm về đường lối phát triển kinh tế xã hội trong hai thập niên 1959 - 1978 › Khủng hoảng trầm trọng về kinh tế - xã hội",
+     "yccd": [
+      "Giải thích được vì sao Trung Quốc phải tiến hành cải cách mở cửa: khủng hoảng kinh tế - xã hội trầm trọng do những sai lầm về đường lối phát triển kinh tế - xã hội trong hai thập niên 1959 - 1978."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Quá trình cải cách mở cửa › Đường lối cải cách",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Trọng tâm cải cách: phát triển kinh tế › Kiên trì bốn nguyên tắc cơ bản › Tiến hành cải cách mở cửa, phát triển kinh tế thị trường › Xây dựng chủ nghĩa xã hội mang đặc sắc Trung Quốc",
+     "yccd": [
+      "Phân tích được những nội dung chính của đường lối cải cách, mở cửa của Trung Quốc: phát triển kinh tế, kiên trì bốn nguyên tắc cơ bản, tiến hành cải cách mở cửa, phát triển kinh tế thị trường, xây dựng chủ nghĩa xã hội mang đặc sắc Trung Quốc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Các giai đoạn cải cách mở cửa: › Giai đoạn 1978 - 1991 › Giai đoạn 1992 - 2000 › Giai đoạn 2001 - 2012 › Giai đoạn 2012 - 2020",
+     "yccd": [
+      "Trình bày được các giai đoạn cải cách mở cửa của Trung Quốc trên đường thời gian: Giai đoạn khởi đầu (1978 - 1991); xây dựng thể chế kinh tế thị trường (1992 - 2000); từng bước hoàn thiện thể chế kinh tế thị trường (2001 - 2012); cải cách mở cửa sâu rộng (2012 - 2020)."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Thành tựu chính và một số đặc điểm của cải cách mở cửa › Những thành tựu chính",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Về kinh tế - xã hội › Về khoa học công nghệ, văn hoá, giáo dục › Về đối ngoại",
+     "yccd": [
+      "Phân tích được những thành tựu chính của công cuộc cải cách, mở cửa của Trung Quốc trên các lĩnh vực kinh tế - xã hội, khoa học công nghệ, văn hoá, giáo dục,...",
+      "Nêu được một số nét chính về chính sách đối ngoại của Trung Quốc."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Một số đặc điểm của cải cách mở cửa › Về bối cảnh lịch sử › Về phương thức cải cách mở cửa › Về quá trình cải cách mở cửa",
+     "yccd": [
+      "Phân tích được những đặc điểm của công cuộc cải cách mở cửa ở Trung Quốc về bối cảnh lịch sử, về phương thức mang “đặc sắc Trung Quốc”, phương châm “dò đá qua sông”; về quá trình cải cách: tính đồng bộ và phối hợp, lựa chọn trọng điểm,…"
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-12-03",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "ASEAN: NHỮNG CHẶNG ĐƯỜNG LỊCH SỬ",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Sự ra đời và phát triển của Hiệp hội các quốc gia Đông Nam Á (ASEAN)",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Quá trình hình thành ASEAN › Quá trình hình thành ASEAN › Mục đích thành lập của ASEAN",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu để tìm hiểu về quá trình thành lập ASEAN.",
+      "Trình bày được quá trình hình thành và mục đích thành lập của ASEAN."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Hành trình phát triển của ASEAN › Từ ASEAN 5 (1967) đến ASEAN 10 (1999) › Các giai đoạn phát triển chính của ASEAN (1967 đến nay)",
+     "yccd": [
+      "Phân tích được quá trình phát triển từ ASEAN 5 đến ASEAN 10.",
+      "Nêu được các giai đoạn phát triển chính của ASEAN (1967 đến nay) trên đường thời gian."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cơ cấu tổ chức của ASEAN (trình bày theo sơ đồ) › Hội nghị Cấp cao ASEAN › Hội đồng Điều phối ASEAN › Các Hội đồng Cộng đồng ASEAN › Các Hội nghị Bộ trưởng chuyên ngành › Tổng Thư kí ASEAN và Ban Thư kí ASEAN › Ban Thư kí ASEAN quốc gia",
+     "yccd": [
+      "Trình bày được cơ cấu tổ chức của ASEAN thông qua sơ đồ."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Nguyên tắc cơ bản và phương thức hoạt động của ASEAN › Nguyên tắc cơ bản (theo Hiến chương ASEAN) › Phương thức ra quyết định của ASEAN",
+     "yccd": [
+      "Chỉ ra được những nguyên tắc cơ bản của ASEAN.",
+      "Giải thích được phương thức ASEAN (ASEAN Way) là cách tiếp cận riêng của ASEAN trong việc giải quyết các vấn đề của khu vực và duy trì quan hệ giữa các nước thành viên."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cộng đồng ASEAN: Từ ý tưởng đến hiện thực › Ý tưởng và kế hoạch xây dựng Cộng đồng ASEAN",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ý tưởng xây dựng Cộng đồng ASEAN › Mục tiêu xây dựng Cộng đồng ASEAN › Kế hoạch xây dựng Cộng đồng ASEAN",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tài liệu để tìm hiểu về quá trình hình thành và mục tiêu của Cộng đồng ASEAN.",
+      "Nêu được nét chính về ý tưởng, mục tiêu và kế hoạch xây dựng Cộng đồng ASEAN."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Ba trụ cột của Cộng đồng ASEAN",
+     "yccd": [],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cộng đồng Chính trị - An ninh ASEAN (APSC) › Cộng đồng Kinh tế ASEAN (AEC) › Cộng đồng Văn hoá - Xã hội (ASCC)",
+     "yccd": [
+      "Phân tích được nội dung ba trụ cột của Cộng đồng ASEAN: Cộng đồng Chính trị - An ninh ASEAN (APSC),",
+      "Cộng đồng Kinh tế ASEAN (AEC), Cộng đồng Văn hoá - Xã hội (ASCC)."
+     ],
+     "viet_nam": false
+    },
+    {
+     "noi_dung": "Cộng đồng ASEAN sau năm 2015 › Tầm nhìn ASEAN sau năm 2015 › Những thách thức và triển vọng của Cộng đồng ASEAN",
+     "yccd": [
+      "Nêu được nhận xét về thuận lợi, khó khăn của Cộng đồng ASEAN. Có ý thức sẵn sàng tham gia vào các hoạt động xây dựng Cộng đồng ASEAN."
+     ],
+     "viet_nam": false
+    }
+   ],
+   "ma": "THPT-12-04",
+   "viet_nam": false
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "CÁCH MẠNG THÁNG TÁM NĂM 1945, CHIẾN TRANH GIẢI PHÓNG DÂN TỘC VÀ CHIẾN TRANH BẢO VỆ TỔ QUỐC TRONG LỊCH SỬ VIỆT NAM (TỪ THÁNG 8 NĂM 1945 ĐẾN NAY)",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Cách mạng tháng Tám năm 1945",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khái quát về Cách mạng tháng Tám năm 1945",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Bối cảnh lịch sử › Diễn biến chính",
+     "yccd": [
+      "Trình bày được nét khái quát về bối cảnh lịch sử, diễn biến chính của Cách mạng tháng Tám năm 1945."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nguyên nhân thắng lợi, vị trí, ý nghĩa của Cách mạng tháng Tám năm 1945 trong tiến trình lịch sử Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nguyên nhân thắng lợi",
+     "yccd": [
+      "Nêu được nguyên nhân thắng lợi của Cách mạng tháng Tám năm 1945."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Ý nghĩa lịch sử",
+     "yccd": [
+      "Phân tích được vị trí, ý nghĩa lịch sử của Cách mạng tháng Tám năm 1945 trong tiến trình lịch sử Việt Nam."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Cuộc kháng chiến chống thực dân Pháp (1945 - 1954)",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khái quát về cuộc kháng chiến chống thực dân Pháp › Bối cảnh lịch sử",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về cuộc kháng chiến chống thực dân Pháp."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Những diễn biến chính",
+     "yccd": [
+      "Trình bày được nét khái quát về bối cảnh lịch sử, diễn biến chính của cuộc kháng chiến chống thực dân Pháp."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nguyên nhân thắng lợi, vị trí, ý nghĩa lịch sử của cuộc kháng chiến chống thực dân Pháp trong tiến trình lịch sử Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nguyên nhân thắng lợi › Vị trí, ý nghĩa lịch sử",
+     "yccd": [
+      "Nêu được nguyên nhân thắng lợi của cuộc kháng chiến chống thực dân Pháp.",
+      "Phân tích được vị trí, ý nghĩa lịch sử của cuộc kháng chiến chống thực dân Pháp trong tiến trình lịch sử Việt Nam."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Cuộc kháng chiến chống Mỹ, cứu nước (1954 - 1975) › Khái quát về cuộc kháng chiến chống Mỹ, cứu nước",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Bối cảnh lịch sử",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về cuộc kháng chiến chống Mỹ, cứu nước."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Các giai đoạn phát triển chính",
+     "yccd": [
+      "Trình bày được nét khái quát về bối cảnh lịch sử, các giai đoạn phát triển chính của cuộc kháng chiến chống Mỹ, cứu nước."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nguyên nhân thắng lợi, vị trí, ý nghĩa lịch sử của cuộc kháng chiến chống Mỹ, cứu nước trong tiến trình lịch sử Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Nguyên nhân thắng lợi › Vị trí, ý nghĩa lịch sử",
+     "yccd": [
+      "Nêu được nguyên nhân thắng lợi của cuộc kháng chiến chống Mỹ, cứu nước.",
+      "Phân tích vị trí, ý nghĩa lịch sử của cuộc kháng chiến chống Mỹ, cứu nước trong tiến trình lịch sử Việt Nam.",
+      "Trân trọng, tự hào về truyền thống bất khuất của cha ông trong cuộc kháng chiến chống Mỹ, cứu nước, tham gia vào công tác đền ơn đáp nghĩa ở địa phương."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khái quát về cuộc đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay › Bối cảnh lịch sử › Diễn biến chính",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về các cuộc đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay.",
+      "Trình bày được những nét khái quát về bối cảnh lịch sử, diễn biến chính của: cuộc chiến tranh bảo vệ Tổ quốc ở vùng biên giới Tây Nam và biên giới phía Bắc (từ sau tháng 4 năm 1975 đến đầu những năm 80 của thế kỉ XX), cuộc đấu tranh bảo vệ chủ quyền quốc gia ở vùng biên giới phía Bắc và ở Biển Đông từ năm 1979 đến nay."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Ý nghĩa lịch sử của cuộc đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Ý nghĩa lịch sử",
+     "yccd": [
+      "Nêu được ý nghĩa lịch sử của cuộc đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số bài học lịch sử",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Về đại nghĩa dân tộc, tinh thần yêu nước › Về vai trò của khối đoàn kết dân tộc › Về kết hợp sức mạnh dân tộc với sức mạnh thời đại › Về nghệ thuật lãnh đạo, nghệ thuật quân sự",
+     "yccd": [
+      "Rút ra được những bài học cơ bản của các cuộc kháng chiến bảo vệ Tổ quốc từ năm 1945 đến nay: bài học về đại nghĩa dân tộc, tinh thần yêu nước; về vai trò của khối đoàn kết dân tộc trong các cuộc kháng chiến bảo vệ Tổ quốc từ năm 1945 đến nay; về kết hợp sức mạnh dân tộc với sức mạnh thời đại; nghệ thuật lãnh đạo và nghệ thuật quân sự.",
+      "Phân tích được giá trị thực tiễn của những bài học lịch sử của các cuộc kháng chiến bảo vệ Tổ quốc từ năm 1945 đến nay. Trân trọng những bài học kinh nghiệm trong lịch sử và sẵn sàng góp phần tham gia bảo vệ Tổ quốc khi Tổ quốc cần."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-12-05",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "CÔNG CUỘC ĐỔI MỚI Ở VIỆT NAM TỪ NĂM 1986 ĐẾN NAY",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Khái quát về công cuộc Đổi mới từ năm 1986 đến nay",
+     "yccd": [
+      "Xây dựng đường thời gian về các giai đoạn phát triển của công cuộc Đổi mới đất nước từ năm 1986 đến nay, điểm lại các giai đoạn phát triển chính trên đường thời gian:"
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giai đoạn 1986 - 1995",
+     "yccd": [
+      "+ Giai đoạn 1986 - 1995: khởi đầu công cuộc Đổi mới."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giai đoạn 1996 - 2006",
+     "yccd": [
+      "+ Giai đoạn 1996 - 2006: đẩy mạnh công nghiệp hoá, hiện đại hoá, hội nhập kinh tế quốc tế."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giai đoạn 2007 đến nay",
+     "yccd": [
+      "+ Giai đoạn từ năm 2007 đến nay: tiếp tục đẩy mạnh công nghiệp hoá, hiện đại hoá, hội nhập quốc tế sâu rộng."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đặc điểm của công cuộc Đổi mới ở Việt Nam từ năm 1986 đến nay",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Về bối cảnh lịch sử › Bối cảnh quốc tế, khu vực › Bối cảnh trong nước",
+     "yccd": [
+      "Phân tích được công cuộc Đổi mới ở Việt Nam diễn ra trong bối cảnh quốc tế, khu vực có nhiều biến đổi. Kinh nghiệm cải cách của các nước gợi mở cho Việt Nam trong quá trình đổi mới."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Về quá trình đổi mới",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đổi mới ở Việt Nam bắt đầu từ lĩnh vực kinh tế › Đổi mới kinh tế là trọng tâm, đồng thời từng bước đổi mới về chính trị, xã hội, văn hoá",
+     "yccd": [
+      "Giải thích được quá trình đổi mới của Việt Nam bắt đầu từ lĩnh vực kinh tế. Đổi mới kinh tế là trọng tâm, song song với đổi mới kinh tế, từng bước đổi mới về chính trị, xã hội, văn hoá."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Về phương thức › Đổi mới ở Việt Nam diễn ra từ hai chiều: vừa có sự chỉ đạo từ trên xuống, vừa có sự sáng tạo của nhân dân từ dưới lên",
+     "yccd": [
+      "Phân tích được công cuộc Đổi mới ở Việt Nam diễn ra từ hai chiều: vừa có sự chỉ đạo từ trên xuống, vừa có sự sáng tạo của nhân dân từ dưới lên (các địa phương, các hợp tác xã, doanh nghiệp)."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đổi mới gắn liền với quá trình hội nhập quốc tế",
+     "yccd": [
+      "Giải thích được công cuộc Đổi mới ở Việt Nam gắn liền với quá trình hội nhập quốc tế: mở rộng quan hệ đối ngoại và chủ động gia nhập ASEAN, hội nhập kinh tế quốc tế, thực hiện đường lối đối ngoại độc lập tự chủ, rộng mở, đa phương hoá, đa dạng hoá các quan hệ quốc tế."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thành tựu cơ bản và bài học của công cuộc Đổi mới ở Việt Nam từ năm 1986 đến nay",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Thành tựu cơ bản",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Chấm dứt tình trạng khủng hoảng kinh tế - xã hội kéo dài trong nhiều năm",
+     "yccd": [
+      "Giải thích được công cuộc Đổi mới đã đưa Việt Nam thoát khỏi khủng hoảng kinh tế - xã hội và tình trạng kém phát triển, trở thành nước đang phát triển có thu nhập trung bình."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Chuyển đổi quan trọng về mô hình kinh tế và mô hình quản lí kinh tế",
+     "yccd": [
+      "Phân tích được sự chuyển đổi quan trọng từ mô hình kinh tế kế hoạch hoá tập trung sang mô hình mới - kinh tế hàng hoá nhiều thành phần; từ mô hình quản lí kinh tế theo cơ chế tập trung, quan liêu bao cấp chuyển sang mô hình quản lí kinh tế theo cơ chế thị trường."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Xây dựng, hoàn thiện hệ thống chính trị",
+     "yccd": [
+      "Trình bày được những nét chính về quá trình xây dựng và đổi mới trong cơ chế, chính sách, tổ chức bộ máy nhà nước, nâng cao hiệu quả của hệ thống chính trị."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Vượt qua tình trạng bị bao vây cấm vận, tích cực và chủ động hội nhập quốc tế",
+     "yccd": [
+      "Giải thích được Việt Nam đã vượt qua thế bị bao vây, cấm vận, tích cực và chủ động hội nhập kinh tế khu vực và toàn cầu, quan hệ quốc tế và thương mại quốc tế mở rộng mạnh mẽ."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Giải quyết các vấn đề xã hội, phát triển văn hoá, con người",
+     "yccd": [
+      "Phân tích được nét chính về việc giải quyết các vấn đề xã hội, phát triển văn hoá, con người, chú trọng nâng cao đời sống vật chất và tinh thần của nhân dân. Gắn kết tăng trưởng kinh tế với thực hiện tiến bộ, công bằng xã hội."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Một số bài học kinh nghiệm",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Kiên trì mục tiêu độc lập dân tộc và chủ nghĩa xã hội trên nền tảng chủ nghĩa Mác - Lênin và tư tưởng Hồ Chí Minh",
+     "yccd": [
+      "Phân tích được đổi mới là sự vận dụng sáng tạo và phát triển chủ nghĩa Mác - Lênin, tư tưởng Hồ Chí Minh và vai trò lãnh đạo của Đảng."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đổi mới toàn diện, đồng bộ, có bước đi, hình thức và cách làm phù hợp",
+     "yccd": [
+      "Giải thích được sự cần thiết phải đổi mới đồng bộ tất cả các mặt của đời sống xã hội, có những bước đi thích hợp."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đổi mới phải vì lợi ích của nhân dân, phát huy vai trò chủ động, sáng tạo của nhân dân",
+     "yccd": [
+      "Vận dụng những hiểu biết về vai trò của quần chúng nhân dân trong lịch sử để phân tích được vai trò của quần chúng nhân dân trong công cuộc Đổi mới."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Kết hợp sức mạnh nội lực và ngoại lực, kết hợp sức mạnh dân tộc với sức mạnh thời đại trong điều kiện mới",
+     "yccd": [
+      "Trình bày được vai trò của việc kết hợp nội lực với ngoại lực, phát huy sức mạnh dân tộc với sức mạnh thời đại như là cách thức để tận dụng thời cơ, vận hội để tiếp tục công cuộc Đổi mới.",
+      "Có ý thức trân trọng những thành tựu của công cuộc Đổi mới, sẵn sàng tham gia đóng góp vào công cuộc Đổi mới ở địa phương và đất nước."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-12-06",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "LỊCH SỬ QUAN HỆ ĐỐI NGOẠI VIỆT NAM",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Quan hệ bang giao Việt Nam thời cổ - trung đại",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ bang giao Việt Nam với Trung Quốc",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Sự thiết lập quan hệ bang giao Việt Nam - Trung Quốc ở thế kỉ X",
+     "yccd": [
+      "Tóm tắt được những nét chính về sự thiết lập quan hệ bang giao Việt Nam - Trung Quốc ở thế kỉ thứ X."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Đặc điểm của quan hệ bang giao Việt Nam - Trung Quốc",
+     "yccd": [
+      "Phân tích được những đặc điểm của quan hệ bang giao Việt Nam - Trung Quốc."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ bang giao Việt Nam với Đông Nam Á",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ bang giao Việt Nam - Đông Nam Á",
+     "yccd": [
+      "Nêu được nhưng nét chính trong quan hệ bang giao Việt Nam - Đông Nam Á."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ đối ngoại Việt Nam thời cận - hiện đại",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hoạt động đối ngoại của Việt Nam trong đấu tranh giành độc lập dân tộc (đầu thế kỉ XX đến Cách mạng tháng Tám năm 1945) › Bối cảnh lịch sử › Hoạt động đối ngoại chủ yếu › Quan hệ đối ngoại Việt Nam trong kháng chiến chống Pháp (1945 - 1954)",
+     "yccd": [
+      "Nêu được nét khái quát về bối cảnh lịch sử và những hoạt động đối ngoại chủ yếu của Việt Nam trong đấu tranh giành độc lập dân tộc (từ đầu thế kỉ XX đến Cách mạng tháng Tám năm 1945)."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hoàn cảnh lịch sử › Chủ trương đối ngoại › Những thành tựu chính",
+     "yccd": [
+      "Nêu được tác động của hoàn cảnh lịch sử đến các hoạt động đối ngoại trong kháng chiến chống Pháp.",
+      "Nêu được nhận xét về những thành tựu của hoạt động đối ngoại của Việt Nam trong kháng chiến chống Pháp."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ đối ngoại Việt Nam trong kháng chiến chống Mỹ (1954 - 1975)",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hoàn cảnh lịch sử › Chủ trương đối ngoại › Những thành tựu chính",
+     "yccd": [
+      "Nêu được tác động của bối cảnh lịch sử đến các hoạt động đối ngoại trong kháng chiến chống Mỹ.",
+      "Đánh giá được những thành tựu đối ngoại của Việt Nam trong kháng chiến chống Mỹ."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ đối ngoại Việt Nam trong giai đoạn 1975 - 1985 › Hoàn cảnh lịch sử › Chủ trương đối ngoại › Những thành tựu chính",
+     "yccd": [
+      "Nêu được tác động của hoàn cảnh lịch sử đối với hoạt động đối ngoại của Việt Nam trong giai đoạn 1975 - 1985.",
+      "Đánh giá được những thành tựu của đối ngoại Việt Nam trong giai đoạn 1975 - 1985."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Quan hệ đối ngoại Việt Nam thời kì Đổi mới (từ năm 1986 đến nay) › Hoàn cảnh lịch sử › Chủ trương hội nhập quốc tế › Thành tựu và thách thức của đối ngoại Việt Nam thời kì Đổi mới",
+     "yccd": [
+      "Sưu tầm và sử dụng tư liệu để hiểu về quan hệ đối ngoại Việt Nam thời kì Đổi mới.",
+      "Giải thích được vì sao Việt Nam chủ trương hội nhập quốc tế.",
+      "Đánh giá được những thành tựu và thách thức của đối ngoại Việt Nam thời kì Đổi mới.",
+      "Tự hào về truyền thống ngoại giao của cha ông trong lịch sử, góp phần vào việc xây dựng hình ảnh đẹp, thân thiện của đất nước Việt Nam trong cộng đồng quốc tế."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-12-07",
+   "viet_nam": true
+  },
+  {
+   "cap": "THPT",
+   "lop": 12,
+   "mon": "lich_su",
+   "chu_de": "HỒ CHÍ MINH TRONG LỊCH SỬ VIỆT NAM",
+   "chuyen_de": false,
+   "muc": [
+    {
+     "noi_dung": "Khái quát về cuộc đời và sự nghiệp của Hồ Chí Minh › Những yếu tố ảnh hưởng đến cuộc đời và sự nghiệp của Hồ Chí Minh › Hoàn cảnh đất nước › Hoàn cảnh quê hương › Hoàn cảnh gia đình",
+     "yccd": [
+      "Biết cách sưu tầm và sử dụng tư liệu lịch sử để tìm hiểu về cuộc đời và sự nghiệp của Hồ Chí Minh.",
+      "Phân tích được một số yếu tố ảnh hưởng đến cuộc đời và sự nghiệp của Hồ Chí Minh."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Tiểu sử Hồ Chí Minh",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Xuất thân › Quê quán",
+     "yccd": [
+      "Tóm tắt được những nét cơ bản trong tiểu sử của Hồ Chí Minh."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Khái quát về sự nghiệp của Hồ Chí Minh",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Tuổi trẻ › Hoạt động ở nước ngoài (1911 - 1941) › Trở về Việt Nam › Trong nhà tù ở Trung Quốc › Hoạt động lãnh đạo cách mạng",
+     "yccd": [
+      "Nêu được tiến trình hoạt động cách mạng của Hồ Chí Minh trên đường thời gian."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hồ Chí Minh - Anh hùng giải phóng dân tộc",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Xác định con đường cứu nước › Hành trình đi tìm đường cứu nước › Con đường cứu nước › Ý nghĩa của việc tìm ra con đường cứu nước",
+     "yccd": [
+      "Giới thiệu được hành trình đi tìm đường cứu nước của Hồ Chí Minh trên bản đồ.",
+      "Phân tích được nội dung cơ bản của con đường cứu nước của Hồ Chí Minh.",
+      "Nêu được ý nghĩa của sự kiện Hồ Chí Minh tìm ra con đường cứu nước."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Sáng lập Đảng Cộng sản Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Chuẩn bị về chính trị, tư tưởng, tổ chức cho sự ra đời của Đảng › Triệu tập và chủ trì hội nghị thành lập Đảng Cộng sản › Việt Nam › Ý nghĩa của việc thành lập Đảng Cộng sản Việt Nam",
+     "yccd": [
+      "Phân tích được quá trình chuẩn bị về chính trị, tư tưởng, tổ chức của Hồ Chí Minh cho sự ra đời của Đảng Cộng sản.",
+      "Nêu được vai trò của Hồ Chí Minh đối với việc thành lập Đảng Cộng sản Việt Nam và ý nghĩa của việc thành lập Đảng Cộng sản Việt Nam."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Lãnh đạo Cách mạng tháng Tám 1945",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Triệu tập và chủ trì Hội nghị Trung ương 8 (tháng 5 năm 1941) › Sáng lập Mặt trận Việt Minh (ngày 19 tháng 5 năm 1941) › Trực tiếp lãnh đạo và tiến hành các hoạt động đấu tranh ngoại giao trong thời gian từ năm 1941 đến năm 1945 › Cùng Trung ương Đảng và Mặt trận Việt Minh lãnh đạo Cách mạng tháng Tám năm 1945 thắng lợi, lập ra nước Việt Nam Dân chủ Cộng hoà",
+     "yccd": [
+      "Nêu được vai trò của Hồ Chí Minh đối với việc triệu tập Hội nghị Trung ương 8 (tháng 5 năm 1941).",
+      "Phân tích được ý nghĩa của việc thành lập Mặt trận Việt Minh (ngày 19 tháng 5 năm 1941) và vai trò của Hồ Chí Minh."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Lãnh đạo kháng chiến chống Pháp (1945 - 1954) và chống Mỹ (1954 - 1969) › Giai đoạn 1945 - 1946 › Giai đoạn 1946 - 1954 › Giai đoạn 1954 - 1969",
+     "yccd": [
+      "Nêu được vai trò của Hồ Chí Minh trong giai đoạn sau Cách mạng tháng Tám (1945 - 1946) khi thực hiện chủ trương “hoà để tiến” thông qua việc kí Hiệp định Sơ bộ (ngày 06 tháng 3 năm 1946) và bản Tạm ước (ngày 14 tháng 9 năm 1946).",
+      "Phân tích được vai trò của Hồ Chí Minh trong kháng chiến chống Pháp (1946 - 1954).",
+      "Phân tích được vai trò của Hồ Chí Minh trong kháng chiến chống Mỹ (1954 - 1969).",
+      "Có ý thức trân trọng công lao, đóng góp của Hồ Chí Minh đối với cách mạng Việt Nam."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Dấu ấn Hồ Chí Minh trong lòng nhân dân thế giới và Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hồ Chí Minh trong lòng nhân dân thế giới",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Danh hiệu: › + Năm 1987, UNESCO công nhận Hồ Chí Minh là anh hùng giải phóng dân tộc, nhà văn hoá lớn › + Nhân dân thế giới đánh giá cao những cống hiến và những giá trị tư tưởng và văn hoá của Hồ Chí Minh › Tưởng niệm: Nhà lưu niệm; Đài kỉ niệm; Đặt tên một số đại lộ,...",
+     "yccd": [
+      "Giải thích được vì sao nhân dân thế giới đánh giá cao những cống hiến và giá trị tư tưởng, văn hoá của Chủ tịch Hồ Chí Minh."
+     ],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Hồ Chí Minh trong lòng nhân dân Việt Nam",
+     "yccd": [],
+     "viet_nam": true
+    },
+    {
+     "noi_dung": "Bảo tàng, Nhà lưu niệm › Hình tượng văn học, nghệ thuật › Phong trào học tập và làm theo tư tưởng, đạo đức và phong cách Hồ Chí Minh",
+     "yccd": [
+      "Giải thích được vì sao Chủ tịch Hồ Chí Minh sống mãi trong lòng dân tộc Việt Nam.",
+      "Có ý thức trân trọng những cống hiến và giá trị tư tưởng văn hoá của Chủ tịch Hồ Chí Minh, tích cực tham gia phong trào học tập và làm theo tư tưởng, đạo đức và phong cách Hồ Chí Minh."
+     ],
+     "viet_nam": true
+    }
+   ],
+   "ma": "THPT-12-08",
+   "viet_nam": true
+  }
+ ]
+}

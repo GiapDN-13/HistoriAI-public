@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HistoriAI decorative embers</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    /* Local to the embedded background; Flutter controls the UI paint order. */
+    .ember-background {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .ember-particle {
+      --ember-x: 50vw;
+      --ember-size: 4px;
+      --ember-opacity: .50;
+      --ember-drift: 18vw;
+      --ember-sway: 3vw;
+      --ember-duration: 11s;
+      --ember-delay: 0s;
+      position: absolute;
+      left: var(--ember-x);
+      bottom: -24px;
+      width: var(--ember-size);
+      height: var(--ember-size);
+      border-radius: 50%;
+      background: #c34a1e;
+      box-shadow: 0 0 6px rgba(186, 35, 35, .45), 0 0 12px rgba(195, 74, 30, .30);
+      opacity: 0;
+      will-change: transform, opacity;
+      animation: ember-float var(--ember-duration) ease-in var(--ember-delay) infinite;
+    }
+
+    /* 
+     * 36 hạt ember kích thước 3px - 8px, độ mờ tinh chỉnh trong dải 0.45 - 0.55,
+     * bảng màu đất nung/đỏ son/hổ phách đậm tương phản thanh nhã trên nền be
+     */
+    .ember-particle--1  { --ember-x: 4vw;  --ember-size: 5px; --ember-opacity: .50; --ember-drift: 18vw;  --ember-sway: 4vw;  --ember-duration: 11s; --ember-delay: 0s;     background: #b86a04; }
+    .ember-particle--2  { --ember-x: 11vw; --ember-size: 6px; --ember-opacity: .54; --ember-drift: 22vw;  --ember-sway: -3vw; --ember-duration: 13s; --ember-delay: -4s;    background: #c34a1e; }
+    .ember-particle--3  { --ember-x: 18vw; --ember-size: 4px; --ember-opacity: .47; --ember-drift: -16vw; --ember-sway: 2vw;  --ember-duration: 10s; --ember-delay: -7s;    background: #96241c; }
+    .ember-particle--4  { --ember-x: 25vw; --ember-size: 8px; --ember-opacity: .52; --ember-drift: 26vw;  --ember-sway: 5vw;  --ember-duration: 14s; --ember-delay: -2s;    background: #a04000; }
+    .ember-particle--5  { --ember-x: 32vw; --ember-size: 3px; --ember-opacity: .45; --ember-drift: -20vw; --ember-sway: -4vw; --ember-duration: 15s; --ember-delay: -11s;   background: #b86a04; }
+    .ember-particle--6  { --ember-x: 39vw; --ember-size: 6px; --ember-opacity: .55; --ember-drift: 19vw;  --ember-sway: 3vw;  --ember-duration: 9s;  --ember-delay: -5s;    background: #c34a1e; }
+    .ember-particle--7  { --ember-x: 46vw; --ember-size: 5px; --ember-opacity: .49; --ember-drift: -24vw; --ember-sway: -5vw; --ember-duration: 12s; --ember-delay: -9s;    background: #96241c; }
+    .ember-particle--8  { --ember-x: 53vw; --ember-size: 6px; --ember-opacity: .53; --ember-drift: 21vw;  --ember-sway: 2vw;  --ember-duration: 11s; --ember-delay: -3s;    background: #a04000; }
+    .ember-particle--9  { --ember-x: 60vw; --ember-size: 8px; --ember-opacity: .51; --ember-drift: -18vw; --ember-sway: -3vw; --ember-duration: 16s; --ember-delay: -13s;   background: #b86a04; }
+    .ember-particle--10 { --ember-x: 67vw; --ember-size: 4px; --ember-opacity: .48; --ember-drift: 24vw;  --ember-sway: 4vw;  --ember-duration: 10s; --ember-delay: -6s;    background: #c34a1e; }
+    .ember-particle--11 { --ember-x: 74vw; --ember-size: 3px; --ember-opacity: .45; --ember-drift: -22vw; --ember-sway: -2vw; --ember-duration: 14s; --ember-delay: -1s;    background: #96241c; }
+    .ember-particle--12 { --ember-x: 81vw; --ember-size: 7px; --ember-opacity: .54; --ember-drift: 17vw;  --ember-sway: 3vw;  --ember-duration: 12s; --ember-delay: -8s;    background: #a04000; }
+    .ember-particle--13 { --ember-x: 88vw; --ember-size: 4px; --ember-opacity: .46; --ember-drift: -25vw; --ember-sway: -4vw; --ember-duration: 13s; --ember-delay: -10s;   background: #b86a04; }
+    .ember-particle--14 { --ember-x: 95vw; --ember-size: 6px; --ember-opacity: .52; --ember-drift: -28vw; --ember-sway: -5vw; --ember-duration: 11s; --ember-delay: -4s;    background: #c34a1e; }
+
+    .ember-particle--15 { --ember-x: 7vw;  --ember-size: 6px; --ember-opacity: .53; --ember-drift: 25vw;  --ember-sway: 4vw;  --ember-duration: 13s; --ember-delay: -9s;    background: #96241c; }
+    .ember-particle--16 { --ember-x: 15vw; --ember-size: 3px; --ember-opacity: .45; --ember-drift: -14vw; --ember-sway: -3vw; --ember-duration: 15s; --ember-delay: -3s;    background: #a04000; }
+    .ember-particle--17 { --ember-x: 22vw; --ember-size: 6px; --ember-opacity: .55; --ember-drift: 20vw;  --ember-sway: 3vw;  --ember-duration: 10s; --ember-delay: -12s;   background: #b86a04; }
+    .ember-particle--18 { --ember-x: 29vw; --ember-size: 5px; --ember-opacity: .49; --ember-drift: -23vw; --ember-sway: -4vw; --ember-duration: 12s; --ember-delay: -6s;    background: #c34a1e; }
+    .ember-particle--19 { --ember-x: 36vw; --ember-size: 8px; --ember-opacity: .52; --ember-drift: 28vw;  --ember-sway: 5vw;  --ember-duration: 14s; --ember-delay: -1s;    background: #96241c; }
+    .ember-particle--20 { --ember-x: 43vw; --ember-size: 4px; --ember-opacity: .48; --ember-drift: -19vw; --ember-sway: -2vw; --ember-duration: 9s;  --ember-delay: -8s;    background: #a04000; }
+    .ember-particle--21 { --ember-x: 50vw; --ember-size: 7px; --ember-opacity: .55; --ember-drift: 23vw;  --ember-sway: 4vw;  --ember-duration: 11s; --ember-delay: -14s;   background: #b86a04; }
+    .ember-particle--22 { --ember-x: 57vw; --ember-size: 3px; --ember-opacity: .46; --ember-drift: -26vw; --ember-sway: -5vw; --ember-duration: 16s; --ember-delay: -5s;    background: #c34a1e; }
+    .ember-particle--23 { --ember-x: 64vw; --ember-size: 6px; --ember-opacity: .51; --ember-drift: 18vw;  --ember-sway: 2vw;  --ember-duration: 12s; --ember-delay: -10s;   background: #96241c; }
+    .ember-particle--24 { --ember-x: 71vw; --ember-size: 5px; --ember-opacity: .50; --ember-drift: -21vw; --ember-sway: -3vw; --ember-duration: 10s; --ember-delay: -2s;    background: #a04000; }
+    .ember-particle--25 { --ember-x: 78vw; --ember-size: 8px; --ember-opacity: .51; --ember-drift: 24vw;  --ember-sway: 4vw;  --ember-duration: 15s; --ember-delay: -7s;    background: #b86a04; }
+    .ember-particle--26 { --ember-x: 85vw; --ember-size: 4px; --ember-opacity: .47; --ember-drift: -27vw; --ember-sway: -4vw; --ember-duration: 13s; --ember-delay: -11s;   background: #c34a1e; }
+    .ember-particle--27 { --ember-x: 92vw; --ember-size: 6px; --ember-opacity: .53; --ember-drift: -22vw; --ember-sway: -3vw; --ember-duration: 10s; --ember-delay: -4s;    background: #96241c; }
+
+    .ember-particle--28 { --ember-x: 2vw;  --ember-size: 6px; --ember-opacity: .50; --ember-drift: 29vw;  --ember-sway: 5vw;  --ember-duration: 12s; --ember-delay: -2s;    background: #a04000; }
+    .ember-particle--29 { --ember-x: 13vw; --ember-size: 5px; --ember-opacity: .48; --ember-drift: 21vw;  --ember-sway: 3vw;  --ember-duration: 14s; --ember-delay: -8s;    background: #b86a04; }
+    .ember-particle--30 { --ember-x: 27vw; --ember-size: 7px; --ember-opacity: .54; --ember-drift: -18vw; --ember-sway: -2vw; --ember-duration: 11s; --ember-delay: -13s;   background: #c34a1e; }
+    .ember-particle--31 { --ember-x: 38vw; --ember-size: 8px; --ember-opacity: .53; --ember-drift: 27vw;  --ember-sway: 4vw;  --ember-duration: 13s; --ember-delay: -5s;    background: #96241c; }
+    .ember-particle--32 { --ember-x: 48vw; --ember-size: 4px; --ember-opacity: .49; --ember-drift: -24vw; --ember-sway: -4vw; --ember-duration: 10s; --ember-delay: -10s;   background: #a04000; }
+    .ember-particle--33 { --ember-x: 62vw; --ember-size: 6px; --ember-opacity: .54; --ember-drift: 23vw;  --ember-sway: 3vw;  --ember-duration: 12s; --ember-delay: -3s;    background: #b86a04; }
+    .ember-particle--34 { --ember-x: 73vw; --ember-size: 3px; --ember-opacity: .46; --ember-drift: -25vw; --ember-sway: -5vw; --ember-duration: 15s; --ember-delay: -9s;    background: #c34a1e; }
+    .ember-particle--35 { --ember-x: 83vw; --ember-size: 6px; --ember-opacity: .52; --ember-drift: 20vw;  --ember-sway: 2vw;  --ember-duration: 11s; --ember-delay: -1s;    background: #96241c; }
+    .ember-particle--36 { --ember-x: 96vw; --ember-size: 5px; --ember-opacity: .51; --ember-drift: -30vw; --ember-sway: -6vw; --ember-duration: 14s; --ember-delay: -7s;    background: #a04000; }
+
+    @keyframes ember-float {
+      0% {
+        transform: translate3d(0, 24px, 0) scale(.8);
+        opacity: 0;
+      }
+      12% {
+        opacity: var(--ember-opacity);
+      }
+      50% {
+        transform: translate3d(calc(var(--ember-drift) * 0.48 + var(--ember-sway, 0vw)), -55vh, 0) scale(1.0);
+        opacity: var(--ember-opacity);
+      }
+      75% {
+        opacity: calc(var(--ember-opacity) * .9);
+      }
+      100% {
+        transform: translate3d(var(--ember-drift), -115vh, 0) scale(1.18);
+        opacity: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ember-particle {
+        animation: none;
+        opacity: .12;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ember-background ember-background--low" aria-hidden="true">
+    <span class="ember-particle ember-particle--1"></span>
+    <span class="ember-particle ember-particle--2"></span>
+    <span class="ember-particle ember-particle--3"></span>
+    <span class="ember-particle ember-particle--4"></span>
+    <span class="ember-particle ember-particle--5"></span>
+    <span class="ember-particle ember-particle--6"></span>
+    <span class="ember-particle ember-particle--7"></span>
+    <span class="ember-particle ember-particle--8"></span>
+    <span class="ember-particle ember-particle--9"></span>
+    <span class="ember-particle ember-particle--10"></span>
+    <span class="ember-particle ember-particle--11"></span>
+    <span class="ember-particle ember-particle--12"></span>
+    <span class="ember-particle ember-particle--13"></span>
+    <span class="ember-particle ember-particle--14"></span>
+    <span class="ember-particle ember-particle--15"></span>
+    <span class="ember-particle ember-particle--16"></span>
+    <span class="ember-particle ember-particle--17"></span>
+    <span class="ember-particle ember-particle--18"></span>
+    <span class="ember-particle ember-particle--19"></span>
+    <span class="ember-particle ember-particle--20"></span>
+    <span class="ember-particle ember-particle--21"></span>
+    <span class="ember-particle ember-particle--22"></span>
+    <span class="ember-particle ember-particle--23"></span>
+    <span class="ember-particle ember-particle--24"></span>
+    <span class="ember-particle ember-particle--25"></span>
+    <span class="ember-particle ember-particle--26"></span>
+    <span class="ember-particle ember-particle--27"></span>
+    <span class="ember-particle ember-particle--28"></span>
+    <span class="ember-particle ember-particle--29"></span>
+    <span class="ember-particle ember-particle--30"></span>
+    <span class="ember-particle ember-particle--31"></span>
+    <span class="ember-particle ember-particle--32"></span>
+    <span class="ember-particle ember-particle--33"></span>
+    <span class="ember-particle ember-particle--34"></span>
+    <span class="ember-particle ember-particle--35"></span>
+    <span class="ember-particle ember-particle--36"></span>
+  </div>
+</body>
+</html>

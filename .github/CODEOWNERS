@@ -1,0 +1,5 @@
+# CODEOWNERS — người duyệt bắt buộc cho mọi thay đổi
+# Mọi Pull Request đều cần @GiapDN-13 (trưởng nhóm) approve mới được merge.
+# Kết hợp với branch protection "Require review from Code Owners" trên master.
+
+* @GiapDN-13

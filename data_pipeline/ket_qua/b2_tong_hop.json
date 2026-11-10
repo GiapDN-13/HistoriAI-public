@@ -1,0 +1,110 @@
+{
+ "bach-dang-938": {
+  "nam": 938,
+  "ky_tu_wp": 9459,
+  "menh_de_wd": 1,
+  "doan_vnsl": 4,
+  "anh": true
+ },
+ "khang-chien-tong-981": {
+  "nam": 981,
+  "ky_tu_wp": 20732,
+  "menh_de_wd": 1,
+  "doan_vnsl": 20,
+  "anh": false
+ },
+ "bach-dang-1288": {
+  "nam": 1288,
+  "ky_tu_wp": 16991,
+  "menh_de_wd": 5,
+  "doan_vnsl": 20,
+  "anh": true
+ },
+ "lam-son-1428": {
+  "nam": 1418,
+  "ky_tu_wp": 67241,
+  "menh_de_wd": 4,
+  "doan_vnsl": 24,
+  "anh": true
+ },
+ "quang-trung-1789": {
+  "nam": 1788,
+  "ky_tu_wp": 49899,
+  "menh_de_wd": 10,
+  "doan_vnsl": 21,
+  "anh": true
+ },
+ "tran-hung-dao": {
+  "nam": null,
+  "ky_tu_wp": 34357,
+  "menh_de_wd": 5,
+  "doan_vnsl": 35,
+  "anh": true
+ },
+ "quang-trung": {
+  "nam": null,
+  "ky_tu_wp": 110374,
+  "menh_de_wd": 6,
+  "doan_vnsl": 15,
+  "anh": true
+ },
+ "trong-dong-dong-son": {
+  "nam": null,
+  "ky_tu_wp": 13464,
+  "menh_de_wd": 1,
+  "doan_vnsl": 0,
+  "anh": true
+ },
+ "trong-dong-khai-quat": {
+  "nam": null,
+  "ky_tu_wp": 13464,
+  "menh_de_wd": 1,
+  "doan_vnsl": 0,
+  "anh": true
+ },
+ "trong-dong-hoa-van": {
+  "nam": null,
+  "ky_tu_wp": 13464,
+  "menh_de_wd": 1,
+  "doan_vnsl": 0,
+  "anh": true
+ },
+ "coc-bach-dang-1288": {
+  "nam": 938,
+  "ky_tu_wp": 11207,
+  "menh_de_wd": 4,
+  "doan_vnsl": 0,
+  "anh": true
+ },
+ "thuyen-chien-dong-son": {
+  "nam": -1000,
+  "ky_tu_wp": 23758,
+  "menh_de_wd": 3,
+  "doan_vnsl": 0,
+  "anh": false
+ },
+ "kiem-dong-son": {
+  "nam": -1000,
+  "ky_tu_wp": 23758,
+  "menh_de_wd": 3,
+  "doan_vnsl": 0,
+  "anh": false
+ },
+ "nghe-den-vua-dinh": {
+  "nam": null,
+  "ky_tu_wp": 9183,
+  "menh_de_wd": 1,
+  "doan_vnsl": 0,
+  "anh": true
+ },
+ "rong-co-loa": {
+  "nam": null,
+  "ky_tu_wp": 9332,
+  "menh_de_wd": 1,
+  "doan_vnsl": 0,
+  "anh": true
+ },
+ "hu-tien-dong": {
+  "loi": "không có bài nguồn"
+ }
+}

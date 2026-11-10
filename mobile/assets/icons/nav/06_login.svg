@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Đăng nhập">
+  <circle cx="25" cy="20" r="11" fill="#FDD141"/>
+  <path fill="#D89A25" d="M6 52a19 19 0 0 1 38 0v4H6z"/>
+  <path fill="#FBF3E6" d="M46 17h13v5h-8v6h8v5H46z"/>
+  <path fill="#FDD141" d="m54 11 9 9-9 9v-6H42v-6h12z"/>
+  <path fill="#7A2218" d="M6 52h38v4H6z"/>
+</svg>

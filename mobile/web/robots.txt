@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /noi-bo/
+Disallow: /dat-lai-mat-khau/
+Disallow: /api/
+
+Sitemap: https://historiai.org/sitemap.xml

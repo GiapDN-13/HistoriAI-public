@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Chỉ mở cho trình cài đặt đúng một thư mục: nơi app lưu bản cài mới tải về. -->
+<paths>
+    <cache-path name="ban_moi" path="ban_moi/" />
+</paths>

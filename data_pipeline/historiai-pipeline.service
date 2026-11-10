@@ -1,0 +1,24 @@
+[Unit]
+# Đường ống làm giàu dữ liệu (data_pipeline/chay_het.py) — systemd của user, không cần sudo.
+# Trước đây chạy bằng nohup: VPS khởi động lại là đường ống dừng im lặng.
+# Cài: cp historiai-pipeline.service ~/.config/systemd/user/ &&
+#      systemctl --user daemon-reload && systemctl --user enable --now historiai-pipeline
+Description=HistoriAI — đường ống làm giàu dữ liệu sử
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/giapdn/historiai/pipeline
+ExecStart=/home/giapdn/historiai/pipeline/.venv/bin/python -W ignore chay_het.py
+# Nhật ký vẫn ghi nối vào chay.out như trước, để lệnh xem cũ vẫn dùng được
+StandardOutput=append:/home/giapdn/historiai/pipeline/chay.out
+StandardError=append:/home/giapdn/historiai/pipeline/chay.out
+Environment=PYTHONUNBUFFERED=1
+# Nhường CPU cho API và giọng nói; đường ống chủ yếu chờ hạn mức mô hình nên không cần nhanh
+Nice=15
+# Chạy xong (thoát mã 0) thì thôi. Chỉ tự chạy lại khi chết bất thường — và chờ 15 phút,
+# cùng nhịp với vòng thử lại bên trong chay_het.py, để không dội liên tục khi có lỗi thật.
+Restart=on-failure
+RestartSec=900
+
+[Install]
+WantedBy=default.target

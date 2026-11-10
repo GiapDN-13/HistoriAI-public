@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- Cho khối giới thiệu tĩnh hiện đúng khổ điện thoại trước khi Flutter nạp xong (Flutter
+       tự thay thẻ này bằng cấu hình của nó, chỉ in một dòng cảnh báo vô hại ra console). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tránh trình duyệt giữ bản HTML cũ (Flutter web hay cache lì) -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content="Học sử Việt bằng cách trò chuyện với vĩ nhân, đấu quiz và ngắm cổ vật 3D. Dành cho học sinh THCS & THPT.">
+  <meta name="theme-color" content="#BA2323">
+
+  <!-- Bản xem trước khi chia sẻ link (Facebook, Zalo, Messenger). Các bot này KHÔNG chạy
+       JavaScript nên chỉ đọc được thẻ tĩnh ở đây. Đổi ảnh: python tool/tao_anh_chia_se.py,
+       rồi dán link vào Facebook Sharing Debugger để xoá bản xem trước cũ đã lưu. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HistoriAI">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:url" content="https://historiai.org/">
+  <meta property="og:title" content="HistoriAI — Học sử Việt cùng vĩ nhân">
+  <meta property="og:description" content="Trò chuyện với Trần Hưng Đạo, Quang Trung; đấu quiz theo chương trình THCS & THPT; ngắm cổ vật 3D.">
+  <meta property="og:image" content="https://historiai.org/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="HistoriAI — Học sử Việt bằng cách trò chuyện với vĩ nhân, đấu quiz và ngắm cổ vật 3D">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://historiai.org/og-image.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- iPhone: mở từ màn hình chính là toàn màn hình như app (chưa có bản cài iOS) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="HistoriAI">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>HistoriAI — Học sử Việt</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://historiai.org/">
+  <style>
+    :root {
+      background: #fdf9f4;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: #fdf9f4;
+    }
+
+    /* Khối giới thiệu tĩnh — xem chú thích ở <div id="gioi-thieu">. */
+    #gioi-thieu { color: #2B1410; font: 16px/1.6 -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+                  max-width: 560px; margin: 0 auto; padding: 36px 16px 48px; text-align: center; }
+    #gioi-thieu img { width: 88px; height: 88px; border-radius: 22px; }
+    #gioi-thieu h1 { font-family: "Times New Roman", serif; color: #BA2323; font-size: 30px;
+                     line-height: 1.25; margin: 14px 0 6px; }
+    #gioi-thieu .phu { color: #7C5A4A; margin: 0 0 22px; }
+    #gioi-thieu ul { list-style: none; padding: 0; margin: 0 0 24px; text-align: left; }
+    #gioi-thieu li { background: #FBF3E6; border-left: 4px solid #D4AF37; border-radius: 0 10px 10px 0;
+                     padding: 10px 14px; margin: 8px 0; }
+    #gioi-thieu li b { color: #7A2218; }
+    #gioi-thieu .tai { color: #7C5A4A; font-size: 14px; }
+    #gioi-thieu .vach { height: 4px; border-radius: 2px; background: #FBF3E6; overflow: hidden; margin: 6px auto 0; max-width: 220px; }
+    #gioi-thieu .vach i { display: block; height: 100%; width: 40%; background: #BA2323;
+                          animation: chay 1.2s ease-in-out infinite; }
+    @keyframes chay { 0% { transform: translateX(-100%); } 100% { transform: translateX(250%); } }
+    #gioi-thieu nav { margin-top: 26px; font-size: 14px; }
+    #gioi-thieu a { color: #BA2323; }
+
+  </style>
+</head>
+<body>
+  <!--
+    Khối giới thiệu TĨNH: hiện ngay khi HTML tới (app Flutter còn phải tải ~3–4 MB mới
+    vẽ được gì), và là phần chữ duy nhất Google đọc được — Flutter vẽ mọi thứ bằng
+    canvas nên với máy tìm kiếm, trang app là trang trắng. App vẽ khung hình đầu tiên
+    thì khối này tự gỡ (sự kiện flutter-first-frame bên dưới).
+    Chỉ ghi tính năng ĐANG CHẠY THẬT — đừng thêm số liệu hay tính năng chưa có.
+  -->
+  <div id="gioi-thieu">
+    <img src="icons/Icon-192.png" alt="Biểu tượng HistoriAI">
+    <h1>HistoriAI — Học sử Việt cùng vĩ nhân</h1>
+    <p class="phu">Ứng dụng học Lịch sử Việt Nam cho học sinh THCS và THPT, bám chương trình GDPT 2018.</p>
+    <ul>
+      <li><b>Trò chuyện với vĩ nhân</b> — hỏi Trần Hưng Đạo, Quang Trung về trận đánh, quyết sách của các ngài, nghe trả lời bằng giọng nói.</li>
+      <li><b>Dòng thời gian</b> — Bạch Đằng 938 và 1288, khởi nghĩa Lam Sơn, Quang Trung đại phá quân Thanh, tóm tắt theo cấp học.</li>
+      <li><b>Đấu quiz</b> — ôn lại từng sự kiện bằng câu hỏi trắc nghiệm, xem ngay đúng sai.</li>
+      <li><b>Cổ vật 3D</b> — xoay, phóng to trống đồng Đông Sơn và các hiện vật khác.</li>
+    </ul>
+    <p class="tai">Đang mở ứng dụng…</p>
+    <div class="vach"><i></i></div>
+    <noscript><p>Hãy bật JavaScript để dùng HistoriAI.</p></noscript>
+    <nav>
+      <a href="/tai-app/">Tải bản cài Android</a> ·
+      <a href="/rieng-tu/">Quyền riêng tư</a>
+    </nav>
+  </div>
+  <script>
+    // Gỡ khối giới thiệu khi app đã vẽ. Sự kiện flutter-first-frame không phải lúc nào
+    // cũng phát (thử thấy không phát ở bản release), nên dự phòng thêm: thấy thẻ
+    // <flutter-view> xuất hiện thì chờ 1,5 giây cho app vẽ xong rồi gỡ. Khung app phủ
+    // kín màn hình nên trong lúc chờ người dùng không thấy khối này chồng lên.
+    (function () {
+      function go() { var el = document.getElementById('gioi-thieu'); if (el) el.remove(); }
+      window.addEventListener('flutter-first-frame', go);
+      new MutationObserver(function (_, ob) {
+        if (document.querySelector('flutter-view, flt-glass-pane')) { ob.disconnect(); setTimeout(go, 1500); }
+      }).observe(document.body, { childList: true });
+    })();
+  </script>
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script>
+    // Gỡ service worker cũ để tránh phục vụ bản build lỗi thời cho cả team.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (regs) {
+        for (var i = 0; i < regs.length; i++) { regs[i].unregister(); }
+      }).catch(function () {});
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

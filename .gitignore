@@ -1,0 +1,69 @@
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.db
+*.sqlite3
+.env
+.pytest_cache/
+*.egg-info/
+
+# --- Flutter / Mobile ---
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/build/
+mobile/.idea/
+mobile/*.iml
+mobile/ios/Pods/
+mobile/android/.gradle/
+mobile/android/local.properties
+
+# --- IDE / OS ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Asset 3D nặng (lưu trên CDN/Storage, không commit) ---
+*.glb
+# ...trừ các model ĐÃ NÉN dùng cho bảo tàng 3D. Bản gốc tải từ Sketchfab nặng
+# hàng chục tới hàng trăm MB nên vẫn bị chặn; bản trong đây đã qua
+# gltf-transform, cả chín tệp cộng lại chỉ 3,4 MB.
+!mobile/web/models/*.glb
+*.usdz
+*.fbx
+*.blend
+assets/models/
+assets/videos/
+
+# Audio TTS cache (sinh ra lúc chạy, không commit)
+backend/audio_cache/
+
+# viXTTS: model + giọng mẫu nặng, không commit
+vixtts_service/voices/*.wav
+vixtts_service/*.log
+vixtts_service/*.wav
+
+# --- Android ---
+# Khoá ký bản phát hành. Lọt vào repo là bất kỳ ai cũng ký được bản giả mạo
+# mang đúng danh tính app của nhóm. Cất ở Drive riêng, không để ở đây.
+mobile/android/key.properties
+*.jks
+*.keystore
+mobile/android/app/release/
+mobile/android/.cxx/
+mobile/android/app/.cxx/
+
+# Bản cài dựng ra, không version hoá tệp 30 MB
+mobile/web/tai-app/*.apk
+
+# Ảnh chụp và hồ sơ trình duyệt của Playwright khi soát giao diện (173 MB)
+output/
+.playwright-cli/
+
+# Ảnh người dùng tải lên (backend/app/services/anh_tai_len.py)
+backend/media/
+# Tham số dựng phát hành (tool/phat_hanh.py) — giữ trên máy, không commit
+mobile/.phat_hanh.local

@@ -1,0 +1,4 @@
+# Kịch bản chạy trên Linux (VPS) phải giữ xuống dòng LF. Máy Windows có core.autocrlf=true
+# sẽ đổi sang CRLF khi checkout, bash trên VPS gặp ký tự CR là báo "command not found".
+*.sh text eol=lf
+*.service text eol=lf

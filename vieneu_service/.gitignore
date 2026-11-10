@@ -1,0 +1,4 @@
+mo_hinh/
+.venv/
+voices/*.npz
+__pycache__/

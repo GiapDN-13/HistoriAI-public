@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dòng thời gian">
+  <path fill="#D89A25" d="M17 8h32v48H17a8 8 0 0 1-8-8V16a8 8 0 0 1 8-8z"/>
+  <path fill="#FBF3E6" d="M18 12h27v40H18a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z"/>
+  <path fill="#FDD141" d="M45 8h4v48h-4zM12 16a4 4 0 0 1 4-4v40a4 4 0 0 1-4-4z"/>
+  <path fill="#7A2218" d="M22 20h18v3H22zm0 9h15v3H22zm0 9h18v3H22z"/>
+  <circle cx="22" cy="21.5" r="3" fill="#FDD141"/><circle cx="22" cy="30.5" r="3" fill="#D89A25"/><circle cx="22" cy="39.5" r="3" fill="#FDD141"/>
+  <path fill="#D89A25" d="M45 9a7 7 0 0 1 0 14z"/>
+</svg>

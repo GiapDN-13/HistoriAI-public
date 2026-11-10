@@ -1,0 +1,71 @@
+{
+ "_ghi_chu": "Câu trả lời soạn sẵn cho câu gợi ý ở màn chat (app/services/soan_san.py). 'hoi' phải khớp _suggestedQuestions trong mobile/lib/features/chat/chat_screen.dart. Tạo bằng: python -m tools.soan_tra_loi. Sửa tay 'dap' được. Câu có 'loai_vi' thì đã bị loại khi đọc lại: để 'dap' trống, câu đó đi qua AI như thường; nhóm viết lại 'dap' (có nguồn) rồi xoá 'loai_vi'. Tất cả bản soạn sẵn nên được người trong nhóm duyệt lại trước tuần 10.",
+ "tran-hung-dao": [
+  {
+   "hoi": "Khởi bẩm Vương gia, kế sách cọc ngầm Bạch Đằng?",
+   "dap": "Con hỏi đúng chỗ. Khi ấy thủy quân Nguyên đang rút lui, ta đã đoán được tuyến đường tháo chạy của chúng. Ta cho vót nhọn đầu cọc gỗ và cắm ngầm dưới lòng sông Bạch Đằng, chờ lúc nước lên để che khuất.\n\nKhi thủy triều rút, chiến thuyền địch mắc cạn, ta sai Nguyễn Khoái chỉ huy quân Thánh Dực đánh vào, phối hợp cùng đại quân của Thượng hoàng và vua Nhân Tông. Đây là thắng lợi chung của cả triều đình và quân dân, không phải công của riêng ai.",
+   "nguon": [
+    "Hồ sơ nhân vật (nhóm HistoriAI biên soạn)",
+    "Wikipedia tiếng Việt",
+    "Wikidata",
+    "Việt Nam sử lược (Trần Trọng Kim)"
+   ],
+   "tao_luc": "2026-10-02"
+  },
+  {
+   "hoi": "Ý chí \"Sát Thát\" bắt nguồn từ đâu?",
+   "dap": "Ý chí \"Sát Thát\" không phải là một khẩu hiệu do ta sáng tác, mà là tinh thần bất khuất của cả dân tộc Đại Việt khi đất nước bị xâm lăng. Nó bắt nguồn từ lòng yêu nước, ý thức bảo vệ non sông gấm vóc và sự căm phẫn trước tội ác của quân giặc.\n\nTrong Hịch tướng sĩ, ta đã khơi dậy lòng tự hào dân tộc và trách nhiệm của người quân nhân, nhắc nhở các tướng sĩ phải \"thù nước\" và \"trừ giặc\". Khi đất nước lâm nguy, từ vua đến dân, từ tướng đến binh, tất cả đều đồng lòng quyết tâm đánh tan quân Nguyên - Mông để bảo vệ độc lập. Đó chính là nguồn gốc sâu xa và mạnh mẽ nhất của ý chí \"Sát Thát\".",
+   "nguon": [
+    "Hồ sơ nhân vật (nhóm HistoriAI biên soạn)",
+    "Wikipedia tiếng Việt"
+   ],
+   "tao_luc": "2026-10-02"
+  },
+  {
+   "hoi": "Lời căn dặn hậu thế về đạo giữ nước?",
+   "dap": "Con hãy nhớ kỹ lời ta dặn vua Trần Anh Tông: vua tôi phải đồng tâm, anh em hòa mục, cả nước cùng góp sức thì nước mới bền. Ta luôn tin vào đạo lý \"khoan thư sức dân\", coi dân là gốc rễ sâu xa để đất nước vững chãi. Khi có giặc, phải tùy thế mà ứng biến, dùng đoản binh để chế trường trận. Giữ nước không chỉ là cầm quân đánh giặc, mà là giữ cho lòng dân yên ổn, gốc rễ bền vững.",
+   "nguon": [
+    "Wikipedia tiếng Việt",
+    "Hồ sơ nhân vật (nhóm HistoriAI biên soạn)",
+    "Việt Nam sử lược (Trần Trọng Kim)"
+   ],
+   "tao_luc": "2026-10-02"
+  }
+ ],
+ "quang-trung": [
+  {
+   "hoi": "Khởi bẩm Hoàng thượng, vì sao tiến quân ra Bắc đúng dịp Tết?",
+   "dap": "Quân Thanh đang lơ là, tưởng ta chưa kịp tập hợp lực lượng, nên ta chọn dịp Tết để đánh úp. Ta muốn thần tốc hành quân, bất ngờ tấn công để phá tan 29 vạn quân Thanh trước khi chúng kịp phản ứng. Đánh cho nhanh, đánh cho mạnh, để giữ vững độc lập và tự do cho dân tộc.",
+   "nguon": [
+    "Hồ sơ nhân vật (nhóm HistoriAI biên soạn)",
+    "Wikipedia tiếng Việt",
+    "Việt Nam sử lược (Trần Trọng Kim)",
+    "Wikidata"
+   ],
+   "tao_luc": "2026-10-02"
+  },
+  {
+   "hoi": "Trận Ngọc Hồi – Đống Đa diễn ra thế nào?",
+   "dap": "Con hỏi đúng chỗ rồi. Đêm 30 tháng Chạp, ta lệnh cho quân đánh đồn Gián Khẩu, sau đó phá Nguyệt Quyết, Nhật Tảo và dụ hàng Hà Hồi. Đến đêm mồng 4 Tết, cánh quân của đô đốc Long bất ngờ tập kích Khương Thượng khiến Sầm Nghi Đống phải tự vẫn. Sáng mồng 5, ta cùng đô đốc Bảo tổng công kích Ngọc Hồi, hạ được đồn này. Trưa cùng ngày, ta đã tiến vào Thăng Long, sớm hơn hẹn với quân sĩ.",
+   "nguon": [
+    "Wikipedia tiếng Việt",
+    "Hồ sơ nhân vật (nhóm HistoriAI biên soạn)",
+    "Việt Nam sử lược (Trần Trọng Kim)",
+    "Wikidata"
+   ],
+   "tao_luc": "2026-10-02"
+  },
+  {
+   "hoi": "Lời hiểu dụ tướng sĩ ở Nghệ An năm ấy?",
+   "dap": "",
+   "nguon": [
+    "Wikipedia tiếng Việt",
+    "Hồ sơ nhân vật (nhóm HistoriAI biên soạn)",
+    "Việt Nam sử lược (Trần Trọng Kim)"
+   ],
+   "tao_luc": "2026-10-02",
+   "ban_ai_bi_loai": "Lời hịch ấy trẫm đọc tại Phú Xuân khi lên ngôi, không phải ở Nghệ An. Khi ấy trẫm đã hạ lệnh cho các tướng sĩ chuẩn bị hành quân ra Bắc, quyết tâm quét sạch quân Thanh.\n\nTrẫm đã tuyên bố: \"Đánh cho để dài tóc, đánh cho để đen răng, đánh cho nó chích luân bất phản, đánh cho nó phiến giáp bất hoàn\". Đó là lời thề độc lập của dân tộc, không thể để ngoại bang xâm phạm bờ cõi.\n\nCác tướng sĩ nghe xong đều đồng lòng, sẵn sàng theo trẫm Bắc tiến.",
+   "loai_vi": "02/10: AI khẳng định lời hịch đọc ở Phú Xuân khi lên ngôi, 'không phải ở Nghệ An' — sai: lời hiểu dụ được đọc ở Nghệ An khi tuyển quân, duyệt binh (Hoàng Lê nhất thống chí). Cần nhóm viết lại theo hồ sơ Quang Trung."
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=VieNeu-TTS — giọng nhân bản cho Chat Vĩ Nhân (HistoriAI)
+After=network.target
+
+[Service]
+WorkingDirectory=/home/giapdn/historiai/vieneu_service
+ExecStart=/home/giapdn/historiai/vieneu_service/.venv/bin/python server.py
+Environment=VIENEU_THREADS=4 VIENEU_MAX_CHO=2 PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1
+# Nhường CPU cho API và các dịch vụ khác trên máy dùng chung
+Nice=10
+CPUAffinity=0-3
+# Chặn trên bộ nhớ: vượt thì bị giết và khởi động lại, thay vì kéo cả máy chủ vào swap
+MemoryMax=3G
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,55 @@
+# Cấu hình đường ống làm giàu dữ liệu. Đổi ở đây, không sửa mã.
+
+llm:
+  # Khoá đặt trong data_pipeline/.env (LLM_API_KEY=...), KHÔNG dùng khoá chat.
+  base_url: https://api.groq.com/openai/v1
+  mo_hinh: qwen/qwen3.8-27b
+  # Groq gói miễn phí: 8.000 token/phút, ~1.000 lượt/ngày. Chừa khoảng trống
+  # cho sai số ước lượng token.
+  tran_token_moi_phut: 7000
+  # Groq miễn phí: tối đa 1.000 token ĐẦU RA mỗi phút, và từ chối mọi lượt xin nhiều hơn.
+  tran_token_ra_moi_phut: 950
+  tran_luot_moi_ngay: 950
+
+vong_2:
+  bat: true
+  su_kien_moi_chu_de: 5          # tối đa sự kiện lấy từ mỗi chủ đề Việt Nam
+  # Mô hình đề xuất nhầm (khái niệm, địa danh không có năm, lịch sử thế giới). Code chỉ
+  # kiểm được "có bài Wikipedia thật", chưa kiểm được "có phải sự kiện Việt Nam" —
+  # nên loại tay ở đây (Giáp duyệt 27/09). Mọi bước B3–B7 bỏ qua các mục này.
+  loai_tru:
+    - toan-cau-hoa
+    - do-thi-hoa
+    - khu-cong-nghiep-viet-nam
+    - cau-nhat-tan
+    - bien-doi-khi-hau-o-viet-nam
+    - cach-mang-philippines        # lịch sử thế giới
+    - bien-dong                    # địa danh, không có năm → không lên dòng thời gian được
+    - quan-dao-truong-sa
+    - hoang-sa
+    - nguoi-co-xua                 # khái niệm tiền sử, không có mốc năm
+    - van-hoa-hoa-binh
+    - van-hoa-son-vi
+    - van-hoa-phung-nguyen
+  # Wikipedia tiếng Anh làm nguồn thứ hai cho vòng 2 (lịch sử hiện đại không có trong
+  # Việt Nam sử lược). KHÔNG hoàn toàn độc lập với bản tiếng Việt — mệnh đề chỉ được
+  # cặp Việt–Anh xác nhận bị đánh dấu trên trang duyệt để người duyệt soát kỹ.
+  wikipedia_anh: true
+
+thu_thap:
+  # Mỗi tài liệu cắt thành đoạn ~3.500 ký tự (~1.500 token) để vừa trần 8.000 token/phút.
+  ky_tu_moi_doan: 3500
+  doan_toi_da_vong_1: 6
+  doan_toi_da_vong_2: 1          # rút gọn (Giáp chốt 26/09): trần 200k token/ngày
+  # Các mục cuối bài Wikipedia không chứa sử liệu
+  bo_muc: ["Xem thêm", "Tham khảo", "Chú thích", "Liên kết ngoài", "Ghi chú",
+           "Đọc thêm", "Trong văn hóa đại chúng", "Trong văn hoá đại chúng", "Thư mục"]
+
+sinh:
+  cau_hoi_toi_da_moi_su_kien: 10
+  cau_hoi_toi_da_vong_2: 6        # rút gọn cho vòng 2 — cổng kiểm giữ nguyên
+  cau_hoi_toi_thieu_de_len_app: 3   # sự kiện vòng 2 ít hơn số này thì không đưa lên
+
+# Nạp nội dung vào app. Để false tới khi người duyệt (Giáp) đọc xong trang duyệt
+# và đồng ý — bật true rồi chạy: python b7_xuat_seed.py --nap
+nap_vao_app: false
